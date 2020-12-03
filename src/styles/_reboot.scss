@@ -1,19 +1,19 @@
 #root,
 body,
 html {
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
 }
 
 div,
 a {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 img {
-  max-width: 100%;
+    max-width: 100%;
 }
 h1,
 h2,
@@ -22,8 +22,8 @@ h4,
 h5,
 h6,
 .card-title {
-  color: $text-body !important;
-  // font-weight: 500;
+    color: $text-body !important;
+    // font-weight: 500;
 }
 
 .layout1,
@@ -31,12 +31,12 @@ h6,
 .MuiPaper-root,
 .MuiTableCell-body,
 .matx-customizer {
-  color: $text-body !important;
+    color: $text-body !important;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
-  color: rgba(255, 0, 221, 0.863);
-  font-size: 16px;
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+        monospace;
+    color: rgba(255, 0, 221, 0.863);
+    font-size: 16px;
 }

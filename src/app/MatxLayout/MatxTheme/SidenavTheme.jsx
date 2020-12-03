@@ -1,43 +1,42 @@
-import React from "react";
-import { Helmet } from "react-helmet";
+import React from 'react'
+import { Helmet } from 'react-helmet'
 
 const SidenavTheme = ({ theme, settings }) => {
-
-  function darkHoverStyle() {
-    return theme.palette.type === "dark"
-      ? `.navigation .nav-item:hover,
+    function darkHoverStyle() {
+        return theme.palette.type === 'dark'
+            ? `.navigation .nav-item:hover,
         .navigation .nav-item.active {
           color: ${theme.palette.text.primary};
         }`
-      : "";
-  }
+            : ''
+    }
 
-  function lightHoverStyle() {
-    return theme.palette.type === "light"
-      ? `.navigation .nav-item:hover,
+    function lightHoverStyle() {
+        return theme.palette.type === 'light'
+            ? `.navigation .nav-item:hover,
         .navigation .nav-item.active,
         .navigation .submenu {
           background: rgba(0, 0, 0, .08);
         }`
-      : "";
-  }
+            : ''
+    }
 
-  return (
-    <Helmet>
-      <style>
-        {`
+    return (
+        <Helmet>
+            <style>
+                {`
         
         ${
-          theme.palette.type === "dark"
-            ? `.sidenav {
+            theme.palette.type === 'dark'
+                ? `.sidenav {
           color: ${theme.palette.text.secondary};
         }`
-            : " "
+                : ' '
         }
 
         .sidenav__hold {
           background-image: url(${
-            settings.layout1Settings.leftSidebar.bgImgURL
+              settings.layout1Settings.leftSidebar.bgImgURL
           });
           opacity: 1 !important;
         }
@@ -60,9 +59,9 @@ const SidenavTheme = ({ theme, settings }) => {
         ${darkHoverStyle()}
         
       `}
-      </style>
-    </Helmet>
-  );
-};
+            </style>
+        </Helmet>
+    )
+}
 
-export default SidenavTheme;
+export default SidenavTheme

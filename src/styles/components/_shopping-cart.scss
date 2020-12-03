@@ -1,16 +1,16 @@
 .mini-cart {
-  width: $sidenav-width;
-  .cart__topbar {
-    height: $topbar-height;
-    box-shadow: $elevation-z6;
-  }
-  .mini-cart__item {
-    transition: background 300ms ease;
-    &:hover {
-      background: $light-gray;
+    width: $sidenav-width;
+    .cart__topbar {
+        height: $topbar-height;
+        box-shadow: $elevation-z6;
     }
-    img {
-      width: 80px;
+    .mini-cart__item {
+        transition: background 300ms ease;
+        &:hover {
+            background: $light-gray;
+        }
+        img {
+            width: 80px;
+        }
     }
-  }
 }

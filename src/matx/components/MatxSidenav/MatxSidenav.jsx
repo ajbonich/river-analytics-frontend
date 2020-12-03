@@ -2,10 +2,12 @@ import React, { Component } from "react";
 import { isMobile } from "utils";
 
 class MatxSidenav extends Component {
-  handleResizeRef;
-
-  state = {
-    mobile: isMobile()
+    constructor() {
+        super();
+        this.state = {
+            mobile: isMobile()
+        }
+    }
   };
 
   handleWindowResize = () => {
