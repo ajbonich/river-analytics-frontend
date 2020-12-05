@@ -9,7 +9,6 @@ import { renderRoutes } from 'react-router-config'
 import Layout1Topbar from './Layout1Topbar'
 import Layout1Sidenav from './Layout1Sidenav'
 import Footer from '../SharedCompoents/Footer'
-import SecondarySidebar from '../SharedCompoents/SecondarySidebar/SecondarySidebar'
 import AppContext from 'app/appContext'
 import { MatxSuspense } from 'matx'
 
@@ -77,7 +76,6 @@ const Layout1 = (props) => {
 
                 {settings.footer.show && settings.footer.fixed && <Footer />}
             </div>
-            {settings.secondarySidebar.show && <SecondarySidebar />}
         </div>
     )
 }

@@ -472,7 +472,7 @@ Mock.onPost('/api/scrum-board/delete-column').reply((config) => {
     const board = ScrumBoardDB.boardList.find((board) => board.id === boardId)
     let deleteIndex = null
 
-    board.list.map((column, index) => {
+    board.list.forEach((column, index) => {
         if (column.id === listId) deleteIndex = index
     })
 

@@ -231,7 +231,7 @@ Mock.onGet('/api/chat/chat-room').reply((config) => {
         return [200, response]
     } else {
         const chatId = shortId.generate()
-        ChatDB.user.map((user) => {
+        ChatDB.user.forEach((user) => {
             if (currentUser === user.id) {
                 user.chatInfo.push({
                     chatId,
@@ -284,7 +284,7 @@ Mock.onGet('/api/chat/contacts').reply((config) => {
 Mock.onPost('/api/chat/add').reply((config) => {
     const chatDetails = JSON.parse(config.data)
     const { chatId } = chatDetails
-    ChatDB.chatCollection.map((chatRoom) => {
+    ChatDB.chatCollection.forEach((chatRoom) => {
         if (chatId === chatRoom.id) {
             delete chatDetails.chatId
             chatRoom.chats.push({ ...chatDetails })

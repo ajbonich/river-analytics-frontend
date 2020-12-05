@@ -1,4 +1,4 @@
-import React, { useContext, useEffect } from 'react'
+import React, { useContext, useEffect, useCallback } from 'react'
 import { MatxLayouts } from './index'
 import PropTypes from 'prop-types'
 import { withRouter } from 'react-router-dom'
@@ -17,17 +17,22 @@ let tempSettings
 
 const MatxLayoutSFC = (props) => {
     const appContext = useContext(AppContext)
-    const {
-        settings,
-        defaultSettings,
-        setLayoutSettings,
-        setDefaultSettings,
-    } = props
+    const { settings, defaultSettings, setLayoutSettings } = props
 
     tempSettings = settings
 
     useEffect(() => {
-        listenWindowResize()
+        const listenWindowResize = () => {
+            const settings = tempSettings
+            if (settings.layout1Settings.leftSidebar.show) {
+                const mode = isMdScreen() ? 'close' : 'full'
+                setLayoutSettings(
+                    merge({}, settings, {
+                        layout1Settings: { leftSidebar: { mode } },
+                    })
+                )
+            }
+        }
 
         if (window) {
             // LISTEN WINDOW RESIZE
@@ -38,25 +43,9 @@ const MatxLayoutSFC = (props) => {
                 window.removeEventListener('resize', listenWindowResize)
             }
         }
-    }, [])
+    }, [setLayoutSettings])
 
-    useEffect(() => {
-        updateSettingsFromRouter()
-    }, [props.location])
-
-    const listenWindowResize = () => {
-        const settings = tempSettings
-        if (settings.layout1Settings.leftSidebar.show) {
-            const mode = isMdScreen() ? 'close' : 'full'
-            setLayoutSettings(
-                merge({}, settings, {
-                    layout1Settings: { leftSidebar: { mode } },
-                })
-            )
-        }
-    }
-
-    const updateSettingsFromRouter = () => {
+    const updateSettingsFromRouter = useCallback(() => {
         const { routes } = appContext
         const matched = matchRoutes(routes, props.location.pathname)[0]
 
@@ -71,7 +60,17 @@ const MatxLayoutSFC = (props) => {
             setLayoutSettings(defaultSettings)
             // console.log('reset settings', defaultSettings);
         }
-    }
+    }, [
+        appContext,
+        defaultSettings,
+        props.location.pathname,
+        setLayoutSettings,
+        settings,
+    ])
+
+    useEffect(() => {
+        updateSettingsFromRouter()
+    }, [props.location, updateSettingsFromRouter])
 
     const Layout = MatxLayouts[settings.activeLayout]
 
