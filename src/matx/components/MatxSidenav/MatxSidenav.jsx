@@ -1,58 +1,60 @@
-import React, { Component } from "react";
-import { isMobile } from "utils";
+import React, { Component } from 'react'
+import { isMobile } from 'utils'
 
 class MatxSidenav extends Component {
     constructor() {
-        super();
+        super()
         this.state = {
-            mobile: isMobile()
+            mobile: isMobile(),
         }
     }
-  };
 
-  handleWindowResize = () => {
-    return event => {
-      if (event.target.innerWidth < 768) {
-        this.setState({ mobile: true });
-      } else this.setState({ mobile: false });
-    };
-  };
+    handleWindowResize = () => {
+        return (event) => {
+            if (event.target.innerWidth < 768) {
+                this.setState({ mobile: true })
+            } else this.setState({ mobile: false })
+        }
+    }
 
-  componentDidMount() {
-    this.handleResizeRef = this.handleWindowResize();
-    if (window) window.addEventListener("resize", this.handleResizeRef);
-  }
+    componentDidMount() {
+        this.handleResizeRef = this.handleWindowResize()
+        if (window) window.addEventListener('resize', this.handleResizeRef)
+    }
 
-  componentWillUnmount() {
-    if (this.handleResizeRef)
-      window.removeEventListener("resize", this.handleResizeRef);
-  }
+    componentWillUnmount() {
+        if (this.handleResizeRef)
+            window.removeEventListener('resize', this.handleResizeRef)
+    }
 
-  render() {
-    let {
-      open,
-      children,
-      toggleSidenav,
-      width = "220px",
-      bgClass
-    } = this.props;
+    render() {
+        let {
+            open,
+            children,
+            toggleSidenav,
+            width = '220px',
+            bgClass,
+        } = this.props
 
-    let { mobile } = this.state;
+        let { mobile } = this.state
 
-    return (
-      <div className="flex h-full">
-        <div
-          className={`matx-sidenav bg-default ${bgClass}`}
-          style={{ width: open || !mobile ? width : "0px" }}
-        >
-          {children}
-        </div>
-        {open && mobile && (
-          <div onClick={toggleSidenav} className="matx-sidenav-overlay" />
-        )}
-      </div>
-    );
-  }
+        return (
+            <div className="flex h-full">
+                <div
+                    className={`matx-sidenav bg-default ${bgClass}`}
+                    style={{ width: open || !mobile ? width : '0px' }}
+                >
+                    {children}
+                </div>
+                {open && mobile && (
+                    <div
+                        onClick={toggleSidenav}
+                        className="matx-sidenav-overlay"
+                    />
+                )}
+            </div>
+        )
+    }
 }
 
-export default MatxSidenav;
+export default MatxSidenav
