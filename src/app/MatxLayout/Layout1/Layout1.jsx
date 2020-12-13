@@ -5,12 +5,13 @@ import { setLayoutSettings } from 'app/redux/actions/LayoutActions'
 import { withStyles, ThemeProvider } from '@material-ui/core/styles'
 import Scrollbar from 'react-perfect-scrollbar'
 import { classList } from 'utils'
-import { renderRoutes } from 'react-router-config'
 import Layout1Topbar from './Layout1Topbar'
-import Layout1Sidenav from './Layout1Sidenav'
 import Footer from '../SharedCompoents/Footer'
-import AppContext from 'app/appContext'
+import SimpleForm from 'app/views/material-kit/forms/SimpleForm'
+import { Card } from '@material-ui/core'
 import { MatxSuspense } from 'matx'
+import { renderRoutes } from 'react-router-config'
+import AppContext from 'app/appContext'
 
 const styles = (theme) => {
     return {
@@ -33,8 +34,6 @@ const Layout1 = (props) => {
 
     return (
         <div className={classList(layoutClasses)}>
-            {layout1Settings.leftSidebar.show && <Layout1Sidenav />}
-
             <div className="content-wrap position-relative">
                 {layout1Settings.topbar.show && layout1Settings.topbar.fixed && (
                     <ThemeProvider theme={topbarTheme}>
@@ -42,39 +41,15 @@ const Layout1 = (props) => {
                     </ThemeProvider>
                 )}
 
-                {settings.perfectScrollbar && (
-                    <Scrollbar className="scrollable-content">
-                        {layout1Settings.topbar.show &&
-                            !layout1Settings.topbar.fixed && (
-                                <ThemeProvider theme={topbarTheme}>
-                                    <Layout1Topbar />
-                                </ThemeProvider>
-                            )}
-                        <div className="content">
-                            <MatxSuspense>{renderRoutes(routes)}</MatxSuspense>
-                        </div>
-                        <div className="my-auto" />
-                        {settings.footer.show && !settings.footer.fixed && (
-                            <Footer />
-                        )}
-                    </Scrollbar>
-                )}
-
-                {!settings.perfectScrollbar && (
-                    <div className="scrollable-content">
-                        {layout1Settings.topbar.show &&
-                            !layout1Settings.topbar.fixed && <Layout1Topbar />}
-                        <div className="content">
-                            <MatxSuspense>{renderRoutes(routes)}</MatxSuspense>
-                        </div>
-                        <div className="my-auto" />
-                        {settings.footer.show && !settings.footer.fixed && (
-                            <Footer />
-                        )}
+                <Scrollbar className="scrollable-content">
+                    <div className="content">
+                        <MatxSuspense>{renderRoutes(routes)}</MatxSuspense>
                     </div>
-                )}
-
-                {settings.footer.show && settings.footer.fixed && <Footer />}
+                    <div className="my-auto" />
+                    {settings.footer.show && !settings.footer.fixed && (
+                        <Footer />
+                    )}
+                </Scrollbar>
             </div>
         </div>
     )
