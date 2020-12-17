@@ -128,7 +128,6 @@ class SimpleRiverForm extends Component {
                         </Grid>
                     </Grid>
                     <Button color="primary" variant="contained" type="submit">
-                        <Icon>Y</Icon>
                         <span className="pl-2 capitalize">Submit</span>
                     </Button>
                 </ValidatorForm>

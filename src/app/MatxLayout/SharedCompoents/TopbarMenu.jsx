@@ -22,7 +22,7 @@ const TopbarMenu = (props) => {
                     <Icon>{open ? 'close' : 'more_vert'}</Icon>
                 </IconButton>
             </Hidden>
-
+            
             <div
                 style={{ top: offsetTop }}
                 className="flex items-center menu-area container"

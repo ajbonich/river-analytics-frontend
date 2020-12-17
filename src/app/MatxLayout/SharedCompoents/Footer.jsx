@@ -12,21 +12,18 @@ const Footer = ({ theme, settings }) => {
                 <Toolbar className="footer flex items-center">
                     <div className="flex items-center container w-full">
                         <a
-                            href="https://ui-lib.com/downloads/matx-react-material-design-admin-template/"
+                            href="https://maps.waterdata.usgs.gov/mapper/index.html"
                             className="mr-2"
                         >
-                            <Button variant="contained">Download Matx</Button>
+                            <Button variant="contained">USGS Site Map</Button>
                         </a>
-                        <a href="https://ui-lib.com/downloads/matx-pro-react-material-design-admin-template/">
+                        <a href="https://www.americanwhitewater.org/content/River/view/river-index">
                             <Button variant="contained" color="secondary">
-                                Get MatX Pro
+                                Find river sections at American Whitewater
                             </Button>
                         </a>
                         <span className="m-auto"></span>
-                        <p className="m-0">
-                            Design and Developed by{' '}
-                            <a href="http://ui-lib.com">UI Lib</a>
-                        </p>
+                        <p className="m-0">Design by Andrew Bonich</p>
                     </div>
                 </Toolbar>
             </AppBar>
