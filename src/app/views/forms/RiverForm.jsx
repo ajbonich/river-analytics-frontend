@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import SimpleRiverForm from '../material-kit/forms/SimpleRiverForm'
 import { SimpleCard } from 'matx'
 import { Grid } from '@material-ui/core'
+import RechartLineGraph from 'app/components/RechartLineGraph'
 
 class RiverForm extends Component {
     render() {
@@ -19,7 +20,9 @@ class RiverForm extends Component {
                         </SimpleCard>
                     </Grid>
                     <Grid item xs={9} style={{ textAlign: 'center' }}>
-                        <SimpleCard title="Graph">Graphs and stuff</SimpleCard>
+                        <SimpleCard title="Graph">
+                            <RechartLineGraph />
+                        </SimpleCard>
                     </Grid>
                 </Grid>
             </div>
