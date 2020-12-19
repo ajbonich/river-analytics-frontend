@@ -20,7 +20,7 @@ export const themeColors = {
                 contrastText: textLight.primary,
             },
             secondary: {
-                main: '#7467ef',
+                main: '#348fc2',
                 contrastText: textLight.primary,
             },
             text: textLight,
@@ -30,7 +30,7 @@ export const themeColors = {
         palette: {
             type: 'dark',
             primary: {
-                main: '#222A45',
+                main: '#276b91',
                 contrastText: '#ffffff',
             },
             secondary: {
@@ -38,7 +38,7 @@ export const themeColors = {
                 contrastText: textLight.primary,
             },
             background: {
-                paper: '#222A45',
+                paper: '#276b91',
                 default: '#1a2038',
             },
         },
@@ -55,7 +55,7 @@ export const themeColors = {
                 contrastText: textLight.primary,
             },
             background: {
-                paper: '#222A45',
+                paper: '#276b91',
                 default: '#1a2038',
             },
         },
@@ -64,7 +64,7 @@ export const themeColors = {
         palette: {
             type: 'light',
             primary: {
-                main: '#7467ef',
+                main: '#348fc2',
                 contrastText: '#ffffff',
             },
             secondary: secondaryColor,
@@ -75,7 +75,7 @@ export const themeColors = {
         palette: {
             type: 'light',
             primary: {
-                main: '#6a75c9',
+                main: '#348fc2',
                 contrastText: '#ffffff',
             },
             secondary: {
@@ -89,7 +89,7 @@ export const themeColors = {
         palette: {
             type: 'dark',
             primary: {
-                main: '#7467ef',
+                main: '#348fc2',
                 contrastText: '#ffffff',
             },
             secondary: {
@@ -97,7 +97,7 @@ export const themeColors = {
                 contrastText: textLight.primary,
             },
             background: {
-                paper: '#222A45',
+                paper: '#276b91',
                 default: '#1a2038',
             },
         },
@@ -114,7 +114,7 @@ export const themeColors = {
                 contrastText: textLight.primary,
             },
             background: {
-                paper: '#222A45',
+                paper: '#276b91',
                 default: '#1a2038',
             },
         },
@@ -145,7 +145,7 @@ export const themeColors = {
                 contrastText: textLight.primary,
             },
             background: {
-                paper: '#222A45',
+                paper: '#276b91',
                 default: '#1a2038',
             },
         },
