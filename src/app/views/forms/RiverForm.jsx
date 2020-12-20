@@ -8,17 +8,11 @@ class RiverForm extends Component {
     constructor(props) {
         super(props)
         this.state = {
-            dailyAverageData: [
-                { index: '1/1', value: 45.5 },
-                { index: '1/2', value: 15.5 },
-                { index: '1/3', value: 35.5 },
-                { index: '1/4', value: 45.5 },
-                { index: '1/6', value: 95.5 },
-                { index: '1/8', value: 25.5 },
-            ],
+            dailyAverageData: [],
         }
         this.baseApiUrl =
             'https://x7tt9f86r8.execute-api.us-east-2.amazonaws.com/dev'
+        this.getDailyAverageData('06719505')
     }
 
     getDailyAverageData = (siteId) => {
@@ -29,6 +23,10 @@ class RiverForm extends Component {
                     dailyAverageData: data,
                 })
             })
+    }
+
+    getMonthDay(date) {
+        return `${date.getMonth() + 1}-${date.getDate()}`
     }
 
     render() {

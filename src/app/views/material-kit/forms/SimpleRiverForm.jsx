@@ -33,7 +33,11 @@ class SimpleRiverForm extends React.Component {
     }
 
     handleSubmit() {
-        this.props.handleDailyAverageSubmit(this.state.siteId)
+        this.props.handleDailyAverageSubmit(
+            this.state.siteId,
+            this.state.startDate,
+            this.state.endDate
+        )
     }
 
     render() {
@@ -71,7 +75,7 @@ class SimpleRiverForm extends React.Component {
                                 errorMessages={['this field is required']}
                             />
                         </Grid>
-                        <Grid item xs>
+                        {/* <Grid item xs>
                             <MuiPickersUtilsProvider utils={DateFnsUtils}>
                                 <KeyboardDatePicker
                                     className="mb-4 w-full"
@@ -107,7 +111,7 @@ class SimpleRiverForm extends React.Component {
                                     }}
                                 />
                             </MuiPickersUtilsProvider>
-                        </Grid>
+                        </Grid> */}
                     </Grid>
                     <div className="py-3" />
                     <Button color="primary" variant="contained" type="submit">
