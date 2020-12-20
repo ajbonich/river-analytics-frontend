@@ -48,7 +48,7 @@ class RiverForm extends Component {
                         </SimpleCard>
                     </Grid>
                     <Grid item xs={9} style={{ textAlign: 'center' }}>
-                        <SimpleCard title="Graph">
+                        <SimpleCard title="Average Flow">
                             <RechartLineGraph
                                 data={this.state.dailyAverageData}
                             />
