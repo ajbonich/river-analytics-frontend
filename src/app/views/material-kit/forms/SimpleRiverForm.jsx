@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React from 'react'
 import { ValidatorForm, TextValidator } from 'react-material-ui-form-validator'
 import { Button, Grid } from '@material-ui/core'
 import {
@@ -7,25 +7,16 @@ import {
 } from '@material-ui/pickers'
 import 'date-fns'
 import DateFnsUtils from '@date-io/date-fns'
+import PropTypes from 'prop-types'
 
-class SimpleRiverForm extends Component {
+class SimpleRiverForm extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
-            stationId: '06719505',
+            siteId: '06719505',
             startDate: new Date('January 1, 2021'),
             endDate: new Date('December 31, 2021'),
-            loading: false,
         }
-    }
-
-    componentDidMount() {}
-
-    componentWillUnmount() {}
-
-    handleSubmit = (event) => {
-        // console.log("submitted");
-        // console.log(event);
     }
 
     handleChange = (event) => {
@@ -41,14 +32,19 @@ class SimpleRiverForm extends Component {
         this.setState({ endDate })
     }
 
+    handleSubmit() {
+        this.props.handleDailyAverageSubmit(this.state.siteId)
+    }
+
     render() {
-        const { stationId, startDate, endDate } = this.state
+        const { siteId, startDate, endDate } = this.state
         return (
             <div>
                 <ValidatorForm
+                    debounceTime={2000}
+                    onError={(errors) => console.log(errors)}
+                    onSubmit={() => this.handleSubmit()}
                     ref="form"
-                    onSubmit={this.handleSubmit}
-                    onError={(errors) => null}
                 >
                     <Grid
                         container
@@ -63,8 +59,8 @@ class SimpleRiverForm extends Component {
                                 label="USGS Station ID"
                                 onChange={this.handleChange}
                                 type="text"
-                                name="stationId"
-                                value={stationId}
+                                name="siteId"
+                                value={siteId}
                                 validators={[
                                     'required',
                                     'minStringLength: 8',
@@ -121,6 +117,10 @@ class SimpleRiverForm extends Component {
             </div>
         )
     }
+}
+
+SimpleRiverForm.propTypes = {
+    handleDailyAverageSubmit: PropTypes.func.isRequired,
 }
 
 export default SimpleRiverForm
