@@ -39,7 +39,7 @@ class RiverForm extends Component {
                     spacing={3}
                 >
                     <Grid item xs={3}>
-                        <SimpleCard title="Average Flow">
+                        <SimpleCard title="USGS Station ID">
                             <SimpleRiverForm
                                 handleDailyAverageSubmit={
                                     this.getDailyAverageData

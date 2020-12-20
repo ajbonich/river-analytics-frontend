@@ -60,7 +60,7 @@ class SimpleRiverForm extends React.Component {
                         <Grid item xs>
                             <TextValidator
                                 className="mb-4 w-full"
-                                label="USGS Station ID"
+                                label="Must be a valid USGS station Id"
                                 onChange={this.handleChange}
                                 type="text"
                                 name="siteId"

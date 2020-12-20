@@ -82,7 +82,7 @@ class Layout1Topbar extends Component {
                                 <Icon>menu</Icon>
                             </IconButton>
                             <p className="font-medium text-24 mx-4">
-                                River Flow Prediction
+                                River Flow Analytics
                             </p>
                         </div>
                     </div>
