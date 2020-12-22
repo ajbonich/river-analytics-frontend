@@ -63,15 +63,15 @@ class RiverForm extends Component {
                     alignItems="flex-start"
                     spacing={3}
                 >
-                    <Grid container>
-                        <Grid item xs={3}>
-                            <SimpleCard title="Section Details">
+                    <Grid container spacing={3}>
+                        <Grid item xs={2}>
+                            <SimpleCard title="USGS Station Details">
                                 <SimpleRiverForm
                                     handleSubmit={this.getDailyData}
                                 />
                             </SimpleCard>
                         </Grid>
-                        <Grid item xs={9} style={{ textAlign: 'center' }}>
+                        <Grid item xs={10} style={{ textAlign: 'center' }}>
                             <SimpleCard title="Historic Average Flow">
                                 <RechartLineGraph
                                     dailyAverages={this.state.dailyAverages}

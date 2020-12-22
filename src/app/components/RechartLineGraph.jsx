@@ -14,7 +14,7 @@ export default class RechartLineGraph extends React.Component {
         return (
             <div>
                 <LineChart
-                    width={1200}
+                    width={1000}
                     height={300}
                     data={this.props.dailyAverages}
                     margin={{ top: 5, right: 20, bottom: 5, left: 0 }}
@@ -33,7 +33,7 @@ export default class RechartLineGraph extends React.Component {
                     <YAxis />
                 </LineChart>
                 <LineChart
-                    width={1200}
+                    width={1000}
                     height={300}
                     data={this.props.runnablePercentages}
                     margin={{ top: 5, right: 20, bottom: 5, left: 0 }}
