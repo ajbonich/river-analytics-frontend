@@ -1,12 +1,7 @@
 import React from 'react'
 import { ValidatorForm, TextValidator } from 'react-material-ui-form-validator'
 import { Button, Grid } from '@material-ui/core'
-import {
-    MuiPickersUtilsProvider,
-    KeyboardDatePicker,
-} from '@material-ui/pickers'
 import 'date-fns'
-import DateFnsUtils from '@date-io/date-fns'
 import PropTypes from 'prop-types'
 
 class SimpleRiverForm extends React.Component {
@@ -14,12 +9,12 @@ class SimpleRiverForm extends React.Component {
         super(props)
         this.state = {
             siteId: '06719505',
-            startDate: new Date('January 1, 2021'),
-            endDate: new Date('December 31, 2021'),
+            minFlow: 300,
+            maxFlow: 1000,
         }
     }
 
-    handleChange = (event) => {
+    handleInputChange = (event) => {
         event.persist()
         this.setState({ [event.target.name]: event.target.value })
     }
@@ -28,20 +23,30 @@ class SimpleRiverForm extends React.Component {
         this.setState({ startDate })
     }
 
+    handleMinFlowChange = (minFlow) => {
+        this.setState({ minFlow })
+    }
+
+    handleMaxFlowChange = (maxFlow) => {
+        this.setState({ maxFlow })
+    }
+
     handleEndDateChange = (endDate) => {
         this.setState({ endDate })
     }
 
     handleSubmit() {
-        this.props.handleDailyAverageSubmit(
+        this.props.handleSubmit(
             this.state.siteId,
-            this.state.startDate,
-            this.state.endDate
+            this.state.minFlow,
+            this.state.maxFlow
         )
     }
 
+    handleRunnablePercentage
+
     render() {
-        const { siteId, startDate, endDate } = this.state
+        const { siteId, minFlow, maxFlow } = this.state
         return (
             <div>
                 <ValidatorForm
@@ -61,7 +66,7 @@ class SimpleRiverForm extends React.Component {
                             <TextValidator
                                 className="mb-4 w-full"
                                 label="Must be a valid USGS station Id"
-                                onChange={this.handleChange}
+                                onChange={this.handleInputChange}
                                 type="text"
                                 name="siteId"
                                 value={siteId}
@@ -75,43 +80,42 @@ class SimpleRiverForm extends React.Component {
                                 errorMessages={['this field is required']}
                             />
                         </Grid>
-                        {/* <Grid item xs>
-                            <MuiPickersUtilsProvider utils={DateFnsUtils}>
-                                <KeyboardDatePicker
-                                    className="mb-4 w-full"
-                                    margin="none"
-                                    id="mui-pickers-startDate"
-                                    label="Start Date"
-                                    inputVariant="standard"
-                                    initialFocusedDate={new Date(2020, 1, 1)}
-                                    type="text"
-                                    autoOk={true}
-                                    value={startDate}
-                                    onChange={this.handleStartDateChange}
-                                    KeyboardButtonProps={{
-                                        'aria-label': 'change date',
-                                    }}
-                                />
-                            </MuiPickersUtilsProvider>
-                        </Grid>
-
                         <Grid item xs>
-                            <MuiPickersUtilsProvider utils={DateFnsUtils}>
-                                <KeyboardDatePicker
-                                    margin="none"
-                                    id="mui-pickers-endDate"
-                                    label="End Date"
-                                    inputVariant="standard"
-                                    type="text"
-                                    autoOk={true}
-                                    value={endDate}
-                                    onChange={this.handleEndDateChange}
-                                    KeyboardButtonProps={{
-                                        'aria-label': 'change date',
-                                    }}
-                                />
-                            </MuiPickersUtilsProvider>
-                        </Grid> */}
+                            <TextValidator
+                                className="mb-4 w-full"
+                                label="Minimum Desired Flow"
+                                onChange={this.handleInputChange}
+                                type="text"
+                                name="minFlow"
+                                value={minFlow}
+                                validators={[
+                                    'required',
+                                    'isNumber: true',
+                                    'minNumber: 0',
+                                    'maxNumber: 100000',
+                                    'isPositive: true,',
+                                ]}
+                                errorMessages={['this field is required']}
+                            />
+                        </Grid>
+                        <Grid item xs>
+                            <TextValidator
+                                className="mb-4 w-full"
+                                label="Maximum Desired Flow"
+                                onChange={this.handleInputChange}
+                                type="text"
+                                name="maxFlow"
+                                value={maxFlow}
+                                validators={[
+                                    'required',
+                                    'isNumber: true',
+                                    'minNumber: 0',
+                                    'maxNumber: 100000',
+                                    'isPositive: true,',
+                                ]}
+                                errorMessages={['this field is required']}
+                            />
+                        </Grid>
                     </Grid>
                     <div className="py-3" />
                     <Button color="primary" variant="contained" type="submit">
@@ -124,7 +128,7 @@ class SimpleRiverForm extends React.Component {
 }
 
 SimpleRiverForm.propTypes = {
-    handleDailyAverageSubmit: PropTypes.func.isRequired,
+    handleSubmit: PropTypes.func.isRequired,
 }
 
 export default SimpleRiverForm
