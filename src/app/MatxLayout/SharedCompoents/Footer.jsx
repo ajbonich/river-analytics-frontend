@@ -14,10 +14,14 @@ const Footer = ({ theme, settings }) => {
                         <a
                             href="https://maps.waterdata.usgs.gov/mapper/index.html"
                             className="mr-2"
+                            target="_blank"
                         >
                             <Button variant="contained">USGS Site Map</Button>
                         </a>
-                        <a href="https://www.americanwhitewater.org/content/River/view/river-index">
+                        <a
+                            href="https://www.americanwhitewater.org/content/River/view/river-index"
+                            target="_blank"
+                        >
                             <Button variant="contained" color="secondary">
                                 Find river sections at American Whitewater
                             </Button>
