@@ -15,12 +15,14 @@ const Footer = ({ theme, settings }) => {
                             href="https://maps.waterdata.usgs.gov/mapper/index.html"
                             className="mr-2"
                             target="_blank"
+                            rel="noreferrer noopener"
                         >
                             <Button variant="contained">USGS Site Map</Button>
                         </a>
                         <a
                             href="https://www.americanwhitewater.org/content/River/view/river-index"
                             target="_blank"
+                            rel="noreferrer noopener"
                         >
                             <Button variant="contained" color="secondary">
                                 Find river sections at American Whitewater

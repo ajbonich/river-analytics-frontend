@@ -3,6 +3,7 @@ import SimpleRiverForm from '../material-kit/forms/SimpleRiverForm'
 import { SimpleCard } from 'matx'
 import { Grid } from '@material-ui/core'
 import RechartLineGraph from 'app/components/RechartLineGraph'
+import { Tooltip } from 'recharts'
 
 class RiverForm extends Component {
     constructor(props) {
@@ -71,12 +72,44 @@ class RiverForm extends Component {
                                 />
                             </SimpleCard>
                         </Grid>
-                        <Grid item xs={10} style={{ textAlign: 'center' }}>
-                            <SimpleCard title="Historic Average Flow">
+                        <Grid
+                            item
+                            xs={10}
+                            style={{ textAlign: 'center', align: 'justify' }}
+                        >
+                            <SimpleCard>
+                                <h4>Historic Average Flow</h4>
                                 <RechartLineGraph
-                                    dailyAverages={this.state.dailyAverages}
+                                    xLabel={'Day of the Year'}
+                                    yLabel={'Cubic Feet Per Second (CFS)'}
+                                    data={this.state.dailyAverages}
                                     runnablePercentages={
                                         this.state.dailyRunnablePercentages
+                                    }
+                                    tooltip={
+                                        <Tooltip
+                                            label=""
+                                            formatter={(value) => {
+                                                return [`${value} cfs`, '']
+                                            }}
+                                            separator=""
+                                        />
+                                    }
+                                />
+                                <p className="py-4" />
+                                <h4>Percentage of Years in the Range</h4>
+                                <RechartLineGraph
+                                    xLabel={'Day of the Year'}
+                                    yLabel={'Percent %'}
+                                    data={this.state.dailyRunnablePercentages}
+                                    tooltip={
+                                        <Tooltip
+                                            label=""
+                                            formatter={(value) => {
+                                                return [`${value} %`, '']
+                                            }}
+                                            separator=""
+                                        />
                                     }
                                 />
                             </SimpleCard>
