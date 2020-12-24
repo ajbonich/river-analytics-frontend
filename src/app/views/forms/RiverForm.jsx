@@ -62,7 +62,7 @@ class RiverForm extends Component {
                     container
                     justify="flex-start"
                     alignItems="flex-start"
-                    spacing={3}
+                    spacing={1}
                 >
                     <Grid container spacing={3}>
                         <Grid item xs={2}>
@@ -96,7 +96,7 @@ class RiverForm extends Component {
                                         />
                                     }
                                 />
-                                <p className="py-4" />
+                                {/* <p className="py-2" /> */}
                                 <h4>Percentage of Years in the Range</h4>
                                 <RechartLineGraph
                                     xLabel={'Day of the Year'}

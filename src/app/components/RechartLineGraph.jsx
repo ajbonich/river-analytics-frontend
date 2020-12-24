@@ -12,7 +12,7 @@ import {
 export default class RechartLineGraph extends React.Component {
     render() {
         return (
-            <ResponsiveContainer height={300}>
+            <ResponsiveContainer height={260}>
                 <LineChart data={this.props.data} syncId={'dailyData'}>
                     <Line
                         type="monotone"

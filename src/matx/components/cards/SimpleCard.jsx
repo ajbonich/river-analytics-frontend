@@ -4,7 +4,7 @@ import { classList } from 'utils'
 
 const SimpleCard = ({ children, title, subtitle, icon }) => {
     return (
-        <Card elevation={6} className="px-6 py-5 h-full">
+        <Card elevation={6} className="px-6 py-2 h-full">
             <div
                 className={classList({
                     'card-title': true,
