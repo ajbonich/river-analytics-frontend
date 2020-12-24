@@ -12,25 +12,33 @@ class RiverForm extends Component {
             dailyAverages: [],
             dailyRunnablePercentages: [],
         }
-
         this.baseApi = this.setBaseAPI()
-        this.getDailyData('06719505', 300, 1000)
+    }
+
+    componentDidMount() {
+        this.getDailyRunnablePercentages('06719505', 300, 1000)
+        this.getDailyData('06719505')
     }
 
     setBaseAPI() {
+        if (process.env.REACT_APP_localAPI) {
+            return process.env.REACT_APP_localAPI
+        }
+        console.log(process.env.REACT_APP_localAPI)
+
         switch (process.env.NODE_ENV) {
             case 'production':
                 return 'https://timdw1ya3f.execute-api.us-east-2.amazonaws.com/production/'
             case 'development':
-                return 'https://x7tt9f86r8.execute-api.us-east-2.amazonaws.com/dev'
-            case 'test':
+                return 'https://x7tt9f86r8.execute-api.us-east-2.amazonaws.com/dev/'
+            default:
                 return 'localhost:8888/'
         }
     }
 
     getDailyRunnablePercentages = (siteId, minFlow, maxFlow) => {
         fetch(
-            `${this.baseApi}/getRunnablePercentages?siteId=${siteId}&minFlow=${minFlow}&maxFlow=${maxFlow}`
+            `${this.baseApi}getRunnablePercentages?siteId=${siteId}&minFlow=${minFlow}&maxFlow=${maxFlow}`
         )
             .then((response) => response.json())
             .then((data) => {
@@ -40,19 +48,8 @@ class RiverForm extends Component {
             })
     }
 
-    getDailyData = (siteId, minFlow, maxFlow) => {
-        fetch(
-            `https://x7tt9f86r8.execute-api.us-east-2.amazonaws.com/dev/getRunnablePercentages?siteId=${siteId}&minFlow=${minFlow}&maxFlow=${maxFlow}`
-        )
-            .then((response) => response.json())
-            .then((data) => {
-                this.setState({
-                    dailyRunnablePercentages: data,
-                })
-            })
-        fetch(
-            `https://x7tt9f86r8.execute-api.us-east-2.amazonaws.com/dev/getDailyAverageData?siteId=${siteId}`
-        )
+    getDailyData = (siteId) => {
+        fetch(`${this.baseApi}getDailyAverageData?siteId=${siteId}`)
             .then((response) => response.json())
             .then((data) => {
                 this.setState({
