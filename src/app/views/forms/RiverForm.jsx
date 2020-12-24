@@ -12,10 +12,20 @@ class RiverForm extends Component {
             dailyAverages: [],
             dailyRunnablePercentages: [],
         }
-        this.baseApi =
-            'https://x7tt9f86r8.execute-api.us-east-2.amazonaws.com/dev'
-        this.baseLocalApi = 'localhost:8888'
+
+        this.baseApi = this.setBaseAPI()
         this.getDailyData('06719505', 300, 1000)
+    }
+
+    setBaseAPI() {
+        switch (process.env.NODE_ENV) {
+            case 'production':
+                return 'https://timdw1ya3f.execute-api.us-east-2.amazonaws.com/production/'
+            case 'development':
+                return 'https://x7tt9f86r8.execute-api.us-east-2.amazonaws.com/dev'
+            case 'test':
+                return 'localhost:8888/'
+        }
     }
 
     getDailyRunnablePercentages = (siteId, minFlow, maxFlow) => {
