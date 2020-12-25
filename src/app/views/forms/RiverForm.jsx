@@ -12,15 +12,27 @@ class RiverForm extends Component {
             dailyAverages: [],
             dailyRunnablePercentages: [],
         }
-        this.baseApi =
-            'https://x7tt9f86r8.execute-api.us-east-2.amazonaws.com/dev'
-        this.baseLocalApi = 'localhost:8888'
-        this.getDailyData('06719505', 300, 1000)
+        console.log(process.env.REACT_APP_PYTHON_API)
+        console.log(process.env.REACT_APP_ENVIRONMENT)
+        this.baseApi = this.setBaseAPI()
+    }
+
+    componentDidMount() {
+        this.getDailyRunnablePercentages('06719505', 300, 1000)
+        this.getDailyData('06719505')
+    }
+
+    setBaseAPI() {
+        if (process.env.REACT_APP_LOCAL_ENVIRONMENT) {
+            return 'https://localhost:8888/'
+        }
+
+        return process.env.REACT_APP_PYTHON_API
     }
 
     getDailyRunnablePercentages = (siteId, minFlow, maxFlow) => {
         fetch(
-            `${this.baseApi}/getRunnablePercentages?siteId=${siteId}&minFlow=${minFlow}&maxFlow=${maxFlow}`
+            `${this.baseApi}getRunnablePercentages?siteId=${siteId}&minFlow=${minFlow}&maxFlow=${maxFlow}`
         )
             .then((response) => response.json())
             .then((data) => {
@@ -30,19 +42,8 @@ class RiverForm extends Component {
             })
     }
 
-    getDailyData = (siteId, minFlow, maxFlow) => {
-        fetch(
-            `https://x7tt9f86r8.execute-api.us-east-2.amazonaws.com/dev/getRunnablePercentages?siteId=${siteId}&minFlow=${minFlow}&maxFlow=${maxFlow}`
-        )
-            .then((response) => response.json())
-            .then((data) => {
-                this.setState({
-                    dailyRunnablePercentages: data,
-                })
-            })
-        fetch(
-            `https://x7tt9f86r8.execute-api.us-east-2.amazonaws.com/dev/getDailyAverageData?siteId=${siteId}`
-        )
+    getDailyData = (siteId) => {
+        fetch(`${this.baseApi}getDailyAverageData?siteId=${siteId}`)
             .then((response) => response.json())
             .then((data) => {
                 this.setState({
