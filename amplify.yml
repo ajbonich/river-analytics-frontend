@@ -6,8 +6,8 @@ frontend:
                 - npm ci
         build:
             commands:
-                - if [ "${AWS_BRANCH}" = "main" ]; then echo "npm run build"; fi
-                - if [ "${AWS_BRANCH}" = "development" ]; then echo "npm run development"; fi
+                - if [ "${AWS_BRANCH}" = "main" ]; then npm run build; fi
+                - if [ "${AWS_BRANCH}" = "development" ]; then npm run development fi
     artifacts:
         baseDirectory: build
         files:
