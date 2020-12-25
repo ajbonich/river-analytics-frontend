@@ -1,17 +1,17 @@
 version: 1
 frontend:
-  phases:
-    preBuild:
-      commands:
-        - npm ci
-    build:
-      commands:
-        - if [ "${AWS_BRANCH}" = "main" ]; then echo "npm run build"; fi
-        - if [ "${AWS_BRANCH}" = "development" ]; then echo "npm start"; fi
-  artifacts:
-    baseDirectory: build
-    files:
-      - '**/*'
-  cache:
-    paths:
-      - node_modules/**/*
+    phases:
+        preBuild:
+            commands:
+                - npm ci
+        build:
+            commands:
+                - if [ "${AWS_BRANCH}" = "main" ]; then echo "npm run build"; fi
+                - if [ "${AWS_BRANCH}" = "development" ]; then echo "npm run development"; fi
+    artifacts:
+        baseDirectory: build
+        files:
+            - '**/*'
+    cache:
+        paths:
+            - node_modules/**/*

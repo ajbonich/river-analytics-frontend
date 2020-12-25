@@ -57,8 +57,9 @@
   "scripts": {
     "analyze": "source-map-explorer 'build/static/js/*.js'",
     "start": "react-app-rewired start",
-    "build": "react-scripts build",
-    "buildLocal": "set REACT_APP_localAPI=https://localhost:8888/&& react-app-rewired start",
+    "development": "set REACT_APP_ENVIRONMENT=development&& react-scripts build",
+    "build": "set REACT_APP_ENVIRONMENT=production&& react-scripts build",
+    "buildLocal": "set REACT_APP_ENVIRONMENT=local&& react-app-rewired start",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "ghp": "react-scripts build && gh-pages -d build",

@@ -21,18 +21,14 @@ class RiverForm extends Component {
     }
 
     setBaseAPI() {
-        if (process.env.REACT_APP_localAPI) {
-            return process.env.REACT_APP_localAPI
-        }
-        console.log(process.env.REACT_APP_localAPI)
-
-        switch (process.env.NODE_ENV) {
+        console.log(process.env.REACT_APP_ENVIRONMENT)
+        switch (process.env.REACT_APP_ENVIRONMENT) {
             case 'production':
                 return 'https://timdw1ya3f.execute-api.us-east-2.amazonaws.com/production/'
             case 'development':
                 return 'https://x7tt9f86r8.execute-api.us-east-2.amazonaws.com/dev/'
             default:
-                return 'localhost:8888/'
+                return 'https://localhost:8888/'
         }
     }
 
