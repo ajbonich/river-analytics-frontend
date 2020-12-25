@@ -15,11 +15,11 @@ class RiverForm extends Component {
         console.log(process.env.REACT_APP_PYTHON_API)
         console.log(process.env.REACT_APP_ENVIRONMENT)
         this.baseApi = this.setBaseAPI()
+        this.getAllData = this.getAllData.bind(this)
     }
 
     componentDidMount() {
-        this.getDailyRunnablePercentages('06719505', 300, 1000)
-        this.getDailyData('06719505')
+        this.getAllData('06719505', 300, 1000)
     }
 
     setBaseAPI() {
@@ -30,7 +30,12 @@ class RiverForm extends Component {
         return process.env.REACT_APP_PYTHON_API
     }
 
-    getDailyRunnablePercentages = (siteId, minFlow, maxFlow) => {
+    getAllData(siteId, minFlow, maxFlow) {
+        this.getDailyData(siteId)
+        this.getDailyRunnablePercentages(siteId, minFlow, maxFlow)
+    }
+
+    getDailyRunnablePercentages(siteId, minFlow, maxFlow) {
         fetch(
             `${this.baseApi}getRunnablePercentages?siteId=${siteId}&minFlow=${minFlow}&maxFlow=${maxFlow}`
         )
@@ -42,7 +47,7 @@ class RiverForm extends Component {
             })
     }
 
-    getDailyData = (siteId) => {
+    getDailyData(siteId) {
         fetch(`${this.baseApi}getDailyAverageData?siteId=${siteId}`)
             .then((response) => response.json())
             .then((data) => {
@@ -69,7 +74,7 @@ class RiverForm extends Component {
                         <Grid item xs={2}>
                             <SimpleCard title="USGS Station Details">
                                 <SimpleRiverForm
-                                    handleSubmit={this.getDailyData}
+                                    handleFormSubmit={this.getAllData}
                                 />
                             </SimpleCard>
                         </Grid>
