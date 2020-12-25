@@ -35,16 +35,6 @@ class SimpleRiverForm extends React.Component {
         this.setState({ endDate })
     }
 
-    handleSubmit() {
-        this.props.handleSubmit(
-            this.state.siteId,
-            this.state.minFlow,
-            this.state.maxFlow
-        )
-    }
-
-    handleRunnablePercentage
-
     render() {
         const { siteId, minFlow, maxFlow } = this.state
         return (
@@ -52,7 +42,13 @@ class SimpleRiverForm extends React.Component {
                 <ValidatorForm
                     debounceTime={2000}
                     onError={(errors) => console.log(errors)}
-                    onSubmit={() => this.handleSubmit()}
+                    onSubmit={() =>
+                        this.props.handleFormSubmit(
+                            this.state.siteId,
+                            this.state.minFlow,
+                            this.state.maxFlow
+                        )
+                    }
                     ref="form"
                 >
                     <Grid
@@ -128,7 +124,7 @@ class SimpleRiverForm extends React.Component {
 }
 
 SimpleRiverForm.propTypes = {
-    handleSubmit: PropTypes.func.isRequired,
+    handleFormSubmit: PropTypes.func.isRequired,
 }
 
 export default SimpleRiverForm
