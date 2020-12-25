@@ -23,7 +23,7 @@ class RiverForm extends Component {
     }
 
     setBaseAPI() {
-        if (process.env.REACT_APP_ENVIRONMENT) {
+        if (process.env.REACT_APP_LOCAL_ENVIRONMENT) {
             return 'https://localhost:8888/'
         }
 
