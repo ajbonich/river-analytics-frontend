@@ -59,7 +59,7 @@
     "start": "react-app-rewired start",
     "build": "sh -ac '. .env.${REACT_APP_ENV}; react-scripts build'",
     "buildLocal": "set REACT_APP_ENVIRONMENT=local&& react-app-rewired start",
-    "build:development": "REACT_APP_ENV=development npm run build",
+    "build:development": "set REACT_APP_ENV=development&& npm run build",
     "build:production": "REACT_APP_ENV=production npm run build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
