@@ -12,6 +12,8 @@ class RiverForm extends Component {
             dailyAverages: [],
             dailyRunnablePercentages: [],
         }
+        console.log(process.env.REACT_APP_PYTHON_API)
+        console.log(process.env.REACT_APP_ENVIRONMENT)
         this.baseApi = this.setBaseAPI()
     }
 
@@ -21,15 +23,11 @@ class RiverForm extends Component {
     }
 
     setBaseAPI() {
-        console.log(process.env.REACT_APP_ENVIRONMENT)
-        switch (process.env.REACT_APP_ENVIRONMENT) {
-            case 'production':
-                return 'https://timdw1ya3f.execute-api.us-east-2.amazonaws.com/production/'
-            case 'development':
-                return 'https://x7tt9f86r8.execute-api.us-east-2.amazonaws.com/dev/'
-            default:
-                return 'https://localhost:8888/'
+        if (process.env.REACT_APP_ENVIRONMENT) {
+            return 'https://localhost:8888/'
         }
+
+        return process.env.REACT_APP_PYTHON_API
     }
 
     getDailyRunnablePercentages = (siteId, minFlow, maxFlow) => {
