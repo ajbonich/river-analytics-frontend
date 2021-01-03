@@ -2,8 +2,25 @@ import React, { Component } from 'react'
 import SimpleRiverForm from '../material-kit/forms/SimpleRiverForm'
 import { SimpleCard } from 'matx'
 import { Grid } from '@material-ui/core'
-import RechartLineGraph from 'app/components/RechartLineGraph'
-import { Tooltip } from 'recharts'
+import RechartLineChart from 'app/components/RechartLineChart'
+import RechartAreaChart from 'app/components/RechartAreaChart'
+import { XAxis, YAxis, Label, Tooltip } from 'recharts'
+const LineXAxis = (
+    <XAxis dataKey="index" height={40}>
+        <Label value="Day of the Year" position="insideBottom" offset={3} />
+    </XAxis>
+)
+
+const LineYAxis = (
+    <YAxis>
+        <Label
+            value="Cubic Feet Per Second (CFS)"
+            angle={-90}
+            position="insideBottomLeft"
+            offset={10}
+        />
+    </YAxis>
+)
 
 class RiverForm extends Component {
     constructor(props) {
@@ -24,7 +41,7 @@ class RiverForm extends Component {
 
     setBaseAPI() {
         if (process.env.REACT_APP_LOCAL_ENVIRONMENT) {
-            return 'https://localhost:8888/'
+            return 'http://localhost:8888/'
         }
 
         return process.env.REACT_APP_PYTHON_API
@@ -37,7 +54,7 @@ class RiverForm extends Component {
 
     getDailyRunnablePercentages(siteId, minFlow, maxFlow) {
         fetch(
-            `${this.baseApi}getRunnablePercentages?siteId=${siteId}&minFlow=${minFlow}&maxFlow=${maxFlow}`
+            `${this.baseApi}getRunnablePercentages?useTestData=True&siteId=${siteId}&minFlow=${minFlow}&maxFlow=${maxFlow}`
         )
             .then((response) => response.json())
             .then((data) => {
@@ -48,7 +65,9 @@ class RiverForm extends Component {
     }
 
     getDailyData(siteId) {
-        fetch(`${this.baseApi}getDailyAverageData?siteId=${siteId}`)
+        fetch(
+            `${this.baseApi}getDailyAverageData?useTestData=True&siteId=${siteId}`
+        )
             .then((response) => response.json())
             .then((data) => {
                 this.setState({
@@ -85,18 +104,18 @@ class RiverForm extends Component {
                         >
                             <SimpleCard>
                                 <h4>Historic Average Flow</h4>
-                                <RechartLineGraph
-                                    xLabel={'Day of the Year'}
-                                    yLabel={'Cubic Feet Per Second (CFS)'}
+                                <RechartAreaChart
                                     data={this.state.dailyAverages}
-                                    runnablePercentages={
-                                        this.state.dailyRunnablePercentages
-                                    }
+                                    xAxis={LineXAxis}
+                                    yAxis={LineYAxis}
                                     tooltip={
                                         <Tooltip
                                             label=""
-                                            formatter={(value) => {
-                                                return [`${value} cfs`, '']
+                                            formatter={(value, value2) => {
+                                                return [
+                                                    `${value2} bad ${value} cfs`,
+                                                    '',
+                                                ]
                                             }}
                                             separator=""
                                         />
@@ -104,10 +123,10 @@ class RiverForm extends Component {
                                 />
                                 {/* <p className="py-2" /> */}
                                 <h4>Percentage of Years in the Range</h4>
-                                <RechartLineGraph
-                                    xLabel={'Day of the Year'}
-                                    yLabel={'Percent %'}
+                                <RechartLineChart
                                     data={this.state.dailyRunnablePercentages}
+                                    xAxis={LineXAxis}
+                                    yAxis={LineYAxis}
                                     tooltip={
                                         <Tooltip
                                             label=""
