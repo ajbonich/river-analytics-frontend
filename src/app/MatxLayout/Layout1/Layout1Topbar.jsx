@@ -1,12 +1,6 @@
 import React, { Component } from 'react'
-import { withRouter } from 'react-router-dom'
-import { Icon, IconButton } from '@material-ui/core'
 import { withStyles } from '@material-ui/core/styles'
-import { connect } from 'react-redux'
-import { setLayoutSettings } from 'app/redux/actions/LayoutActions'
-import { logoutUser } from 'app/redux/actions/UserActions'
-import PropTypes from 'prop-types'
-import { isMdScreen, classList } from 'utils'
+import { classList } from 'utils'
 
 const styles = (theme) => ({
     topbar: {
@@ -44,27 +38,6 @@ class Layout1Topbar extends Component {
         })
     }
 
-    handleSidebarToggle = () => {
-        const { settings } = this.props
-        const { layout1Settings } = settings
-
-        let mode
-        if (isMdScreen()) {
-            mode =
-                layout1Settings.leftSidebar.mode === 'close'
-                    ? 'mobile'
-                    : 'close'
-        } else {
-            mode =
-                layout1Settings.leftSidebar.mode === 'full' ? 'close' : 'full'
-        }
-        this.updateSidebarMode({ mode })
-    }
-
-    handleSignOut = () => {
-        this.props.logoutUser()
-    }
-
     render() {
         const { classes, fixed } = this.props
 
@@ -75,12 +48,6 @@ class Layout1Topbar extends Component {
                 >
                     <div className="flex justify-between items-center h-full">
                         <div className="flex">
-                            <IconButton
-                                onClick={this.handleSidebarToggle}
-                                className="hide-on-pc"
-                            >
-                                <Icon>menu</Icon>
-                            </IconButton>
                             <p className="font-medium text-24 mx-4">
                                 River Flow Analytics
                             </p>
@@ -92,22 +59,9 @@ class Layout1Topbar extends Component {
     }
 }
 
-Layout1Topbar.propTypes = {
-    setLayoutSettings: PropTypes.func.isRequired,
-    logoutUser: PropTypes.func.isRequired,
-    settings: PropTypes.object.isRequired,
-}
-
-const mapStateToProps = (state) => ({
-    setLayoutSettings: PropTypes.func.isRequired,
-    logoutUser: PropTypes.func.isRequired,
-    settings: state.layout.settings,
-})
-
 export default withStyles(styles, { withTheme: true })(
-    withRouter(
-        connect(mapStateToProps, { setLayoutSettings, logoutUser })(
+(
             Layout1Topbar
         )
-    )
+    
 )

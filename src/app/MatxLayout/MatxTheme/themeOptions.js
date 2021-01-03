@@ -46,7 +46,11 @@ const themeOptions = {
                 tableLayout: 'fixed',
             },
         },
-
+        MuiPaper: {
+            root: {
+                backgroundColor: '#fff'
+            },
+        },
         MuiTableCell: {
             head: {
                 fontSize: '13px',
