@@ -3,7 +3,7 @@ import SimpleRiverForm from '../material-kit/forms/SimpleRiverForm'
 import { SimpleCard } from 'matx'
 import { Grid } from '@material-ui/core'
 import RechartLineChart from 'app/components/RechartLineChart'
-import RechartAreaChart from 'app/components/RechartAreaChart'
+import RechartAreaChart from 'app/components/RechartComposedChart'
 import { XAxis, YAxis, Label, Tooltip } from 'recharts'
 const LineXAxis = (
     <XAxis dataKey="index" height={40}>
@@ -49,12 +49,12 @@ class RiverForm extends Component {
 
     getAllData(siteId, minFlow, maxFlow) {
         this.getDailyData(siteId)
-        this.getDailyRunnablePercentages(siteId, minFlow, maxFlow)
+        this.getDailyRunnablePercentage(siteId, minFlow, maxFlow)
     }
 
-    getDailyRunnablePercentages(siteId, minFlow, maxFlow) {
+    getDailyRunnablePercentage(siteId, minFlow, maxFlow) {
         fetch(
-            `${this.baseApi}getRunnablePercentages?useTestData=True&siteId=${siteId}&minFlow=${minFlow}&maxFlow=${maxFlow}`
+            `${this.baseApi}getRunnablePercentage?siteId=${siteId}&minFlow=${minFlow}&maxFlow=${maxFlow}`
         )
             .then((response) => response.json())
             .then((data) => {
@@ -66,7 +66,7 @@ class RiverForm extends Component {
 
     getDailyData(siteId) {
         fetch(
-            `${this.baseApi}getDailyAverageData?useTestData=True&siteId=${siteId}`
+            `${this.baseApi}getDailyAverageData?siteId=${siteId}`
         )
             .then((response) => response.json())
             .then((data) => {
@@ -108,18 +108,7 @@ class RiverForm extends Component {
                                     data={this.state.dailyAverages}
                                     xAxis={LineXAxis}
                                     yAxis={LineYAxis}
-                                    tooltip={
-                                        <Tooltip
-                                            label=""
-                                            formatter={(value, value2) => {
-                                                return [
-                                                    `${value2} bad ${value} cfs`,
-                                                    '',
-                                                ]
-                                            }}
-                                            separator=""
-                                        />
-                                    }
+
                                 />
                                 {/* <p className="py-2" /> */}
                                 <h4>Percentage of Years in the Range</h4>
