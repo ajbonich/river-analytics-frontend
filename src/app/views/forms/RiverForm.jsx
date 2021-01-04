@@ -29,8 +29,6 @@ class RiverForm extends Component {
             dailyAverages: [],
             dailyRunnablePercentages: [],
         }
-        console.log(process.env.REACT_APP_PYTHON_API)
-        console.log(process.env.REACT_APP_ENVIRONMENT)
         this.baseApi = this.setBaseAPI()
         this.getAllData = this.getAllData.bind(this)
     }
