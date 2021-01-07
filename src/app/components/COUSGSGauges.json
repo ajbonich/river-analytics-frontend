@@ -1,0 +1,2970 @@
+{
+   "sites": {
+      "site": [
+         {
+            "_sno": "09371010",
+            "_sna": "SAN JUAN RIVER AT FOUR CORNERS, CO",
+            "_cat": "ST",
+            "_lat": "37.00113889",
+            "_lng": "-109.0295833",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "09163500",
+            "_sna": "COLORADO RIVER NEAR COLORADO-UTAH STATE LINE",
+            "_cat": "ST",
+            "_lat": "39.13276047",
+            "_lng": "-109.0270546",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "09372000",
+            "_sna": "MCELMO CREEK NEAR COLORADO-UTAH STATE LINE",
+            "_cat": "ST",
+            "_lat": "37.32415968",
+            "_lng": "-109.015666",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "09179450",
+            "_sna": "DOLORES RIVER NEAR GATEWAY, CO",
+            "_cat": "ST",
+            "_lat": "38.66803889",
+            "_lng": "-108.9655194",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "09168730",
+            "_sna": "DOLORES RIVER NEAR SLICK ROCK, CO",
+            "_cat": "ST",
+            "_lat": "38.04443666",
+            "_lng": "-108.905382",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "09170800",
+            "_sna": "WEST PARADOX CREEK ABOVE BEDROCK, CO.",
+            "_cat": "ST",
+            "_lat": "38.3316562",
+            "_lng": "-108.900381",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "09169500",
+            "_sna": "DOLORES RIVER AT BEDROCK, CO",
+            "_cat": "ST",
+            "_lat": "38.3102675",
+            "_lng": "-108.8853805",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "404417108524900",
+            "_sna": "GREEN RIVER ABOVE GATES OF LODORE, CO",
+            "_cat": "ST",
+            "_lat": "40.73805556",
+            "_lng": "-108.8802778",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "09171100",
+            "_sna": "DOLORES RIVER NEAR BEDROCK, CO.",
+            "_cat": "ST",
+            "_lat": "38.3569337",
+            "_lng": "-108.8334347",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "09371000",
+            "_sna": "MANCOS RIVER NEAR TOWAOC, CO.",
+            "_cat": "ST",
+            "_lat": "37.02749425",
+            "_lng": "-108.7414838",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "09177000",
+            "_sna": "SAN MIGUEL RIVER AT URAVAN, CO.",
+            "_cat": "ST",
+            "_lat": "38.35721157",
+            "_lng": "-108.712875",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "09371520",
+            "_sna": "MCELMO CREEK ABOVE TRAIL CANYON NEAR CORTEZ, CO",
+            "_cat": "ST",
+            "_lat": "37.3266601",
+            "_lng": "-108.7006527",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "09371492",
+            "_sna": "MUD CREEK AT STATE HIGHWAY 32, NEAR CORTEZ, CO.",
+            "_cat": "ST",
+            "_lat": "37.3127716",
+            "_lng": "-108.6612067",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "09306290",
+            "_sna": "WHITE RIVER BELOW BOISE CREEK, NEAR RANGELY, CO.",
+            "_cat": "ST",
+            "_lat": "40.17969335",
+            "_lng": "-108.5653775",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "09260050",
+            "_sna": "YAMPA RIVER AT DEERLODGE PARK, CO",
+            "_cat": "ST",
+            "_lat": "40.45163387",
+            "_lng": "-108.525101",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "09174600",
+            "_sna": "SAN MIGUEL RIVER AT BROOKS BRIDGE NEAR NUCLA CO",
+            "_cat": "ST",
+            "_lat": "38.2441571",
+            "_lng": "-108.5020343",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "09166500",
+            "_sna": "DOLORES RIVER AT DOLORES, CO.",
+            "_cat": "ST",
+            "_lat": "37.47249296",
+            "_lng": "-108.4975908",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "09306242",
+            "_sna": "CORRAL GULCH NEAR RANGELY, CO",
+            "_cat": "ST",
+            "_lat": "39.9202502",
+            "_lng": "-108.4728719",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "09166950",
+            "_sna": "LOST CANYON CREEK NEAR DOLORES, CO.",
+            "_cat": "ST",
+            "_lat": "37.44610459",
+            "_lng": "-108.4692562",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "09152500",
+            "_sna": "GUNNISON RIVER NEAR GRAND JUNCTION, CO.",
+            "_cat": "ST",
+            "_lat": "38.98331575",
+            "_lng": "-108.4506446",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "09260000",
+            "_sna": "LITTLE SNAKE RIVER NEAR LILY, CO",
+            "_cat": "ST",
+            "_lat": "40.54901667",
+            "_lng": "-108.4243222",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "09306255",
+            "_sna": "YELLOW CREEK NEAR WHITE RIVER, CO.",
+            "_cat": "ST",
+            "_lat": "40.1685813",
+            "_lng": "-108.4012046",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "09106150",
+            "_sna": "COLO RIVER BELOW GRAND VALLEY DIV NR PALISADE, CO",
+            "_cat": "ST",
+            "_lat": "39.09859226",
+            "_lng": "-108.355086",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "09306200",
+            "_sna": "PICEANCE CREEK BL RYAN GULCH, NR RIO BLANCO, CO.",
+            "_cat": "ST",
+            "_lat": "39.9210833",
+            "_lng": "-108.2975876",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "09105000",
+            "_sna": "PLATEAU CREEK NEAR CAMEO, CO",
+            "_cat": "ST",
+            "_lat": "39.1836111",
+            "_lng": "-108.2683333",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "09095500",
+            "_sna": "COLORADO RIVER NEAR CAMEO, CO.",
+            "_cat": "ST",
+            "_lat": "39.2391463",
+            "_lng": "-108.2661946",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "09306222",
+            "_sna": "PICEANCE CREEK AT WHITE RIVER, CO",
+            "_cat": "ST",
+            "_lat": "40.0780264",
+            "_lng": "-108.2364753",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "09304800",
+            "_sna": "WHITE RIVER BELOW MEEKER, CO",
+            "_cat": "ST",
+            "_lat": "40.0225833",
+            "_lng": "-108.1199444",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "09172500",
+            "_sna": "SAN MIGUEL RIVER NEAR PLACERVILLE, CO",
+            "_cat": "ST",
+            "_lat": "38.03070556",
+            "_lng": "-108.1102889",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "09149500",
+            "_sna": "UNCOMPAHGRE RIVER AT DELTA, CO",
+            "_cat": "ST",
+            "_lat": "38.74194444",
+            "_lng": "-108.0804167",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "09144250",
+            "_sna": "GUNNISON RIVER AT DELTA, CO",
+            "_cat": "ST",
+            "_lat": "38.75303944",
+            "_lng": "-108.078403",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "09165000",
+            "_sna": "DOLORES RIVER BELOW RICO, CO.",
+            "_cat": "ST",
+            "_lat": "37.63888428",
+            "_lng": "-108.0603517",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "09251000",
+            "_sna": "YAMPA RIVER NEAR MAYBELL, CO",
+            "_cat": "ST",
+            "_lat": "40.50274666",
+            "_lng": "-108.0334152",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "383946107595301",
+            "_sna": "LOUTSENHIZER ARROYO BLW N. RIVER ROAD NR DELTA, CO",
+            "_cat": "ST",
+            "_lat": "38.66434167",
+            "_lng": "-108.0031417",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "09144200",
+            "_sna": "TONGUE CREEK AT CORY, CO",
+            "_cat": "ST",
+            "_lat": "38.787761",
+            "_lng": "-107.9953444",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "383926107593001",
+            "_sna": "LOUTSENHIZER ARROYO AT HWY 50 NEAR OLATHE CO",
+            "_cat": "ST",
+            "_lat": "38.657207",
+            "_lng": "-107.9922886",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "09143500",
+            "_sna": "SURFACE CREEK AT CEDAREDGE, CO.",
+            "_cat": "ST",
+            "_lat": "38.9016487",
+            "_lng": "-107.921176",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "09171310",
+            "_sna": "SOUTH FORK SAN MIGUEL RIVER NEAR OPHIR, CO",
+            "_cat": "ST",
+            "_lat": "37.8731111",
+            "_lng": "-107.8944444",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "09361500",
+            "_sna": "ANIMAS RIVER AT DURANGO, CO",
+            "_cat": "ST",
+            "_lat": "37.2791688",
+            "_lng": "-107.8803445",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "09171240",
+            "_sna": "LAKE FORK SAN MIGUEL RV ABV TROUT LAKE NR OPHIR CO",
+            "_cat": "ST",
+            "_lat": "37.8178333",
+            "_lng": "-107.8791111",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "09363500",
+            "_sna": "ANIMAS RIVER NEAR CEDAR HILL, NM",
+            "_cat": "ST",
+            "_lat": "37.03656944",
+            "_lng": "-107.8753333",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "09362520",
+            "_sna": "ANIMAS RIVER BLW DURANGO PUMP PLANT NR DURANGO, CO",
+            "_cat": "ST",
+            "_lat": "37.24926389",
+            "_lng": "-107.8725833",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "09304500",
+            "_sna": "WHITE RIVER NEAR MEEKER, CO.",
+            "_cat": "ST",
+            "_lat": "40.0335849",
+            "_lng": "-107.8622946",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "09143000",
+            "_sna": "SURFACE CREEK NEAR CEDAREDGE, CO",
+            "_cat": "ST",
+            "_lat": "38.9847034",
+            "_lng": "-107.8545077",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "09361000",
+            "_sna": "HERMOSA CREEK NEAR HERMOSA, CO.",
+            "_cat": "ST",
+            "_lat": "37.4219611",
+            "_lng": "-107.8450944",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "09136100",
+            "_sna": "NORTH FK GUNNISON RIVER ABOVE MOUTH NR LAZEAR, CO",
+            "_cat": "ST",
+            "_lat": "38.78516667",
+            "_lng": "-107.8334167",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "09304200",
+            "_sna": "WHITE RIVER ABOVE COAL CREEK NEAR MEEKER, CO",
+            "_cat": "ST",
+            "_lat": "40.00497428",
+            "_lng": "-107.8253486",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "09359080",
+            "_sna": "CASCADE CR ABV CASCADE CR DIVERSION NR ROCKWOOD CO",
+            "_cat": "ST",
+            "_lat": "37.66727778",
+            "_lng": "-107.822625",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "09359082",
+            "_sna": "CASCADE CR BLW CASCADE CR DIVERSION NR ROCKWOOD CO",
+            "_cat": "ST",
+            "_lat": "37.667",
+            "_lng": "-107.82225",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "09147500",
+            "_sna": "UNCOMPAHGRE RIVER AT COLONA, CO",
+            "_cat": "ST",
+            "_lat": "38.33143056",
+            "_lng": "-107.779225",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "09359500",
+            "_sna": "ANIMAS RIVER AT TALL TIMBER RESORT ABOVE TACOMA,CO",
+            "_cat": "ST",
+            "_lat": "37.59741667",
+            "_lng": "-107.7769667",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "09147025",
+            "_sna": "UNCOMPAHGRE RIVER BELOW RIDGWAY RESERVOIR, CO",
+            "_cat": "ST",
+            "_lat": "38.24055556",
+            "_lng": "-107.7603056",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "09147000",
+            "_sna": "DALLAS CREEK NEAR RIDGWAY, CO",
+            "_cat": "ST",
+            "_lat": "38.17776806",
+            "_lng": "-107.7583927",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "09146200",
+            "_sna": "UNCOMPAHGRE RIVER NEAR RIDGWAY, CO.",
+            "_cat": "ST",
+            "_lat": "38.1838791",
+            "_lng": "-107.7458924",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "09129600",
+            "_sna": "SMITH FORK NEAR LAZEAR, CO",
+            "_cat": "ST",
+            "_lat": "38.70744444",
+            "_lng": "-107.7101389",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "09304115",
+            "_sna": "WHITE RIVER BELOW NORTH ELK CREEK NEAR BUFORD, CO",
+            "_cat": "ST",
+            "_lat": "39.94997674",
+            "_lng": "-107.6947878",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "09146020",
+            "_sna": "UNCOMPAHGRE RIVER NEAR OURAY, CO",
+            "_cat": "ST",
+            "_lat": "38.04332665",
+            "_lng": "-107.6831154",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "09359010",
+            "_sna": "MINERAL CREEK AT SILVERTON, CO",
+            "_cat": "ST",
+            "_lat": "37.8027744",
+            "_lng": "-107.6728392",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "09359020",
+            "_sna": "ANIMAS RIVER BELOW SILVERTON, CO",
+            "_cat": "ST",
+            "_lat": "37.7883333",
+            "_lng": "-107.6682222",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "09358550",
+            "_sna": "CEMENT CREEK AT SILVERTON, CO",
+            "_cat": "ST",
+            "_lat": "37.8197187",
+            "_lng": "-107.6636723",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "09358000",
+            "_sna": "ANIMAS RIVER AT SILVERTON, CO.",
+            "_cat": "ST",
+            "_lat": "37.8111077",
+            "_lng": "-107.6592278",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "09128000",
+            "_sna": "GUNNISON RIVER BELOW GUNNISON TUNNEL, CO",
+            "_cat": "ST",
+            "_lat": "38.52915336",
+            "_lng": "-107.648947",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "09304000",
+            "_sna": "SOUTH FORK WHITE RIVER AT BUFORD, CO.",
+            "_cat": "ST",
+            "_lat": "39.97442169",
+            "_lng": "-107.6253412",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "09134100",
+            "_sna": "NORTH FORK GUNNISON RIVER BELOW PAONIA, CO",
+            "_cat": "ST",
+            "_lat": "38.8575",
+            "_lng": "-107.6219444",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "09303000",
+            "_sna": "NORTH FORK WHITE RIVER AT BUFORD, CO",
+            "_cat": "ST",
+            "_lat": "39.9874772",
+            "_lng": "-107.6145076",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "09247600",
+            "_sna": "YAMPA RIVER BELOW CRAIG, CO.",
+            "_cat": "ST",
+            "_lat": "40.48080479",
+            "_lng": "-107.6142338",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "09354500",
+            "_sna": "LOS PINOS RIVER AT LA BOCA, CO.",
+            "_cat": "ST",
+            "_lat": "37.0094484",
+            "_lng": "-107.5994997",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "09353800",
+            "_sna": "LOS PINOS RIVER NEAR IGNACIO, CO",
+            "_cat": "ST",
+            "_lat": "37.1661111",
+            "_lng": "-107.5825",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "09127000",
+            "_sna": "CIMARRON RIVER BLW SQUAW CREEK AT CIMARRON, CO",
+            "_cat": "ST",
+            "_lat": "38.44694444",
+            "_lng": "-107.5552222",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "09303500",
+            "_sna": "SOUTH FORK WHITE RIVER NEAR BUFORD, CO.",
+            "_cat": "ST",
+            "_lat": "39.9216455",
+            "_lng": "-107.5517269",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "09126000",
+            "_sna": "CIMARRON RIVER NEAR CIMARRON, CO",
+            "_cat": "ST",
+            "_lat": "38.25819444",
+            "_lng": "-107.5461111",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "09352900",
+            "_sna": "VALLECITO CREEK NEAR BAYFIELD, CO.",
+            "_cat": "ST",
+            "_lat": "37.47750126",
+            "_lng": "-107.5436688",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "09303400",
+            "_sna": "SOUTH FORK WHITE RIVER NEAR BUDGES RESORT, CO.",
+            "_cat": "ST",
+            "_lat": "39.86414636",
+            "_lng": "-107.5339478",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "09352800",
+            "_sna": "LOS PINOS R ABV VALLECITO RES NR BAYFIELD, CO",
+            "_cat": "ST",
+            "_lat": "37.4147242",
+            "_lng": "-107.5133893",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "09128500",
+            "_sna": "SMITH FORK NEAR CRAWFORD, CO.",
+            "_cat": "ST",
+            "_lat": "38.72776785",
+            "_lng": "-107.5067234",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "09246500",
+            "_sna": "ELKHEAD CREEK NEAR CRAIG, CO",
+            "_cat": "ST",
+            "_lat": "40.5310829",
+            "_lng": "-107.4361735",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "09132500",
+            "_sna": "NORTH FORK GUNNISON RIVER NEAR SOMERSET, CO.",
+            "_cat": "ST",
+            "_lat": "38.9258228",
+            "_lng": "-107.4342211",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "385553107243301",
+            "_sna": "NORTH FORK GUNNISON BLW RAVEN GULCH NR SOMERSET",
+            "_cat": "ST",
+            "_lat": "38.93125278",
+            "_lng": "-107.4090917",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "09085150",
+            "_sna": "COLORADO R ABV SOUTH CANYON CR NR GLENWOOD SPGS CO",
+            "_cat": "ST",
+            "_lat": "39.56166667",
+            "_lng": "-107.4066667",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "09244490",
+            "_sna": "YAMPA RIVER ABOVE ELKHEAD CREEK NEAR HAYDEN, CO",
+            "_cat": "ST",
+            "_lat": "40.51793056",
+            "_lng": "-107.3989444",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "09349800",
+            "_sna": "PIEDRA RIVER NEAR ARBOLES, CO.",
+            "_cat": "ST",
+            "_lat": "37.08833797",
+            "_lng": "-107.397826",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "09255000",
+            "_sna": "SLATER FORK NEAR SLATER, CO",
+            "_cat": "ST",
+            "_lat": "40.9824657",
+            "_lng": "-107.3828391",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "09132095",
+            "_sna": "ANTHRACITE CREEK ABOVE MOUTH NEAR SOMERSET",
+            "_cat": "ST",
+            "_lat": "38.9372222",
+            "_lng": "-107.3583333",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "385903107210800",
+            "_sna": "MUDDY CREEK ABOVE PAONIA RESERVOIR, CO",
+            "_cat": "ST",
+            "_lat": "38.9883611",
+            "_lng": "-107.3484889",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "09085100",
+            "_sna": "COLORADO RIVER BELOW GLENWOOD SPRINGS, CO",
+            "_cat": "ST",
+            "_lat": "39.5549819",
+            "_lng": "-107.337554",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "09085000",
+            "_sna": "ROARING FORK RIVER AT GLENWOOD SPRINGS, CO.",
+            "_cat": "ST",
+            "_lat": "39.54359307",
+            "_lng": "-107.3294984",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "09246200",
+            "_sna": "ELKHEAD CREEK ABOVE LONG GULCH, NEAR HAYDEN, CO",
+            "_cat": "ST",
+            "_lat": "40.59163879",
+            "_lng": "-107.3208933",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "09124010",
+            "_sna": "HENSON CREEK AT LAKE CITY, CO",
+            "_cat": "ST",
+            "_lat": "38.02566944",
+            "_lng": "-107.3163472",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "09346400",
+            "_sna": "SAN JUAN RIVER NEAR CARRACAS, CO.",
+            "_cat": "ST",
+            "_lat": "37.01361667",
+            "_lng": "-107.312267",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "09123450",
+            "_sna": "LAKE FORK BLW LAKE SAN CRISTOBAL NR LAKE CITY, CO",
+            "_cat": "ST",
+            "_lat": "37.9843611",
+            "_lng": "-107.2920972",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "09071750",
+            "_sna": "COLORADO RIVER ABOVE GLENWOOD SPRINGS, CO",
+            "_cat": "ST",
+            "_lat": "39.5588711",
+            "_lng": "-107.2908874",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "09302400",
+            "_sna": "NORTH FORK WHITE RIVER BELOW TRAPPERS LAKE, CO.",
+            "_cat": "ST",
+            "_lat": "39.99776944",
+            "_lng": "-107.2312806",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "09124500",
+            "_sna": "LAKE FORK AT GATEVIEW, CO.",
+            "_cat": "ST",
+            "_lat": "38.2988834",
+            "_lng": "-107.2300557",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "09081600",
+            "_sna": "CRYSTAL RIVER ABV AVALANCHE CRK, NEAR REDSTONE, CO",
+            "_cat": "ST",
+            "_lat": "39.23263889",
+            "_lng": "-107.2275",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "09253000",
+            "_sna": "LITTLE SNAKE RIVER NEAR SLATER, CO",
+            "_cat": "ST",
+            "_lat": "40.99941048",
+            "_lng": "-107.143388",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "09081000",
+            "_sna": "ROARING FORK RIVER NEAR EMMA, CO",
+            "_cat": "ST",
+            "_lat": "39.37331729",
+            "_lng": "-107.0839367",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "09070500",
+            "_sna": "COLORADO RIVER NEAR DOTSERO, CO",
+            "_cat": "ST",
+            "_lat": "39.6446111",
+            "_lng": "-107.0780139",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "09110990",
+            "_sna": "ELK CREEK AT COAL CREEK ABV CRESTED BUTTE, CO",
+            "_cat": "ST",
+            "_lat": "38.85665",
+            "_lng": "-107.0597722",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "09342500",
+            "_sna": "SAN JUAN RIVER AT PAGOSA SPRINGS, CO",
+            "_cat": "ST",
+            "_lat": "37.26552778",
+            "_lng": "-107.011",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "09113500",
+            "_sna": "OHIO CREEK NEAR BALDWIN, CO.",
+            "_cat": "ST",
+            "_lat": "38.70304167",
+            "_lng": "-106.9999472",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "383103106594200",
+            "_sna": "GUNNISON RIVER AT CNTY RD 32 BELOW GUNNISON, CO",
+            "_cat": "ST",
+            "_lat": "38.51725556",
+            "_lng": "-106.99545",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "09111250",
+            "_sna": "COAL CREEK ABV MCCORMICK DTCH AT CRESTED BUTTE, CO",
+            "_cat": "ST",
+            "_lat": "38.87155556",
+            "_lng": "-106.9852972",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "09242500",
+            "_sna": "ELK RIVER NEAR MILNER, CO.",
+            "_cat": "ST",
+            "_lat": "40.5146975",
+            "_lng": "-106.9539407",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "09070000",
+            "_sna": "EAGLE RIVER BELOW GYPSUM, CO.",
+            "_cat": "ST",
+            "_lat": "39.64942954",
+            "_lng": "-106.9536554",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "385106106571000",
+            "_sna": "SLATE R AB BAXTER GL @HWY 135 NR CRESTED BUTTE, CO",
+            "_cat": "ST",
+            "_lat": "38.85165929",
+            "_lng": "-106.9533773",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "09069000",
+            "_sna": "EAGLE RIVER AT GYPSUM, CO",
+            "_cat": "ST",
+            "_lat": "39.6499851",
+            "_lng": "-106.9522665",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "09114500",
+            "_sna": "GUNNISON RIVER NEAR GUNNISON, CO.",
+            "_cat": "ST",
+            "_lat": "38.54193567",
+            "_lng": "-106.9497661",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "09114520",
+            "_sna": "GUNNISON RIVER AT GUNNISON WHITEWATER PARK, CO",
+            "_cat": "ST",
+            "_lat": "38.5332722",
+            "_lng": "-106.9490861",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "09119000",
+            "_sna": "TOMICHI CREEK AT GUNNISON, CO",
+            "_cat": "ST",
+            "_lat": "38.5211111",
+            "_lng": "-106.9409583",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "09113980",
+            "_sna": "OHIO CREEK ABOVE MOUTH NR GUNNISON, CO",
+            "_cat": "ST",
+            "_lat": "38.5877696",
+            "_lng": "-106.931432",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "09237450",
+            "_sna": "YAMPA RIVER ABOVE STAGECOACH RESERVOIR, CO",
+            "_cat": "ST",
+            "_lat": "40.2642611",
+            "_lng": "-106.8917667",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "09076000",
+            "_sna": "MAROON CREEK NEAR ASPEN, CO.",
+            "_cat": "ST",
+            "_lat": "39.1634083",
+            "_lng": "-106.8807472",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "09112200",
+            "_sna": "EAST RIVER BELOW CEMENT CREEK NR CRESTED BUTTE, CO",
+            "_cat": "ST",
+            "_lat": "38.7841599",
+            "_lng": "-106.8708736",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "09076300",
+            "_sna": "ROARING FORK RIVER BLW MAROON CREEK NR ASPEN, CO",
+            "_cat": "ST",
+            "_lat": "39.2232",
+            "_lng": "-106.8573083",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "09112500",
+            "_sna": "EAST RIVER AT ALMONT, CO",
+            "_cat": "ST",
+            "_lat": "38.66443715",
+            "_lng": "-106.848095",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "09110000",
+            "_sna": "TAYLOR RIVER AT ALMONT, CO.",
+            "_cat": "ST",
+            "_lat": "38.66443715",
+            "_lng": "-106.8453172",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "09240020",
+            "_sna": "YAMPA RIVER BELOW SODA CREEK AT STEAMBOAT SPGS, CO",
+            "_cat": "ST",
+            "_lat": "40.4892222",
+            "_lng": "-106.8415278",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "09239500",
+            "_sna": "YAMPA RIVER AT STEAMBOAT SPRINGS, CO",
+            "_cat": "ST",
+            "_lat": "40.4829861",
+            "_lng": "-106.8324306",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "09060799",
+            "_sna": "COLORADO RIVER AT CATAMOUNT BRIDGE, CO",
+            "_cat": "ST",
+            "_lat": "39.8911",
+            "_lng": "-106.8316944",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "09237500",
+            "_sna": "YAMPA RIVER BELOW STAGECOACH RESERVOIR, CO",
+            "_cat": "ST",
+            "_lat": "40.28654444",
+            "_lng": "-106.8290556",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "09080400",
+            "_sna": "FRYINGPAN RIVER NEAR RUEDI, CO.",
+            "_cat": "ST",
+            "_lat": "39.36554075",
+            "_lng": "-106.8255948",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "09074500",
+            "_sna": "HUNTER CREEK AT ASPEN, CO",
+            "_cat": "ST",
+            "_lat": "39.19688889",
+            "_lng": "-106.8189167",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "09073400",
+            "_sna": "ROARING FORK RIVER NEAR ASPEN, CO.",
+            "_cat": "ST",
+            "_lat": "39.17998755",
+            "_lng": "-106.8019826",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "09238900",
+            "_sna": "FISH CR AT UPPER STA NR STEAMBOAT SPRINGS, CO",
+            "_cat": "ST",
+            "_lat": "40.4749775",
+            "_lng": "-106.7869926",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "09073300",
+            "_sna": "ROARING FORK RIVER AB DIFFICULT C NR ASPEN, CO.",
+            "_cat": "ST",
+            "_lat": "39.14109959",
+            "_lng": "-106.7742039",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "09118450",
+            "_sna": "COCHETOPA CREEK BELOW ROCK CREEK NEAR PARLIN, CO",
+            "_cat": "ST",
+            "_lat": "38.3372222",
+            "_lng": "-106.7736111",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "394220106431500",
+            "_sna": "EAGLE RIVER BELOW MILK CREEK NEAR WOLCOTT, CO",
+            "_cat": "ST",
+            "_lat": "39.705",
+            "_lng": "-106.7258333",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "09073891",
+            "_sna": "NO NAME CREEK CONDUIT BYPASS NEAR ASPEN, CO",
+            "_cat": "ST",
+            "_lat": "39.18360738",
+            "_lng": "-106.7198577",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "09073791",
+            "_sna": "MIDWAY CREEK CONDUIT BYPASS NEAR ASPEN, CO",
+            "_cat": "ST",
+            "_lat": "39.19102778",
+            "_lng": "-106.6859",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "09079450",
+            "_sna": "LIME CREEK NEAR THOMASVILLE, CO",
+            "_cat": "ST",
+            "_lat": "39.3604111",
+            "_lng": "-106.6852444",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "09073721",
+            "_sna": "HUNTER CREEK CONDUIT BYPASS NEAR ASPEN, CO",
+            "_cat": "ST",
+            "_lat": "39.20756944",
+            "_lng": "-106.6803917",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "09078475",
+            "_sna": "LAST CHANCE CREEK NEAR NORRIE, CO",
+            "_cat": "ST",
+            "_lat": "39.34388889",
+            "_lng": "-106.6565278",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "09072550",
+            "_sna": "ROARING FORK RIVER ABV LOST MAN CR NEAR ASPEN, CO",
+            "_cat": "ST",
+            "_lat": "39.1193611",
+            "_lng": "-106.6239167",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "09073005",
+            "_sna": "LINCOLN CREEK BELOW GRIZZLY RESERVOIR NR ASPEN, CO",
+            "_cat": "ST",
+            "_lat": "39.0802361",
+            "_lng": "-106.6165833",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "09067200",
+            "_sna": "LAKE CREEK NEAR EDWARDS, CO",
+            "_cat": "ST",
+            "_lat": "39.647486",
+            "_lng": "-106.6092003",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "09109000",
+            "_sna": "TAYLOR RIVER BELOW TAYLOR PARK RESERVOIR, CO.",
+            "_cat": "ST",
+            "_lat": "38.8183269",
+            "_lng": "-106.6091977",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "09059500",
+            "_sna": "PINEY RIVER NEAR STATE BRIDGE, CO",
+            "_cat": "ST",
+            "_lat": "39.7957222",
+            "_lng": "-106.5743472",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "09107000",
+            "_sna": "TAYLOR RIVER AT TAYLOR PARK, CO.",
+            "_cat": "ST",
+            "_lat": "38.86027127",
+            "_lng": "-106.5666966",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "09078141",
+            "_sna": "NORTH CUNNINGHAM CREEK CONDUIT BYPASS NR NORRIE,CO",
+            "_cat": "ST",
+            "_lat": "39.33596219",
+            "_lng": "-106.5442115",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "09067020",
+            "_sna": "EAGLE R BLW WASTEWATER TREATMENT PLANT AT AVON, CO",
+            "_cat": "ST",
+            "_lat": "39.6348611",
+            "_lng": "-106.5319444",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "09067000",
+            "_sna": "BEAVER CREEK AT AVON, CO",
+            "_cat": "ST",
+            "_lat": "39.62970826",
+            "_lng": "-106.5228096",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "09067005",
+            "_sna": "EAGLE RIVER AT AVON, CO.",
+            "_cat": "ST",
+            "_lat": "39.6316527",
+            "_lng": "-106.5225318",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "09063900",
+            "_sna": "MISSOURI CREEK NEAR GOLD PARK, CO.",
+            "_cat": "ST",
+            "_lat": "39.39026486",
+            "_lng": "-106.4700294",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "09066510",
+            "_sna": "GORE CREEK AT MOUTH NEAR MINTURN, CO",
+            "_cat": "ST",
+            "_lat": "39.60943048",
+            "_lng": "-106.447808",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "09058000",
+            "_sna": "COLORADO RIVER NEAR KREMMLING, CO",
+            "_cat": "ST",
+            "_lat": "40.03665248",
+            "_lng": "-106.4400324",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "09064000",
+            "_sna": "HOMESTAKE CREEK AT GOLD PARK, CO.",
+            "_cat": "ST",
+            "_lat": "39.4055426",
+            "_lng": "-106.433362",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "09058500",
+            "_sna": "PINEY RIVER BELOW PINEY LAKE, NEAR MINTURN, CO.",
+            "_cat": "ST",
+            "_lat": "39.70804158",
+            "_lng": "-106.4266968",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "09115500",
+            "_sna": "TOMICHI CREEK AT SARGENTS, CO",
+            "_cat": "ST",
+            "_lat": "38.39502778",
+            "_lng": "-106.422625",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "09041090",
+            "_sna": "MUDDY CREEK ABOVE ANTELOPE CREEK NR. KREMMLING, CO",
+            "_cat": "ST",
+            "_lat": "40.2024844",
+            "_lng": "-106.4225335",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "09041400",
+            "_sna": "MUDDY CRK BLW WOLFORD MTN RESER. NR KREMMLING, CO",
+            "_cat": "ST",
+            "_lat": "40.10859628",
+            "_lng": "-106.4139212",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "09065100",
+            "_sna": "CROSS CREEK NEAR MINTURN, CO",
+            "_cat": "ST",
+            "_lat": "39.56829167",
+            "_lng": "-106.4124306",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "09064600",
+            "_sna": "EAGLE RIVER NEAR MINTURN, CO",
+            "_cat": "ST",
+            "_lat": "39.55387495",
+            "_lng": "-106.402529",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "09066325",
+            "_sna": "GORE CREEK ABV RED SANDSTONE CREEK AT VAIL, CO",
+            "_cat": "ST",
+            "_lat": "39.6410971",
+            "_lng": "-106.3947515",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "07083000",
+            "_sna": "HALFMOON CREEK NEAR MALTA, CO",
+            "_cat": "ST",
+            "_lat": "39.17221259",
+            "_lng": "-106.3891926",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "07083200",
+            "_sna": "HALFMOON CR BL HALFMOON DIVERSION NR LEADVILLE, CO",
+            "_cat": "ST",
+            "_lat": "39.1857222",
+            "_lng": "-106.3833611",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "09066300",
+            "_sna": "MIDDLE CREEK NEAR MINTURN, CO.",
+            "_cat": "ST",
+            "_lat": "39.6458193",
+            "_lng": "-106.3822512",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "09063000",
+            "_sna": "EAGLE RIVER AT RED CLIFF, CO.",
+            "_cat": "ST",
+            "_lat": "39.50831949",
+            "_lng": "-106.3666948",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "07081200",
+            "_sna": "ARKANSAS RIVER NEAR LEADVILLE, CO",
+            "_cat": "ST",
+            "_lat": "39.249",
+            "_lng": "-106.3481111",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "06620000",
+            "_sna": "NORTH PLATTE RIVER NEAR NORTHGATE, CO",
+            "_cat": "ST",
+            "_lat": "40.93663889",
+            "_lng": "-106.3391944",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "09057500",
+            "_sna": "BLUE RIVER BELOW GREEN MOUNTAIN RESERVOIR, CO",
+            "_cat": "ST",
+            "_lat": "39.88026354",
+            "_lng": "-106.3339175",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "09056500",
+            "_sna": "ELLIOTT CREEK FEEDER CANAL TO GREEN MTN RES, CO",
+            "_cat": "ST-CA",
+            "_lat": "39.873725",
+            "_lng": "-106.3305972",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "09066200",
+            "_sna": "BOOTH CREEK NEAR MINTURN, CO.",
+            "_cat": "ST",
+            "_lat": "39.64831927",
+            "_lng": "-106.3230833",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "07083710",
+            "_sna": "ARKANSAS RIVER BELOW EMPIRE GULCH NEAR MALTA, CO",
+            "_cat": "ST",
+            "_lat": "39.1638798",
+            "_lng": "-106.320024",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "07079300",
+            "_sna": "EF ARKANSAS R AT US HIGHWAY 24, NR LEADVILLE, CO.",
+            "_cat": "ST",
+            "_lat": "39.2724892",
+            "_lng": "-106.3064133",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "08227000",
+            "_sna": "SAGUACHE CREEK NEAR SAGUACHE, CO",
+            "_cat": "ST",
+            "_lat": "38.16333294",
+            "_lng": "-106.290583",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "09065500",
+            "_sna": "GORE CREEK AT UPPER STATION, NEAR MINTURN, CO.",
+            "_cat": "ST",
+            "_lat": "39.6258193",
+            "_lng": "-106.2780823",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "07086000",
+            "_sna": "ARKANSAS RIVER AT GRANITE, CO.",
+            "_cat": "ST",
+            "_lat": "39.04277116",
+            "_lng": "-106.2658553",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "09066000",
+            "_sna": "BLACK GORE CREEK NEAR MINTURN, CO.",
+            "_cat": "ST",
+            "_lat": "39.59637495",
+            "_lng": "-106.2650264",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "09061600",
+            "_sna": "EAST FORK EAGLE RIVER NEAR CLIMAX, CO",
+            "_cat": "ST",
+            "_lat": "39.4102654",
+            "_lng": "-106.2497468",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "07087050",
+            "_sna": "ARKANSAS RIVER BELOW GRANITE, CO",
+            "_cat": "ST",
+            "_lat": "38.9949943",
+            "_lng": "-106.2202983",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "09038500",
+            "_sna": "WILLIAMS FORK BELOW WILLIAMS FORK RESERVOIR, CO",
+            "_cat": "ST",
+            "_lat": "40.03592778",
+            "_lng": "-106.2050139",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "09037500",
+            "_sna": "WILLIAMS FORK NEAR PARSHALL, CO",
+            "_cat": "ST",
+            "_lat": "40.0002",
+            "_lng": "-106.1803667",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "09050100",
+            "_sna": "TENMILE CREEK BL NORTH TENMILE C, AT FRISCO, CO.",
+            "_cat": "ST",
+            "_lat": "39.57526424",
+            "_lng": "-106.1105765",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "09041900",
+            "_sna": "MONTE CRISTO DIVERSION NEAR HOOSIER PASS, CO",
+            "_cat": "ST",
+            "_lat": "39.38082156",
+            "_lng": "-106.0714082",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "09044800",
+            "_sna": "MCCULLOUGH-SP-CRYS-DIVERSION NEAR HOOSIER PASS, CO",
+            "_cat": "ST",
+            "_lat": "39.38082156",
+            "_lng": "-106.0711304",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "09044300",
+            "_sna": "BEMROSE-HOOSIER DIVERSION NEAR HOOSIER PASS, CO",
+            "_cat": "ST",
+            "_lat": "39.38054378",
+            "_lng": "-106.0708526",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "09050700",
+            "_sna": "BLUE RIVER BELOW DILLON, CO.",
+            "_cat": "ST",
+            "_lat": "39.625542",
+            "_lng": "-106.0664082",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "09036000",
+            "_sna": "WILLIAMS FORK NEAR LEAL, CO.",
+            "_cat": "ST",
+            "_lat": "39.833875",
+            "_lng": "-106.0564079",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "07091200",
+            "_sna": "ARKANSAS RIVER NEAR NATHROP, CO",
+            "_cat": "ST",
+            "_lat": "38.6522188",
+            "_lng": "-106.051126",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "09046600",
+            "_sna": "BLUE RIVER NEAR DILLON, CO",
+            "_cat": "ST",
+            "_lat": "39.56665329",
+            "_lng": "-106.0494632",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "09051050",
+            "_sna": "STRAIGHT CR BLW LASKEY GULCH NR DILLON, CO",
+            "_cat": "ST",
+            "_lat": "39.6397087",
+            "_lng": "-106.040296",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "09046490",
+            "_sna": "BLUE RIVER AT BLUE RIVER, CO.",
+            "_cat": "ST",
+            "_lat": "39.45582067",
+            "_lng": "-106.0316849",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "09035900",
+            "_sna": "SOUTH FORK OF WILLIAMS FORK NEAR LEAL, CO",
+            "_cat": "ST",
+            "_lat": "39.79581958",
+            "_lng": "-106.0305734",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "09035700",
+            "_sna": "WILLIAMS FORK ABOVE DARLING CREEK, NEAR LEAL, CO",
+            "_cat": "ST",
+            "_lat": "39.79719444",
+            "_lng": "-106.0256389",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "09034250",
+            "_sna": "COLORADO RIVER AT WINDY GAP, NEAR GRANBY, CO.",
+            "_cat": "ST",
+            "_lat": "40.108319",
+            "_lng": "-106.0041847",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "09047700",
+            "_sna": "KEYSTONE GULCH NEAR DILLON, CO.",
+            "_cat": "ST",
+            "_lat": "39.59443117",
+            "_lng": "-105.9725158",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "09047500",
+            "_sna": "SNAKE RIVER NEAR MONTEZUMA, CO",
+            "_cat": "ST",
+            "_lat": "39.6053611",
+            "_lng": "-105.9431306",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "09021000",
+            "_sna": "WILLOW CREEK BELOW WILLOW CREEK RESERVOIR, CO.",
+            "_cat": "ST",
+            "_lat": "40.14581899",
+            "_lng": "-105.9400156",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "07093700",
+            "_sna": "ARKANSAS RIVER NEAR WELLSVILLE, CO.",
+            "_cat": "ST",
+            "_lat": "38.50277496",
+            "_lng": "-105.9397333",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "09035500",
+            "_sna": "WILLIAMS FORK BELOW STEELMAN CREEK, CO.",
+            "_cat": "ST",
+            "_lat": "39.77887549",
+            "_lng": "-105.9283469",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "06696980",
+            "_sna": "TARRYALL CREEK AT UPPER STATION NEAR COMO, CO",
+            "_cat": "ST",
+            "_lat": "39.33943296",
+            "_lng": "-105.9116813",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "09034900",
+            "_sna": "BOBTAIL CREEK NEAR JONES PASS, CO",
+            "_cat": "ST",
+            "_lat": "39.76026447",
+            "_lng": "-105.9064014",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "09019500",
+            "_sna": "COLORADO RIVER NEAR GRANBY, CO",
+            "_cat": "ST",
+            "_lat": "40.12081915",
+            "_lng": "-105.9005694",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "06746095",
+            "_sna": "JOE WRIGHT CREEK ABOVE JOE WRIGHT RESERVOIR, CO",
+            "_cat": "ST",
+            "_lat": "40.5399822",
+            "_lng": "-105.88279",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "09026500",
+            "_sna": "ST. LOUIS CREEK NEAR FRASER, CO.",
+            "_cat": "ST",
+            "_lat": "39.90998657",
+            "_lng": "-105.8783451",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "09019000",
+            "_sna": "COLORADO RIVER BELOW LAKE GRANBY, CO.",
+            "_cat": "ST",
+            "_lat": "40.1441524",
+            "_lng": "-105.8672348",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "06614800",
+            "_sna": "MICHIGAN RIVER NEAR CAMERON PASS, CO",
+            "_cat": "ST",
+            "_lat": "40.49609409",
+            "_lng": "-105.8650119",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "06746110",
+            "_sna": "JOE WRIGHT CREEK BELOW JOE WRIGHT RESERVOIR, CO",
+            "_cat": "ST",
+            "_lat": "40.5619264",
+            "_lng": "-105.8639",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "09010500",
+            "_sna": "COLORADO RIVER BELOW BAKER GULCH NR GRAND LAKE, CO",
+            "_cat": "ST",
+            "_lat": "40.32581784",
+            "_lng": "-105.8566791",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "09033300",
+            "_sna": "FRASER RIVER BLW CROOKED CR AT TABERNASH CO",
+            "_cat": "ST",
+            "_lat": "40.00689167",
+            "_lng": "-105.8482722",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "09015000",
+            "_sna": "COLORADO RIVER BL SHADOW MOUNTAIN RESERVOIR, CO.",
+            "_cat": "ST",
+            "_lat": "40.20519444",
+            "_lng": "-105.8375611",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "09025300",
+            "_sna": "ELK CREEK AT UPPER STATION, NEAR FRASER, CO",
+            "_cat": "ST",
+            "_lat": "39.8894312",
+            "_lng": "-105.8325098",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "09027100",
+            "_sna": "FRASER RIVER AT TABERNASH, CO",
+            "_cat": "ST",
+            "_lat": "39.9903333",
+            "_lng": "-105.8297778",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "09014050",
+            "_sna": "GRAND LAKE OUTLET BLW CHIPMUNK LN AT GRAND LK, CO",
+            "_cat": "ST",
+            "_lat": "40.2461111",
+            "_lng": "-105.8288333",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "09033100",
+            "_sna": "RANCH CREEK BLW MEADOW CR NR TABERNASH, CO",
+            "_cat": "ST",
+            "_lat": "39.9990861",
+            "_lng": "-105.8265583",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "09014000",
+            "_sna": "GRAND LAKE OUTLET AT GRAND LAKE, CO.",
+            "_cat": "ST",
+            "_lat": "40.24474444",
+            "_lng": "-105.82615",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "09025000",
+            "_sna": "VASQUEZ CREEK AT WINTER PARK, CO",
+            "_cat": "ST",
+            "_lat": "39.92026468",
+            "_lng": "-105.7852857",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "09032400",
+            "_sna": "TRAIL CREEK NEAR TABERNASH, CO",
+            "_cat": "ST",
+            "_lat": "40.02841667",
+            "_lng": "-105.7806389",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "09033010",
+            "_sna": "MEADOW CREEK DIVERSION NEAR TABERNASH, CO",
+            "_cat": "ST",
+            "_lat": "40.0502861",
+            "_lng": "-105.7797056",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "09024000",
+            "_sna": "FRASER RIVER AT WINTER PARK, CO.",
+            "_cat": "ST",
+            "_lat": "39.89998695",
+            "_lng": "-105.7766741",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "09032000",
+            "_sna": "RANCH CREEK NEAR FRASER, CO.",
+            "_cat": "ST",
+            "_lat": "39.94998694",
+            "_lng": "-105.7655627",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "09032300",
+            "_sna": "HURD CREEK NEAR TABERNASH, CO",
+            "_cat": "ST",
+            "_lat": "40.01325",
+            "_lng": "-105.7616944",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "08251500",
+            "_sna": "RIO GRANDE NEAR LOBATOS, CO",
+            "_cat": "ST",
+            "_lat": "37.0786111",
+            "_lng": "-105.7569444",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "09032990",
+            "_sna": "MEADOW CREEK BLW MEADOW CREEK RES NR TABERNASH, CO",
+            "_cat": "ST",
+            "_lat": "40.05202778",
+            "_lng": "-105.7541667",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "09022000",
+            "_sna": "FRASER RIVER AT UPPER STA, NEAR WINTER PARK, CO.",
+            "_cat": "ST",
+            "_lat": "39.8458204",
+            "_lng": "-105.7519507",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "09032200",
+            "_sna": "HAMILTON CREEK NEAR TABERNASH, CO",
+            "_cat": "ST",
+            "_lat": "39.99727778",
+            "_lng": "-105.7468056",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "09032100",
+            "_sna": "CABIN CREEK NEAR FRASER, CO.",
+            "_cat": "ST",
+            "_lat": "39.9858203",
+            "_lng": "-105.7450064",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "09032050",
+            "_sna": "LITTLE CABIN CREEK NEAR TABERNASH, CO",
+            "_cat": "ST",
+            "_lat": "39.97454444",
+            "_lng": "-105.7395361",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "06714400",
+            "_sna": "S CLEAR CR ABV LOWER CABIN CR RES NR GEORGETOWN,CO",
+            "_cat": "ST",
+            "_lat": "39.64900556",
+            "_lng": "-105.7074833",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "06714500",
+            "_sna": "S CLEAR CR ABV LWR CABIN CR RES SPILWY NR GEORGTWN",
+            "_cat": "ST",
+            "_lat": "39.6631",
+            "_lng": "-105.7063278",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "06714800",
+            "_sna": "LEAVENWORTH CREEK AT MOUTH NEAR GEORGETOWN, CO",
+            "_cat": "ST",
+            "_lat": "39.68720955",
+            "_lng": "-105.7002821",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "401723105400000",
+            "_sna": "ANDREWS CREEK-LOCH VALE-RMNP",
+            "_cat": "ST",
+            "_lat": "40.29",
+            "_lng": "-105.6666667",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "06715000",
+            "_sna": "CLEAR CREEK ABV WEST FORK CLEAR CREEK NR EMPIRE CO",
+            "_cat": "ST",
+            "_lat": "39.7519319",
+            "_lng": "-105.661947",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "06716100",
+            "_sna": "WEST FORK CLEAR CREEK ABV MOUTH NR EMPIRE, CO",
+            "_cat": "ST",
+            "_lat": "39.75887636",
+            "_lng": "-105.6600025",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "401733105392404",
+            "_sna": "THE LOCH OUTLET - LOCH VALE",
+            "_cat": "ST",
+            "_lat": "40.29305556",
+            "_lng": "-105.6544444",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "06716500",
+            "_sna": "CLEAR CREEK NEAR LAWSON, CO",
+            "_cat": "ST",
+            "_lat": "39.7658209",
+            "_lng": "-105.6261123",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "402114105350101",
+            "_sna": "BIG THOMPSON BL MORAINE PARK NR ESTES PARK, CO",
+            "_cat": "ST",
+            "_lat": "40.3538729",
+            "_lng": "-105.5841679",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "09013000",
+            "_sna": "ALVA B ADAMS TUN AT E PORTAL, NR ESTES PARK, CO.",
+            "_cat": "ST",
+            "_lat": "40.32776195",
+            "_lng": "-105.5780567",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "06718550",
+            "_sna": "NORTH CLEAR CREEK ABOVE MOUTH NR BLACK HAWK, CO",
+            "_cat": "ST",
+            "_lat": "39.74887674",
+            "_lng": "-105.3997159",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "07094500",
+            "_sna": "ARKANSAS RIVER AT PARKDALE, CO.",
+            "_cat": "ST",
+            "_lat": "38.4872189",
+            "_lng": "-105.373604",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "06727410",
+            "_sna": "FOURMILE CREEK AT LOGAN MILL ROAD NEAR CRISMAN, CO",
+            "_cat": "ST",
+            "_lat": "40.04202778",
+            "_lng": "-105.3649167",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "06730160",
+            "_sna": "FOURMILE CANYON CREEK NEAR SUNSHINE, CO",
+            "_cat": "ST",
+            "_lat": "40.0576111",
+            "_lng": "-105.3487778",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "06736000",
+            "_sna": "NORTH FORK BIG THOMPSON RIVER AT DRAKE, CO.",
+            "_cat": "ST",
+            "_lat": "40.43331689",
+            "_lng": "-105.338879",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "06751150",
+            "_sna": "N FK CACHE LA POUDRE R BLW HALLIGAN RES NR VA DALE",
+            "_cat": "ST",
+            "_lat": "40.87831637",
+            "_lng": "-105.3380411",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "06710385",
+            "_sna": "BEAR CREEK ABOVE EVERGREEN, CO",
+            "_cat": "ST",
+            "_lat": "39.63316667",
+            "_lng": "-105.3369444",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "06727500",
+            "_sna": "FOURMILE CREEK AT ORODELL, CO",
+            "_cat": "ST",
+            "_lat": "40.01866667",
+            "_lng": "-105.32625",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "06700000",
+            "_sna": "SOUTH PLATTE RIVER ABOVE CHEESMAN LAKE, CO.",
+            "_cat": "ST",
+            "_lat": "39.16276858",
+            "_lng": "-105.3102732",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "07096000",
+            "_sna": "ARKANSAS RIVER AT CANON CITY, CO.",
+            "_cat": "ST",
+            "_lat": "38.43388674",
+            "_lng": "-105.2572128",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "06751490",
+            "_sna": "NORTH FORK CACHE LA POUDRE RIVER AT LIVERMORE, CO",
+            "_cat": "ST",
+            "_lat": "40.7874815",
+            "_lng": "-105.2522047",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "06719505",
+            "_sna": "CLEAR CREEK AT GOLDEN, CO",
+            "_cat": "ST",
+            "_lat": "39.75304299",
+            "_lng": "-105.2352667",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "07096250",
+            "_sna": "FOURMILE CREEK BELOW CRIPPLE CREEK NEAR VICTOR, CO",
+            "_cat": "ST",
+            "_lat": "38.66388094",
+            "_lng": "-105.228041",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "06701900",
+            "_sna": "SOUTH PLATTE RIVER BLW BRUSH CRK NEAR TRUMBULL, CO",
+            "_cat": "ST",
+            "_lat": "39.25999025",
+            "_lng": "-105.2219379",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "06739500",
+            "_sna": "BUCKHORN CREEK NEAR MASONVILLE, CO",
+            "_cat": "ST",
+            "_lat": "40.43444444",
+            "_lng": "-105.1844444",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "06730200",
+            "_sna": "BOULDER CREEK AT NORTH 75TH ST. NEAR BOULDER, CO",
+            "_cat": "ST",
+            "_lat": "40.05165184",
+            "_lng": "-105.1788754",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "06710605",
+            "_sna": "BEAR CREEK ABOVE BEAR CREEK LAKE NEAR MORRISON, CO",
+            "_cat": "ST",
+            "_lat": "39.65202778",
+            "_lng": "-105.17325",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "06701700",
+            "_sna": "WEST CR. ABV SHREWSBURY GULCH NR WESTCREEK CO",
+            "_cat": "ST",
+            "_lat": "39.145425",
+            "_lng": "-105.1600111",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "06711040",
+            "_sna": "TURKEY CREEK ABOVE BEAR CREEK LAKE NEAR MORRISON C",
+            "_cat": "ST",
+            "_lat": "39.6407083",
+            "_lng": "-105.15935",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "06719560",
+            "_sna": "LENA GULCH AT LAKEWOOD, CO",
+            "_cat": "ST",
+            "_lat": "39.74040278",
+            "_lng": "-105.1488333",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "06724970",
+            "_sna": "LEFT HAND CREEK AT HOVER ROAD NEAR LONGMONT, CO",
+            "_cat": "ST",
+            "_lat": "40.13427778",
+            "_lng": "-105.1308194",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "06701620",
+            "_sna": "TROUT CREEK BLW FERN CR NR WESTCREEK, CO.",
+            "_cat": "ST",
+            "_lat": "39.16749104",
+            "_lng": "-105.1222112",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "06752260",
+            "_sna": "CACHE LA POUDRE RIVER AT FORT COLLINS, CO",
+            "_cat": "ST",
+            "_lat": "40.5880833",
+            "_lng": "-105.0692222",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "06741510",
+            "_sna": "BIG THOMPSON RIVER AT LOVELAND, CO.",
+            "_cat": "ST",
+            "_lat": "40.3785946",
+            "_lng": "-105.0610909",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "06711618",
+            "_sna": "WEIR GULCH UPSTREAM FROM 1ST AVE. AT DENVER, CO",
+            "_cat": "ST",
+            "_lat": "39.7172472",
+            "_lng": "-105.0420111",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "06709910",
+            "_sna": "DUTCH CR AT PLATTE CANYON DRIVE NEAR LITTLETON, CO",
+            "_cat": "ST",
+            "_lat": "39.6001111",
+            "_lng": "-105.0419222",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "06719840",
+            "_sna": "LITTLE DRY CREEK AT WESTMINSTER, CO",
+            "_cat": "ST",
+            "_lat": "39.82655278",
+            "_lng": "-105.0400639",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "06711770",
+            "_sna": "DRY GULCH AT DENVER, CO",
+            "_cat": "ST",
+            "_lat": "39.734375",
+            "_lng": "-105.0395556",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "06720820",
+            "_sna": "BIG DRY CREEK AT WESTMINSTER, CO",
+            "_cat": "ST",
+            "_lat": "39.90568056",
+            "_lng": "-105.0353889",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "06711500",
+            "_sna": "BEAR CREEK AT MOUTH AT SHERIDAN, CO",
+            "_cat": "ST",
+            "_lat": "39.6522097",
+            "_lng": "-105.033039",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "06711780",
+            "_sna": "LAKEWOOD GULCH AT DENVER, CO",
+            "_cat": "ST",
+            "_lat": "39.73519444",
+            "_lng": "-105.0313611",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "06709530",
+            "_sna": "PLUM CREEK AT TITAN ROAD NEAR LOUVIERS, CO",
+            "_cat": "ST",
+            "_lat": "39.50736944",
+            "_lng": "-105.0244667",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "07099050",
+            "_sna": "BEAVER CR ABV UPPER BEAVER CEMETERY NR PENROSE, CO",
+            "_cat": "ST",
+            "_lat": "38.56166228",
+            "_lng": "-105.0219257",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "06719845",
+            "_sna": "LITTLE DRY CRK BLW FEDERAL BLVD AT WESTMINSTER, CO",
+            "_cat": "ST",
+            "_lat": "39.81936667",
+            "_lng": "-105.0214472",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "06730500",
+            "_sna": "BOULDER CREEK AT MOUTH NEAR LONGMONT, CO",
+            "_cat": "ST",
+            "_lat": "40.13877778",
+            "_lng": "-105.0202222",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "06710000",
+            "_sna": "SOUTH PLATTE RIVER AT LITTLETON, CO.",
+            "_cat": "ST",
+            "_lat": "39.6188766",
+            "_lng": "-105.0191499",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "07097000",
+            "_sna": "ARKANSAS RIVER AT PORTLAND, CO.",
+            "_cat": "ST",
+            "_lat": "38.38833418",
+            "_lng": "-105.0160961",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "06709740",
+            "_sna": "LEE GULCH AT LITTLETON, CO",
+            "_cat": "ST",
+            "_lat": "39.5961111",
+            "_lng": "-105.0160278",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "06710247",
+            "_sna": "SOUTH PLATTE RIVER BELOW UNION AVE, AT ENGLEWOOD,C",
+            "_cat": "ST",
+            "_lat": "39.6324876",
+            "_lng": "-105.014983",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "06752280",
+            "_sna": "CACHE LA POUDRE RIV AB BOXELDER CRK NR TIMNATH, CO",
+            "_cat": "ST",
+            "_lat": "40.5519269",
+            "_lng": "-105.011365",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "06730525",
+            "_sna": "ST VRAIN CR BLW BOULDER CR AT HWY 119 NR LONGMONT",
+            "_cat": "ST",
+            "_lat": "40.16046667",
+            "_lng": "-105.0079361",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "06711565",
+            "_sna": "SOUTH PLATTE RIVER AT ENGLEWOOD, CO.",
+            "_cat": "ST",
+            "_lat": "39.66498738",
+            "_lng": "-105.004149",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "06714000",
+            "_sna": "SOUTH PLATTE RIVER AT DENVER, CO.",
+            "_cat": "ST",
+            "_lat": "39.7598972",
+            "_lng": "-105.0036861",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "06713500",
+            "_sna": "CHERRY CREEK AT DENVER, CO.",
+            "_cat": "ST",
+            "_lat": "39.74248685",
+            "_lng": "-104.9999817",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "06711590",
+            "_sna": "SOUTH PLATTE RIVER AT FLORIDA AVE AT DENVER, CO.",
+            "_cat": "ST",
+            "_lat": "39.6897094",
+            "_lng": "-104.9997043",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "07099060",
+            "_sna": "BEAVER CREEK ABOVE HIGHWAY 115 NEAR PENROSE, CO",
+            "_cat": "ST",
+            "_lat": "38.4891658",
+            "_lng": "-104.9974832",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "06709000",
+            "_sna": "PLUM CREEK NEAR SEDALIA, CO.",
+            "_cat": "ST",
+            "_lat": "39.43832246",
+            "_lng": "-104.9830387",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "06711555",
+            "_sna": "LITTLE DRY CREEK ABOVE ENGLEWOOD, CO",
+            "_cat": "ST",
+            "_lat": "39.6491542",
+            "_lng": "-104.9788705",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "06711575",
+            "_sna": "HARVARD GULCH AT HARVARD PARK AT DENVER, CO",
+            "_cat": "ST",
+            "_lat": "39.6717222",
+            "_lng": "-104.9770278",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "06714130",
+            "_sna": "SOUTH PLATTE RIVER AT 50TH AVENUE AT DENVER, CO.",
+            "_cat": "ST",
+            "_lat": "39.7869309",
+            "_lng": "-104.9749804",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "07100300",
+            "_sna": "FOUNTAIN CREEK AT CASCADE, CO",
+            "_cat": "ST",
+            "_lat": "38.8970833",
+            "_lng": "-104.9717778",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "06708690",
+            "_sna": "WEST PLUM CREEK AT SEDALIA, CO",
+            "_cat": "ST",
+            "_lat": "39.42927778",
+            "_lng": "-104.9677778",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "06720000",
+            "_sna": "CLEAR CREEK AT MOUTH NEAR DERBY, CO",
+            "_cat": "ST",
+            "_lat": "39.8283194",
+            "_lng": "-104.9588684",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "06714215",
+            "_sna": "SOUTH PLATTE R AT 64TH AVE. COMMERCE CITY, CO.",
+            "_cat": "ST",
+            "_lat": "39.81220846",
+            "_lng": "-104.9583129",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "07103797",
+            "_sna": "WEST MONUMENT CREEK BELOW RAMPART RESERVOIR, CO",
+            "_cat": "ST",
+            "_lat": "38.97499176",
+            "_lng": "-104.9555374",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "06708600",
+            "_sna": "WEST PLUM CREEK NEAR PERRY PARK, CO",
+            "_cat": "ST",
+            "_lat": "39.2594722",
+            "_lng": "-104.9519028",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "394839104570300",
+            "_sna": "SAND CREEK AT MOUTH NR COMMERCE CITY,CO",
+            "_cat": "ST",
+            "_lat": "39.8109722",
+            "_lng": "-104.9515833",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "06714360",
+            "_sna": "SAND CRK ABV BURLINGTON DITCH NR COMMERCE CITY, CO",
+            "_cat": "ST",
+            "_lat": "39.81025",
+            "_lng": "-104.9503333",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "06711570",
+            "_sna": "HARVARD GULCH AT COLORADO BLVD. AT DENVER, CO",
+            "_cat": "ST",
+            "_lat": "39.66920278",
+            "_lng": "-104.9425083",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "07099085",
+            "_sna": "RED CREEK ABOVE SALT CANYON AT FORT CARSON, CO",
+            "_cat": "ST",
+            "_lat": "38.4789722",
+            "_lng": "-104.9405556",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "06713300",
+            "_sna": "CHERRY CREEK AT GLENDALE, CO",
+            "_cat": "ST",
+            "_lat": "39.7060984",
+            "_lng": "-104.9374795",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "07100750",
+            "_sna": "WALDO CANYON ABV MOUTH NEAR MANITOU SPRINGS, CO",
+            "_cat": "ST",
+            "_lat": "38.8881111",
+            "_lng": "-104.9356944",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "06710150",
+            "_sna": "BIG DRY CREEK BELOW C-470 AT HIGHLANDS RANCH, CO",
+            "_cat": "ST",
+            "_lat": "39.5633216",
+            "_lng": "-104.927758",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "07103100",
+            "_sna": "WILLIAMS CANYON ABV MOUTH NEAR MANITOU SPRINGS, CO",
+            "_cat": "ST",
+            "_lat": "38.88880278",
+            "_lng": "-104.918825",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "06711515",
+            "_sna": "LITTLE DRY CREEK NR ARAPAHOE RD AT CENTENNIAL, CO",
+            "_cat": "ST",
+            "_lat": "39.5937361",
+            "_lng": "-104.9065",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "06708800",
+            "_sna": "EAST PLUM CR ABV HASKINS GULCH NR CASTLE ROCK, CO",
+            "_cat": "ST",
+            "_lat": "39.423",
+            "_lng": "-104.9046111",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "07103800",
+            "_sna": "WEST MONUMENT CREEK AT U.S. AIR FORCE ACADEMY, CO",
+            "_cat": "ST",
+            "_lat": "38.97054766",
+            "_lng": "-104.902758",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "07103784",
+            "_sna": "GOAT CAMP CREEK ABV RESERVOIR NO. 4 AT USAFA, CO",
+            "_cat": "ST",
+            "_lat": "39.00888889",
+            "_lng": "-104.8981",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "07105000",
+            "_sna": "BEAR CREEK NEAR COLORADO SPRINGS, CO",
+            "_cat": "ST",
+            "_lat": "38.82249078",
+            "_lng": "-104.888586",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "07103700",
+            "_sna": "FOUNTAIN CREEK NEAR COLORADO SPRINGS, CO.",
+            "_cat": "ST",
+            "_lat": "38.85471357",
+            "_lng": "-104.8780314",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "07103703",
+            "_sna": "CAMP CREEK AT GARDEN OF THE GODS, CO",
+            "_cat": "ST",
+            "_lat": "38.87693609",
+            "_lng": "-104.8727543",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "06720500",
+            "_sna": "SOUTH PLATTE RIVER AT HENDERSON, CO",
+            "_cat": "ST",
+            "_lat": "39.92192936",
+            "_lng": "-104.868864",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "383619104520401",
+            "_sna": "LYTLE DITCH AT FT. CARSON, CO",
+            "_cat": "ST-DCH",
+            "_lat": "38.6052735",
+            "_lng": "-104.8683099",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "07105490",
+            "_sna": "CHEYENNE CREEK AT EVANS AVE AT COLORADO SPRINGS,CO",
+            "_cat": "ST",
+            "_lat": "38.79054685",
+            "_lng": "-104.8641404",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "06713000",
+            "_sna": "CHERRY CREEK BELOW CHERRY CREEK LAKE, CO",
+            "_cat": "ST",
+            "_lat": "39.65359899",
+            "_lng": "-104.8630326",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "384047104510301",
+            "_sna": "RIPLEY DITCH FROM L. FOUNTAIN CR AT FT. CARSON, CO",
+            "_cat": "ST-DCH",
+            "_lat": "38.67971594",
+            "_lng": "-104.8513632",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "384048104504901",
+            "_sna": "WOMACK DITCH FROM L. FOUNTAIN CR NR FT. CARSON, CO",
+            "_cat": "ST-DCH",
+            "_lat": "38.6799938",
+            "_lng": "-104.8480298",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "07103780",
+            "_sna": "MONUMENT C AB N.GATE BLVD AT USAF ACADEMY, CO.",
+            "_cat": "ST",
+            "_lat": "39.03102778",
+            "_lng": "-104.8466111",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "07103791",
+            "_sna": "LEHMAN RUN BLW STADIUM BLVD AT USAFA, CO",
+            "_cat": "ST",
+            "_lat": "39.00007778",
+            "_lng": "-104.8378417",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "07103792",
+            "_sna": "RESERVOIR NO. 1 SPILLWAY AT HUSTED RD AT USAFA, CO",
+            "_cat": "ST",
+            "_lat": "39.0012333",
+            "_lng": "-104.8340111",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "06720990",
+            "_sna": "BIG DRY CREEK AT MOUTH NEAR FORT LUPTON, CO",
+            "_cat": "ST",
+            "_lat": "40.0688333",
+            "_lng": "-104.8319861",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "07104905",
+            "_sna": "MONUMENT CREEK AT BIJOU ST. AT COLO. SPRINGS, CO",
+            "_cat": "ST",
+            "_lat": "38.83721474",
+            "_lng": "-104.8294192",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "07099230",
+            "_sna": "TURKEY CREEK AB TELLER RES NEAR STONE CITY, CO.",
+            "_cat": "ST",
+            "_lat": "38.46499989",
+            "_lng": "-104.8272009",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "382628104493700",
+            "_sna": "TURKEY CR WEST SEEP BL TELLER RES NR STONE CITY,CO",
+            "_cat": "ST",
+            "_lat": "38.4411111",
+            "_lng": "-104.8269444",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "382629104493000",
+            "_sna": "TURKEY C EAST SEEP BL TELLER RES NR STONE CITY, CO",
+            "_cat": "ST",
+            "_lat": "38.44138889",
+            "_lng": "-104.8258333",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "07105500",
+            "_sna": "FOUNTAIN CREEK AT COLORADO SPRINGS, CO",
+            "_cat": "ST",
+            "_lat": "38.81638158",
+            "_lng": "-104.8227519",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "07099238",
+            "_sna": "TELLER RESERVOIR SPILLWAY NEAR STONE CITY, CO",
+            "_cat": "ST",
+            "_lat": "38.43888889",
+            "_lng": "-104.8208333",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "07104000",
+            "_sna": "MONUMENT CREEK AT PIKEVIEW, CO.",
+            "_cat": "ST",
+            "_lat": "38.91777057",
+            "_lng": "-104.8185877",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "06721000",
+            "_sna": "SOUTH PLATTE RIVER AT FORT LUPTON, CO.",
+            "_cat": "ST",
+            "_lat": "40.11609435",
+            "_lng": "-104.8185831",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "394329104490101",
+            "_sna": "TOLL GATE CREEK ABOVE 6TH AVE AT AURORA, CO",
+            "_cat": "ST",
+            "_lat": "39.72508889",
+            "_lng": "-104.8178944",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "07103970",
+            "_sna": "MONUMENT CR ABV WOODMEN RD AT COLORADO SPRINGS, CO",
+            "_cat": "ST",
+            "_lat": "38.9338817",
+            "_lng": "-104.8171992",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "07103990",
+            "_sna": "COTTONWOOD CREEK AT MOUTH AT PIKEVIEW, CO",
+            "_cat": "ST",
+            "_lat": "38.9272222",
+            "_lng": "-104.8141667",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "385821104481601",
+            "_sna": "KETTLE CR DRY DAM NR USAF ACADEMY, ABV CO SPGS, CO",
+            "_cat": "ST",
+            "_lat": "38.97253889",
+            "_lng": "-104.8044917",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "07103960",
+            "_sna": "KETTLE CREEK ABOVE USAF ACADEMY, CO",
+            "_cat": "ST",
+            "_lat": "38.9761111",
+            "_lng": "-104.7986111",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "07105530",
+            "_sna": "FOUNTAIN CR BLW JANITELL RD BLW COLO. SPRINGS, CO",
+            "_cat": "ST",
+            "_lat": "38.8030491",
+            "_lng": "-104.7958069",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "07103965",
+            "_sna": "PINE CREEK ABV BRIARGATE PKWY,ABV COLO SPRINGS, CO",
+            "_cat": "ST",
+            "_lat": "38.96750278",
+            "_lng": "-104.7940167",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "06720460",
+            "_sna": "FIRST CR BEL BUCKLEY RD, AT ROCKY MTN ARSENAL, CO",
+            "_cat": "ST",
+            "_lat": "39.8080421",
+            "_lng": "-104.7938618",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "384037104472001",
+            "_sna": "MERRIAMS ROCK CREEK DITCH AT FT. CARSON, CO",
+            "_cat": "ST-DCH",
+            "_lat": "38.67694",
+            "_lng": "-104.7894182",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "393109104464500",
+            "_sna": "CHERRY CREEK NEAR PARKER, CO",
+            "_cat": "ST",
+            "_lat": "39.5191557",
+            "_lng": "-104.7796975",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "07103987",
+            "_sna": "COTTONWOOD CK AT UNION BLVD, AT COLO SPRINGS, CO",
+            "_cat": "ST",
+            "_lat": "38.9303611",
+            "_lng": "-104.77615",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "07105600",
+            "_sna": "SAND CREEK ABOVE MOUTH AT COLORADO SPRINGS, CO",
+            "_cat": "ST",
+            "_lat": "38.78832768",
+            "_lng": "-104.773862",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "07105815",
+            "_sna": "CLOVER DITCH DRAIN AT QUINN ST NR WIDEFIELD, CO",
+            "_cat": "ST-DCH",
+            "_lat": "38.7297222",
+            "_lng": "-104.7676389",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "06712000",
+            "_sna": "CHERRY CREEK NEAR FRANKTOWN, CO.",
+            "_cat": "ST",
+            "_lat": "39.3558234",
+            "_lng": "-104.7633092",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "07105780",
+            "_sna": "B DITCH DRAIN NEAR SECURITY, CO.",
+            "_cat": "ST-DCH",
+            "_lat": "38.752495",
+            "_lng": "-104.7624723",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "07105940",
+            "_sna": "LITTLE FOUNTAIN CREEK NEAR FOUNTAIN, CO",
+            "_cat": "ST",
+            "_lat": "38.64265",
+            "_lng": "-104.7483833",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "07103980",
+            "_sna": "COTTONWOOD CREEK AT WOODMEN RD NR COLO SPRINGS, CO",
+            "_cat": "ST",
+            "_lat": "38.93943809",
+            "_lng": "-104.7410863",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "07105800",
+            "_sna": "FOUNTAIN CREEK AT SECURITY, CO",
+            "_cat": "ST",
+            "_lat": "38.7294404",
+            "_lng": "-104.7338611",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "07105820",
+            "_sna": "CLOVER DITCH DRAIN NEAR WIDEFIELD, CO.",
+            "_cat": "ST-DCH",
+            "_lat": "38.71860726",
+            "_lng": "-104.729139",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "07099400",
+            "_sna": "ARKANSAS RIVER ABOVE PUEBLO, CO",
+            "_cat": "ST",
+            "_lat": "38.2716694",
+            "_lng": "-104.718033",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "07105900",
+            "_sna": "JIMMY CAMP CREEK AT FOUNTAIN, CO.",
+            "_cat": "ST",
+            "_lat": "38.6844413",
+            "_lng": "-104.688583",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "07106000",
+            "_sna": "FOUNTAIN CREEK NEAR FOUNTAIN, CO.",
+            "_cat": "ST",
+            "_lat": "38.6016647",
+            "_lng": "-104.6702503",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "07124200",
+            "_sna": "PURGATOIRE RIVER AT MADRID, CO.",
+            "_cat": "ST",
+            "_lat": "37.12946459",
+            "_lng": "-104.6399888",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "07106500",
+            "_sna": "FOUNTAIN CREEK AT PUEBLO, CO.",
+            "_cat": "ST",
+            "_lat": "38.2877801",
+            "_lng": "-104.6010849",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "07106300",
+            "_sna": "FOUNTAIN CREEK NEAR PINON, CO",
+            "_cat": "ST",
+            "_lat": "38.42944444",
+            "_lng": "-104.5980556",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "07099973",
+            "_sna": "ARKANSAS RIVER TRIBUTARY ABOVE HWY 227 AT PUEBLO",
+            "_cat": "ST",
+            "_lat": "38.25388889",
+            "_lng": "-104.5958333",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "06754000",
+            "_sna": "SOUTH PLATTE RIVER NEAR KERSEY, CO",
+            "_cat": "ST",
+            "_lat": "40.4119253",
+            "_lng": "-104.5627366",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "07124410",
+            "_sna": "PURGATOIRE RIVER BELOW TRINIDAD LAKE, CO.",
+            "_cat": "ST",
+            "_lat": "37.14390846",
+            "_lng": "-104.5477644",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "381312104321001",
+            "_sna": "BESSEMER DITCH AT ST. CHARLES WD NEAR PUEBLO CO",
+            "_cat": "ST-DCH",
+            "_lat": "38.2201111",
+            "_lng": "-104.5359722",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "07108900",
+            "_sna": "ST. CHARLES RIVER AT VINELAND, CO.",
+            "_cat": "ST",
+            "_lat": "38.24555835",
+            "_lng": "-104.4863597",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "07109500",
+            "_sna": "ARKANSAS RIVER NEAR AVONDALE, CO.",
+            "_cat": "ST",
+            "_lat": "38.24805799",
+            "_lng": "-104.3991356",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "07116500",
+            "_sna": "HUERFANO RIVER NEAR BOONE, CO.",
+            "_cat": "ST",
+            "_lat": "38.2250024",
+            "_lng": "-104.2607996",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "07119500",
+            "_sna": "APISHAPA RIVER NEAR FOWLER, CO",
+            "_cat": "ST",
+            "_lat": "38.1085",
+            "_lng": "-103.9676111",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "07126200",
+            "_sna": "VAN BREMER ARROYO NEAR MODEL, CO",
+            "_cat": "ST",
+            "_lat": "37.34557255",
+            "_lng": "-103.9580186",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "07126325",
+            "_sna": "TAYLOR ARROYO BL ROCK CROSSING, NR THATCHER, CO.",
+            "_cat": "ST",
+            "_lat": "37.42418269",
+            "_lng": "-103.9202382",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "07119700",
+            "_sna": "ARKANSAS RIVER AT CATLIN DAM, NEAR FOWLER, CO.",
+            "_cat": "ST",
+            "_lat": "38.12583934",
+            "_lng": "-103.9119006",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "07126300",
+            "_sna": "PURGATOIRE RIVER NEAR THATCHER, CO.",
+            "_cat": "ST",
+            "_lat": "37.3564059",
+            "_lng": "-103.9002383",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "07126390",
+            "_sna": "LOCKWOOD CANYON CREEK NEAR THATCHER, CO",
+            "_cat": "ST",
+            "_lat": "37.49279316",
+            "_lng": "-103.8280114",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "06759500",
+            "_sna": "SOUTH PLATTE RIVER AT FORT MORGAN, CO",
+            "_cat": "ST",
+            "_lat": "40.26840278",
+            "_lng": "-103.8011917",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "07126415",
+            "_sna": "RED ROCK CANYON CREEK AT MOUTH NR THATCHER, CO.",
+            "_cat": "ST",
+            "_lat": "37.51529314",
+            "_lng": "-103.7255071",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "07120500",
+            "_sna": "ARKANSAS RIVER NEAR ROCKY FORD, CO.",
+            "_cat": "ST",
+            "_lat": "38.06528559",
+            "_lng": "-103.6860593",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "07121500",
+            "_sna": "TIMPAS CREEK AT MOUTH NEAR SWINK, CO.",
+            "_cat": "ST",
+            "_lat": "38.0030644",
+            "_lng": "-103.6560588",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "07126480",
+            "_sna": "BENT CANYON CREEK AT MOUTH NEAR TIMPAS, CO",
+            "_cat": "ST",
+            "_lat": "37.58918109",
+            "_lng": "-103.6482815",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "07126485",
+            "_sna": "PURGATOIRE RIVER AT ROCK CROSSING NR TIMPAS, CO.",
+            "_cat": "ST",
+            "_lat": "37.6183474",
+            "_lng": "-103.593557",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "07124000",
+            "_sna": "ARKANSAS RIVER AT LAS ANIMAS, CO.",
+            "_cat": "ST",
+            "_lat": "38.0808399",
+            "_lng": "-103.2196523",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "07128500",
+            "_sna": "PURGATOIRE RIVER NEAR LAS ANIMAS, CO",
+            "_cat": "ST",
+            "_lat": "38.0342222",
+            "_lng": "-103.2014167",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "07130500",
+            "_sna": "ARKANSAS RIVER BELOW JOHN MARTIN RESERVOIR, CO.",
+            "_cat": "ST",
+            "_lat": "38.06639635",
+            "_lng": "-102.9324228",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "07133000",
+            "_sna": "ARKANSAS RIVER AT LAMAR, CO",
+            "_cat": "ST",
+            "_lat": "38.10579167",
+            "_lng": "-102.6182056",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "07134100",
+            "_sna": "BIG SANDY CREEK NEAR LAMAR, CO.",
+            "_cat": "ST",
+            "_lat": "38.11417565",
+            "_lng": "-102.4838023",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "07134180",
+            "_sna": "ARKANSAS RIVER NEAR GRANADA, CO.",
+            "_cat": "ST",
+            "_lat": "38.0955649",
+            "_lng": "-102.3107453",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "07134990",
+            "_sna": "WILD HORSE CREEK ABOVE HOLLY, CO",
+            "_cat": "ST",
+            "_lat": "38.05702778",
+            "_lng": "-102.1384722",
+            "_agc": "USGS"
+         }
+      ]
+   },
+   "colocated_sites": {
+      "site": [
+         {
+            "_sno": "07099970",
+            "_sna": "ARKANSAS RIVER AT MOFFAT STREET AT PUEBLO, CO",
+            "_cat": "ST",
+            "_lat": "38.25361396",
+            "_lng": "-104.6060854",
+            "_agc": "USGS"
+         },
+         {
+            "_sno": "07099969",
+            "_sna": "ARKANSAS R. AT ST CHARLES MESA DIVER. AT PUEBLO,CO",
+            "_cat": "ST",
+            "_lat": "38.25361396",
+            "_lng": "-104.6060854",
+            "_agc": "USGS"
+         }
+      ]
+   }
+}
