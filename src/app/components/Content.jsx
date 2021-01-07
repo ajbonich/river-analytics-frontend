@@ -29,7 +29,12 @@ export default class Content extends React.Component {
             >
                 <div className="content">
                     <USGSGaugeMap onSelectGauge={this.handleGauge} />
-                    <RiverForm siteId={this.state.siteId} />
+                    <Scrollbar className="scrollable-lower">
+                        <RiverForm
+                            className="content"
+                            siteId={this.state.siteId}
+                        />
+                    </Scrollbar>
                 </div>
                 <div className="my-auto" />
                 {this.props.settings && (
