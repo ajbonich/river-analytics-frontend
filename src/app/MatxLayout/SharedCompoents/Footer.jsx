@@ -28,9 +28,9 @@ const Footer = ({ theme, settings }) => {
                             </Button>
                         </a>
                         <span className="m-auto"></span>
-                        <Button variant="contained" color="secondary">
+                        {/* <Button variant="contained" color="secondary">
                             Submit Feedback
-                        </Button>
+                        </Button> */}
                         <p className="ml-5">Design by Andrew Bonich</p>
                     </div>
                 </Toolbar>
