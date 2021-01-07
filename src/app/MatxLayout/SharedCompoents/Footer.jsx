@@ -2,7 +2,6 @@ import React from 'react'
 import { withStyles, ThemeProvider } from '@material-ui/core/styles'
 import { Button, Toolbar, AppBar } from '@material-ui/core'
 import PropTypes from 'prop-types'
-import { connect } from 'react-redux'
 
 const Footer = ({ theme, settings }) => {
     const footerTheme = settings.themes[settings.footer.theme] || theme
@@ -29,7 +28,10 @@ const Footer = ({ theme, settings }) => {
                             </Button>
                         </a>
                         <span className="m-auto"></span>
-                        <p className="m-0">Design by Andrew Bonich</p>
+                        {/* <Button variant="contained" color="secondary">
+                            Submit Feedback
+                        </Button> */}
+                        <p className="ml-5">Design by Andrew Bonich</p>
                     </div>
                 </Toolbar>
             </AppBar>
@@ -41,11 +43,7 @@ Footer.propTypes = {
     settings: PropTypes.object.isRequired,
 }
 
-const mapStateToProps = (state) => ({
-    settings: state.layout.settings,
-})
-
 export default withStyles(
     {},
     { withTheme: true }
-)(connect(mapStateToProps, {})(Footer))
+)(Footer)

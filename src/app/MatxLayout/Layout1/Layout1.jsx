@@ -1,15 +1,17 @@
-import React, { useContext } from 'react'
-import { connect } from 'react-redux'
+import React from 'react'
 import PropTypes from 'prop-types'
-import { setLayoutSettings } from 'app/redux/actions/LayoutActions'
+
 import { withStyles, ThemeProvider } from '@material-ui/core/styles'
 import Scrollbar from 'react-perfect-scrollbar'
 import { classList } from 'utils'
 import Layout1Topbar from './Layout1Topbar'
 import Footer from '../SharedCompoents/Footer'
-import { MatxSuspense } from 'matx'
-import { renderRoutes } from 'react-router-config'
-import AppContext from 'app/appContext'
+import RiverForm from 'app/views/forms/RiverForm'
+
+import { themeColors } from '../MatxTheme/themeColors'
+import { createMuiTheme } from '@material-ui/core/styles'
+import { forEach, merge } from 'lodash'
+import themeOptions from '../MatxTheme/themeOptions'
 
 const styles = (theme) => {
     return {
@@ -19,21 +21,63 @@ const styles = (theme) => {
     }
 }
 
+function createMatxThemes() {
+    const themes = {}
+
+    forEach(themeColors, (value, key) => {
+        themes[key] = createMuiTheme(merge({}, themeOptions, value))
+    })
+    return themes
+}
+const themes = createMatxThemes()
+const Layout1Settings = {
+    leftSidebar: {
+        show: true,
+        mode: 'close', // full, close, compact, mobile,
+        theme: 'slateDark1', // View all valid theme colors inside MatxTheme/themeColors.js
+        // bgOpacity: .96, // 0 ~ 1
+        bgImgURL: '/assets/images/sidebar/sidebar-bg-dark.jpg',
+    },
+    topbar: {
+        show: true,
+        fixed: true,
+        theme: 'purpleDark1', // View all valid theme colors inside MatxTheme/themeColors.js
+    },
+}
+
+const MatxLayoutSettings = {
+    activeLayout: 'layout1', // layout1, layout2
+    activeTheme: 'purple1', // View all valid theme colors inside MatxTheme/themeColors.js
+    perfectScrollbar: true,
+
+    themes: themes,
+
+    secondarySidebar: {
+        show: true,
+        open: true,
+        theme: 'slateDark1', // View all valid theme colors inside MatxTheme/themeColors.js
+    },
+    // Footer options
+    footer: {
+        show: true,
+        fixed: false,
+        theme: 'slateDark1', // View all valid theme colors inside MatxTheme/themeColors.js
+    },
+}
 const Layout1 = (props) => {
-    const { routes } = useContext(AppContext)
-    const { settings, classes, theme } = props
-    const { layout1Settings } = settings
-    const topbarTheme = settings.themes[layout1Settings.topbar.theme]
+    const { classes, theme } = props
+    const topbarTheme = themes[Layout1Settings.topbar.theme]
     const layoutClasses = {
         [classes.layout]: true,
-        [`${settings.activeLayout} sidenav-${layout1Settings.leftSidebar.mode} theme-${theme.palette.type} flex`]: true,
-        'topbar-fixed': layout1Settings.topbar.fixed,
+        [`layout1 sidenav-${
+            Layout1Settings.leftSidebar.mode} theme-${theme.palette.type} flex`]: true,
+        'topbar-fixed': Layout1Settings.topbar.fixed,
     }
 
     return (
         <div className={classList(layoutClasses)}>
             <div className="content-wrap position-relative">
-                {layout1Settings.topbar.show && layout1Settings.topbar.fixed && (
+                {Layout1Settings.topbar.show && Layout1Settings.topbar.fixed && (
                     <ThemeProvider theme={topbarTheme}>
                         <Layout1Topbar fixed={true} className="elevation-z8" />
                     </ThemeProvider>
@@ -41,11 +85,11 @@ const Layout1 = (props) => {
 
                 <Scrollbar className="scrollable-content">
                     <div className="content">
-                        <MatxSuspense>{renderRoutes(routes)}</MatxSuspense>
+                        <RiverForm/>
                     </div>
                     <div className="my-auto" />
-                    {settings.footer.show && !settings.footer.fixed && (
-                        <Footer />
+                    {MatxLayoutSettings.footer.show && !MatxLayoutSettings.footer.fixed && (
+                        <Footer theme={theme} settings={MatxLayoutSettings} />
                     )}
                 </Scrollbar>
             </div>
@@ -54,16 +98,10 @@ const Layout1 = (props) => {
 }
 
 Layout1.propTypes = {
-    settings: PropTypes.object.isRequired,
     classes: PropTypes.object.isRequired,
     theme: PropTypes.object.isRequired,
 }
 
-const mapStateToProps = (state) => ({
-    setLayoutSettings: PropTypes.func.isRequired,
-    settings: state.layout.settings,
-})
-
 export default withStyles(styles, { withTheme: true })(
-    connect(mapStateToProps, { setLayoutSettings })(Layout1)
+    (Layout1)
 )
