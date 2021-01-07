@@ -30,7 +30,7 @@ class RiverForm extends Component {
             dailyRunnablePercentages: [],
         }
         this.baseApi = this.setBaseAPI()
-        this.getAllData = this.getAllData.bind(this)
+        // this.getAllData = this.getAllData.bind(this)
     }
 
     componentDidMount() {
@@ -41,18 +41,23 @@ class RiverForm extends Component {
         if (process.env.REACT_APP_LOCAL_ENVIRONMENT) {
             return 'http://localhost:8888/'
         }
-
         return process.env.REACT_APP_PYTHON_API
     }
 
-    getAllData(siteId, minFlow, maxFlow) {
-        this.getDailyData(siteId)
-        this.getDailyRunnablePercentage(siteId, minFlow, maxFlow)
+    getAllData(minFlow, maxFlow) {
+        // this.getDailyData(this.props.siteId)
+        this.getDailyRunnablePercentage(minFlow, maxFlow)
     }
 
-    getDailyRunnablePercentage(siteId, minFlow, maxFlow) {
+    componentDidUpdate(prevProps) {
+        if (prevProps.siteId !== this.props.siteId) {
+            this.getDailyData()
+        }
+    }
+
+    getDailyRunnablePercentage(minFlow, maxFlow) {
         fetch(
-            `${this.baseApi}getRunnablePercentage?siteId=${siteId}&minFlow=${minFlow}&maxFlow=${maxFlow}`
+            `${this.baseApi}getRunnablePercentage?siteId=${this.props.siteId}&minFlow=${minFlow}&maxFlow=${maxFlow}`
         )
             .then((response) => response.json())
             .then((data) => {
@@ -62,10 +67,8 @@ class RiverForm extends Component {
             })
     }
 
-    getDailyData(siteId) {
-        fetch(
-            `${this.baseApi}getDailyAverageData?siteId=${siteId}`
-        )
+    getDailyData() {
+        fetch(`${this.baseApi}getDailyAverageData?siteId=${this.props.siteId}`)
             .then((response) => response.json())
             .then((data) => {
                 this.setState({
@@ -91,7 +94,9 @@ class RiverForm extends Component {
                         <Grid item xs={2}>
                             <SimpleCard title="USGS Station Details">
                                 <SimpleRiverForm
-                                    handleFormSubmit={this.getAllData}
+                                    handleFormSubmit={
+                                        this.getDailyRunnablePercentage
+                                    }
                                 />
                             </SimpleCard>
                         </Grid>
@@ -106,7 +111,6 @@ class RiverForm extends Component {
                                     data={this.state.dailyAverages}
                                     xAxis={LineXAxis}
                                     yAxis={LineYAxis}
-
                                 />
                                 {/* <p className="py-2" /> */}
                                 <h4>Percentage of Years in the Range</h4>

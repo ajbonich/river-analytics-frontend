@@ -44,7 +44,7 @@ class SimpleRiverForm extends React.Component {
                     onError={(errors) => console.log(errors)}
                     onSubmit={() =>
                         this.props.handleFormSubmit(
-                            this.state.siteId,
+                            // this.state.siteId,
                             this.state.minFlow,
                             this.state.maxFlow
                         )

@@ -6,12 +6,12 @@ import Scrollbar from 'react-perfect-scrollbar'
 import { classList } from 'utils'
 import Layout1Topbar from './Layout1Topbar'
 import Footer from '../SharedCompoents/Footer'
-import RiverForm from 'app/views/forms/RiverForm'
 
 import { themeColors } from '../MatxTheme/themeColors'
 import { createMuiTheme } from '@material-ui/core/styles'
 import { forEach, merge } from 'lodash'
 import themeOptions from '../MatxTheme/themeOptions'
+import Content from 'app/components/Content'
 
 const styles = (theme) => {
     return {
@@ -69,8 +69,7 @@ const Layout1 = (props) => {
     const topbarTheme = themes[Layout1Settings.topbar.theme]
     const layoutClasses = {
         [classes.layout]: true,
-        [`layout1 sidenav-${
-            Layout1Settings.leftSidebar.mode} theme-${theme.palette.type} flex`]: true,
+        [`layout1 sidenav-${Layout1Settings.leftSidebar.mode} theme-${theme.palette.type} flex`]: true,
         'topbar-fixed': Layout1Settings.topbar.fixed,
     }
 
@@ -85,12 +84,16 @@ const Layout1 = (props) => {
 
                 <Scrollbar className="scrollable-content">
                     <div className="content">
-                        <RiverForm/>
+                        <Content />
                     </div>
                     <div className="my-auto" />
-                    {MatxLayoutSettings.footer.show && !MatxLayoutSettings.footer.fixed && (
-                        <Footer theme={theme} settings={MatxLayoutSettings} />
-                    )}
+                    {MatxLayoutSettings.footer.show &&
+                        !MatxLayoutSettings.footer.fixed && (
+                            <Footer
+                                theme={theme}
+                                settings={MatxLayoutSettings}
+                            />
+                        )}
                 </Scrollbar>
             </div>
         </div>
@@ -102,6 +105,4 @@ Layout1.propTypes = {
     theme: PropTypes.object.isRequired,
 }
 
-export default withStyles(styles, { withTheme: true })(
-    (Layout1)
-)
+export default withStyles(styles, { withTheme: true })(Layout1)
