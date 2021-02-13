@@ -43,7 +43,6 @@ class RiverForm extends Component {
     }
 
     getAllData(minFlow, maxFlow) {
-        // this.getDailyData(this.props.siteId)
         this.getDailyRunnablePercentage(minFlow, maxFlow)
     }
 
