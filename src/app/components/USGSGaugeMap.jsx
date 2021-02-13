@@ -9,7 +9,7 @@ export default class USGSGaugeMap extends React.Component {
             <MapContainer
                 center={[36.705, -97.0]}
                 zoom={5}
-                scrollWheelZoom={true}
+                scrollWheelZoom={false}
             >
                 <TileLayer
                     attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
