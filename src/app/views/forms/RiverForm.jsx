@@ -30,29 +30,35 @@ class RiverForm extends Component {
             dailyRunnablePercentages: [],
         }
         this.baseApi = this.setBaseAPI()
-        this.getAllData = this.getAllData.bind(this)
-    }
-
-    componentDidMount() {
-        this.getAllData('06719505', 300, 1000)
+        this.getDailyRunnablePercentage = this.getDailyRunnablePercentage.bind(
+            this
+        )
     }
 
     setBaseAPI() {
         if (process.env.REACT_APP_LOCAL_ENVIRONMENT) {
             return 'http://localhost:8888/'
         }
-
         return process.env.REACT_APP_PYTHON_API
     }
 
-    getAllData(siteId, minFlow, maxFlow) {
-        this.getDailyData(siteId)
-        this.getDailyRunnablePercentage(siteId, minFlow, maxFlow)
+    getAllData(minFlow, maxFlow) {
+        this.getDailyRunnablePercentage(minFlow, maxFlow)
     }
 
-    getDailyRunnablePercentage(siteId, minFlow, maxFlow) {
+    componentDidUpdate(prevProps) {
+        if (prevProps.siteId !== this.props.siteId) {
+            this.getDailyData()
+        }
+    }
+
+    handleFormSubmit(minFlow, maxFlow) {
+        this.getDailyRunnablePercentage(minFlow, maxFlow)
+    }
+
+    getDailyRunnablePercentage(minFlow, maxFlow) {
         fetch(
-            `${this.baseApi}getRunnablePercentage?siteId=${siteId}&minFlow=${minFlow}&maxFlow=${maxFlow}`
+            `${this.baseApi}getRunnablePercentage?siteId=${this.props.siteId}&minFlow=${minFlow}&maxFlow=${maxFlow}`
         )
             .then((response) => response.json())
             .then((data) => {
@@ -62,20 +68,14 @@ class RiverForm extends Component {
             })
     }
 
-    getDailyData(siteId) {
-        fetch(
-            `${this.baseApi}getDailyAverageData?siteId=${siteId}`
-        )
+    getDailyData() {
+        fetch(`${this.baseApi}getDailyAverageData?siteId=${this.props.siteId}`)
             .then((response) => response.json())
             .then((data) => {
                 this.setState({
                     dailyAverages: data,
                 })
             })
-    }
-
-    getMonthDay(date) {
-        return `${date.getMonth() + 1}-${date.getDate()}`
     }
 
     render() {
@@ -89,9 +89,11 @@ class RiverForm extends Component {
                 >
                     <Grid container spacing={3}>
                         <Grid item xs={2}>
-                            <SimpleCard title="USGS Station Details">
+                            <SimpleCard title="Desired Flow">
                                 <SimpleRiverForm
-                                    handleFormSubmit={this.getAllData}
+                                    handleFormSubmit={
+                                        this.getDailyRunnablePercentage
+                                    }
                                 />
                             </SimpleCard>
                         </Grid>
@@ -106,10 +108,9 @@ class RiverForm extends Component {
                                     data={this.state.dailyAverages}
                                     xAxis={LineXAxis}
                                     yAxis={LineYAxis}
-
                                 />
                                 {/* <p className="py-2" /> */}
-                                <h4>Percentage of Years in the Range</h4>
+                                <h4>Chance Flow is in the Given Range</h4>
                                 <RechartLineChart
                                     data={this.state.dailyRunnablePercentages}
                                     xAxis={LineXAxis}

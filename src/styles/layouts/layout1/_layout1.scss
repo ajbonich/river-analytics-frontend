@@ -41,8 +41,22 @@
             position: relative;
             flex: 1;
             overflow-y: auto;
-            overflow-x: hidden;
+            overflow-x: auto;
             .content {
+                position: relative;
+            }
+        }
+        .scrollable-lower {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            flex: 1;
+            overflow-y: hidden !important;
+            overflow-x: hidden !important;
+            min-width: 800px;
+
+            .content {
+                min-width: 800px;
                 position: relative;
             }
         }
@@ -55,9 +69,6 @@
         .sidenav {
             // width: $sidenav-width;
             left: 0;
-            .sidenav__toggle {
-                // display: block;
-            }
         }
         .content-wrap {
             width: calc(100% - #{$sidenav-width});
@@ -204,8 +215,6 @@
             margin-left: 0px;
             .topbar {
                 width: 100%;
-            }
-            .content {
             }
         }
     }

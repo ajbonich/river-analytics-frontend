@@ -10,6 +10,15 @@ body {
     position: relative;
 }
 
+.leaflet-container {
+    width: 'max-content';
+    height: 60vh;
+    margin-top: 1vh;
+    margin-bottom: 2vh;
+    margin-left: 0.75vw;
+    margin-right: 0.75vw;
+}
+
 code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
         monospace;
