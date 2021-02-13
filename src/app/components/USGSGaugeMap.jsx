@@ -1,12 +1,9 @@
 import React from 'react'
 import { MapContainer, TileLayer, Tooltip, Marker, Popup } from 'react-leaflet'
-import * as gaugeData from './COUSGSGauges.json'
+import MarkerClusterGroup from 'react-leaflet-markercluster'
+import gaugeData from './all_sites_filtered_on_mean.json'
 
 export default class USGSGaugeMap extends React.Component {
-    // const [activeGauge, setActiveGauge] = React.useState(null)
-    // const gaugeClicked = (gaugeId) => {
-    //     this.props.onSelectGauge(gaugeId)
-    // }
     render() {
         return (
             <MapContainer
@@ -18,20 +15,22 @@ export default class USGSGaugeMap extends React.Component {
                     attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
                     url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
                 />
-                {gaugeData.sites.site.map((gauge) => (
-                    <Marker
-                        position={[gauge._lat, gauge._lng]}
-                        key={gauge._sno}
-                        eventHandlers={{
-                            click: () => {
-                                this.props.onSelectGauge(gauge._sno)
-                            },
-                        }}
-                    >
-                        <Popup>Graph generated for gauge: {gauge._sna}</Popup>
-                        <Tooltip>Description: {gauge._sna}</Tooltip>
-                    </Marker>
-                ))}
+                <MarkerClusterGroup>
+                    {gaugeData.map((gauge) => (
+                        <Marker
+                            position={[gauge.dec_lat_va, gauge.dec_long_va]}
+                            key={gauge.site_no}
+                            eventHandlers={{
+                                click: () => {
+                                    this.props.onSelectGauge(gauge.site_no)
+                                },
+                            }}
+                        >
+                            <Popup>Graph generated for gauge: {gauge.station_nm}</Popup>
+                            <Tooltip>Description: {gauge.station_nm}</Tooltip>
+                        </Marker>
+                    ))}
+                </MarkerClusterGroup>
             </MapContainer>
         )
     }
