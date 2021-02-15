@@ -2,8 +2,8 @@ import React, { Component } from 'react'
 import SimpleRiverForm from '../material-kit/forms/SimpleRiverForm'
 import { SimpleCard } from 'matx'
 import { Grid } from '@material-ui/core'
-import RechartLineChart from 'app/components/RechartLineChart'
-import RechartAreaChart from 'app/components/RechartComposedChart'
+import RechartLineChart from 'app/components/Charts/RechartLineChart'
+import RechartComposedChart from 'app/components/Charts/RechartComposedChart'
 import { XAxis, YAxis, Label, Tooltip } from 'recharts'
 const LineXAxis = (
     <XAxis dataKey="index" height={40}>
@@ -21,6 +21,7 @@ const LineYAxis = (
         />
     </YAxis>
 )
+
 
 class RiverForm extends Component {
     constructor(props) {
@@ -104,7 +105,7 @@ class RiverForm extends Component {
                         >
                             <SimpleCard>
                                 <h4>Historic Average Flow</h4>
-                                <RechartAreaChart
+                                <RechartComposedChart
                                     data={this.state.dailyAverages}
                                     xAxis={LineXAxis}
                                     yAxis={LineYAxis}
