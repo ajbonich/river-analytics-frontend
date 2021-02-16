@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
-import SimpleRiverForm from '../material-kit/forms/SimpleRiverForm'
+import CircularProgress from '@material-ui/core/CircularProgress'
+import SimpleRiverForm from './SimpleRiverForm'
 import { SimpleCard } from 'matx'
 import { Grid } from '@material-ui/core'
 import RechartLineChart from 'app/components/Charts/RechartLineChart'
@@ -22,13 +23,14 @@ const LineYAxis = (
     </YAxis>
 )
 
-
 class RiverForm extends Component {
     constructor(props) {
         super(props)
         this.state = {
-            dailyAverages: [],
-            dailyRunnablePercentages: [],
+            averageDataLoading: false,
+            chanceDataLoading: false,
+            dailyAverages: null,
+            dailyRunnablePercentages: null,
         }
         this.baseApi = this.setBaseAPI()
         this.getDailyRunnablePercentage = this.getDailyRunnablePercentage.bind(
@@ -43,12 +45,9 @@ class RiverForm extends Component {
         return process.env.REACT_APP_PYTHON_API
     }
 
-    getAllData(minFlow, maxFlow) {
-        this.getDailyRunnablePercentage(minFlow, maxFlow)
-    }
-
     componentDidUpdate(prevProps) {
         if (prevProps.siteId !== this.props.siteId) {
+            this.setState({ averageDataLoading: true })
             this.getDailyData()
         }
     }
@@ -58,6 +57,7 @@ class RiverForm extends Component {
     }
 
     getDailyRunnablePercentage(minFlow, maxFlow) {
+        this.setState({ chanceDataLoading: true })
         fetch(
             `${this.baseApi}getRunnablePercentage?siteId=${this.props.siteId}&minFlow=${minFlow}&maxFlow=${maxFlow}`
         )
@@ -65,6 +65,7 @@ class RiverForm extends Component {
             .then((data) => {
                 this.setState({
                     dailyRunnablePercentages: data,
+                    chanceDataLoading: false,
                 })
             })
     }
@@ -74,6 +75,7 @@ class RiverForm extends Component {
             .then((response) => response.json())
             .then((data) => {
                 this.setState({
+                    averageDataLoading: false,
                     dailyAverages: data,
                 })
             })
@@ -105,27 +107,36 @@ class RiverForm extends Component {
                         >
                             <SimpleCard>
                                 <h4>Historic Average Flow</h4>
-                                <RechartComposedChart
-                                    data={this.state.dailyAverages}
-                                    xAxis={LineXAxis}
-                                    yAxis={LineYAxis}
-                                />
-                                {/* <p className="py-2" /> */}
+                                {this.state.averageDataLoading ? (
+                                    <CircularProgress />
+                                ) : (
+                                    <RechartComposedChart
+                                        data={this.state.dailyAverages}
+                                        xAxis={LineXAxis}
+                                        yAxis={LineYAxis}
+                                    />
+                                )}
                                 <h4>Chance Flow is in the Given Range</h4>
-                                <RechartLineChart
-                                    data={this.state.dailyRunnablePercentages}
-                                    xAxis={LineXAxis}
-                                    yAxis={LineYAxis}
-                                    tooltip={
-                                        <Tooltip
-                                            label=""
-                                            formatter={(value) => {
-                                                return [`${value} %`, '']
-                                            }}
-                                            separator=""
-                                        />
-                                    }
-                                />
+                                {this.state.chanceDataLoading ? (
+                                    <CircularProgress />
+                                ) : (
+                                    <RechartLineChart
+                                        data={
+                                            this.state.dailyRunnablePercentages
+                                        }
+                                        xAxis={LineXAxis}
+                                        yAxis={LineYAxis}
+                                        tooltip={
+                                            <Tooltip
+                                                label=""
+                                                formatter={(value) => {
+                                                    return [`${value} %`, '']
+                                                }}
+                                                separator=""
+                                            />
+                                        }
+                                    />
+                                )}
                             </SimpleCard>
                         </Grid>
                     </Grid>
