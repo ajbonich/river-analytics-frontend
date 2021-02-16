@@ -11,7 +11,7 @@ class SimpleRiverForm extends React.Component {
             maxFlow: 1000,
         }
     }
-
+    
     handleInputChange = (event) => {
         event.persist()
         this.setState({ [event.target.name]: event.target.value })
