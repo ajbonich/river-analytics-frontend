@@ -1,2 +1,2 @@
 
-export { default as SimpleCard } from './components/cards/SimpleCard'
+export { default as SimpleCard } from './SimpleCard'

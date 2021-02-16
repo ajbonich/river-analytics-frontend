@@ -34,7 +34,7 @@ class SimpleRiverForm extends React.Component {
                 >
                     <Grid
                         container
-                        direction="column"
+                        direction="row"
                         justify="flex-start"
                         alignItems="flex-start"
                         spacing={3}
