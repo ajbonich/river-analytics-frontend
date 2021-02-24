@@ -13,7 +13,7 @@ export default class RechartLineChart extends React.Component {
                     {this.props.tooltip}
                     <Line
                         type="monotone"
-                        dataKey="percent"
+                        dataKey={this.props.dataKey}
                         dot={false}
                         stroke="#000000"
                     />
@@ -25,6 +25,7 @@ export default class RechartLineChart extends React.Component {
 
 RechartLineChart.propTypes = {
     data: PropTypes.any.isRequired,
+    dataKey: PropTypes.any.isRequired,
     xAxis: PropTypes.any.isRequired,
     yAxis: PropTypes.any.isRequired,
     tooltip: PropTypes.any.isRequired,

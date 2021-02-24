@@ -88,12 +88,12 @@ class RiverForm extends Component {
     getDailyForecast(forecastLength, forecastType = 'holtwinters') {
         this.setState({ forecastDataLoading: true })
         fetch(
-            `${this.baseApi}forecast/${forecastType}/${this.props.siteId}/?=${forecastLength}`
+            `${this.baseApi}forecast/${forecastType}/${this.props.siteId}/?days=${forecastLength}`
         )
             .then((response) => response.json())
             .then((data) => {
                 this.setState({
-                    forecastLoading: false,
+                    forecastDataLoading: false,
                     forecastData: data,
                 })
             })
@@ -114,7 +114,7 @@ class RiverForm extends Component {
                             xs={12}
                             style={{ textAlign: 'center', align: 'justify' }}
                         >
-                            <SimpleCard>
+                            <SimpleCard style={{ minHeight: 320 }}>
                                 <h4>Historic Average Flow</h4>
                                 {this.state.averageDataLoading ? (
                                     <CircularProgress />
@@ -134,7 +134,10 @@ class RiverForm extends Component {
                                 textAlign: 'center',
                             }}
                         >
-                            <SimpleCard title="Desired Flow">
+                            <SimpleCard
+                                title="Desired Flow"
+                                style={{ minHeight: 320 }}
+                            >
                                 <DesiredFlowCard
                                     buttonTitle={'Get Percentages'}
                                     handleFormSubmit={
@@ -148,7 +151,7 @@ class RiverForm extends Component {
                             xs={10}
                             style={{ textAlign: 'center', align: 'justify' }}
                         >
-                            <SimpleCard>
+                            <SimpleCard style={{ minHeight: 320 }}>
                                 <h4>Chance Flow is in the Given Range</h4>
                                 {this.state.chanceDataLoading ? (
                                     <CircularProgress />
@@ -157,13 +160,19 @@ class RiverForm extends Component {
                                         data={
                                             this.state.dailyRunnablePercentages
                                         }
+                                        dataKey="percent"
                                         xAxis={LineXAxis}
                                         yAxis={LineYAxis}
                                         tooltip={
                                             <Tooltip
                                                 label=""
                                                 formatter={(value) => {
-                                                    return [`${value} %`, '']
+                                                    return [
+                                                        `${Math.round(
+                                                            value
+                                                        )} %`,
+                                                        '',
+                                                    ]
                                                 }}
                                                 separator=""
                                             />
@@ -196,20 +205,24 @@ class RiverForm extends Component {
                         >
                             <SimpleCard>
                                 <h4>Forecast for the next 100 days</h4>
-                                {this.state.chanceDataLoading ? (
+                                {this.state.forecastDataLoading ? (
                                     <CircularProgress />
                                 ) : (
                                     <RechartLineChart
-                                        data={
-                                            this.state.dailyRunnablePercentages
-                                        }
+                                        data={this.state.forecastData}
+                                        dataKey="forecast"
                                         xAxis={LineXAxis}
                                         yAxis={LineYAxis}
                                         tooltip={
                                             <Tooltip
                                                 label=""
                                                 formatter={(value) => {
-                                                    return [`${value} cfs`, '']
+                                                    return [
+                                                        `${Math.round(
+                                                            value
+                                                        )} cfs`,
+                                                        '',
+                                                    ]
                                                 }}
                                                 separator=""
                                             />
