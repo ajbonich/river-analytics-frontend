@@ -10,12 +10,13 @@ export default class Content extends React.Component {
         super(props)
         this.state = {
             siteId: '',
+            siteDescription: '',
         }
         this._scrollRef = 0
     }
 
-    handleGauge = (gauge) => {
-        this.setState({ siteId: gauge })
+    handleGauge = (gauge, description) => {
+        this.setState({ siteId: gauge, siteDescription: description })
         this._scrollRef.scrollTop = 10000
     }
 
@@ -33,6 +34,7 @@ export default class Content extends React.Component {
                         <RiverForm
                             className="content"
                             siteId={this.state.siteId}
+                            siteDescription={this.state.siteDescription}
                         />
                     </Scrollbar>
                 </div>

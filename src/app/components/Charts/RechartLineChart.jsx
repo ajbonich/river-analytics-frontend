@@ -5,20 +5,23 @@ import { LineChart, Line, CartesianGrid, ResponsiveContainer } from 'recharts'
 export default class RechartLineChart extends React.Component {
     render() {
         return (
-            <ResponsiveContainer height={260}>
-                <LineChart data={this.props.data} syncId={'dailyData'}>
-                    <CartesianGrid stroke="#ccc" strokeDasharray="5 5" />
-                    {this.props.xAxis}
-                    {this.props.yAxis}
-                    {this.props.tooltip}
-                    <Line
-                        type="monotone"
-                        dataKey={this.props.dataKey}
-                        dot={false}
-                        stroke="#000000"
-                    />
-                </LineChart>
-            </ResponsiveContainer>
+            <div>
+                <h4>{this.props.title}</h4>
+                <ResponsiveContainer height={260}>
+                    <LineChart data={this.props.data} syncId={'dailyData'}>
+                        <CartesianGrid stroke="#ccc" strokeDasharray="5 5" />
+                        {this.props.xAxis}
+                        {this.props.yAxis}
+                        {this.props.tooltip}
+                        <Line
+                            type="monotone"
+                            dataKey={this.props.dataKey}
+                            dot={false}
+                            stroke="#000000"
+                        />
+                    </LineChart>
+                </ResponsiveContainer>
+            </div>
         )
     }
 }

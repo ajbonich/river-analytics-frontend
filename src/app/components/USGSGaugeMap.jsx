@@ -22,11 +22,16 @@ export default class USGSGaugeMap extends React.Component {
                             key={gauge.site_no}
                             eventHandlers={{
                                 click: () => {
-                                    this.props.onSelectGauge(gauge.site_no)
+                                    this.props.onSelectGauge(
+                                        gauge.site_no,
+                                        gauge.station_nm
+                                    )
                                 },
                             }}
                         >
-                            <Popup>Graph generated for gauge: {gauge.station_nm}</Popup>
+                            <Popup>
+                                Graph generated for gauge: {gauge.station_nm}
+                            </Popup>
                             <Tooltip>Description: {gauge.station_nm}</Tooltip>
                         </Marker>
                     ))}

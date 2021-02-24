@@ -30,10 +30,13 @@ class RiverForm extends Component {
         this.state = {
             averageDataLoading: false,
             dailyAverages: null,
+            dailyAverageTitle: 'Historic Average Flow',
             chanceDataLoading: false,
             dailyRunnablePercentages: null,
+            chanceTitle: 'Flow Chance',
             forecastDataLoading: false,
             forecastData: null,
+            forecastTitle: 'Forecast',
         }
         this.baseApi = this.setBaseAPI()
         this.getDailyRunnablePercentage = this.getDailyRunnablePercentage.bind(
@@ -61,7 +64,10 @@ class RiverForm extends Component {
     }
 
     getDailyRunnablePercentage(minFlow, maxFlow) {
-        this.setState({ chanceDataLoading: true })
+        this.setState({
+            chanceDataLoading: true,
+            chanceTitle: `Chance Flow is between ${minFlow} and ${maxFlow} cfs`,
+        })
         fetch(
             `${this.baseApi}getRunnablePercentage?siteId=${this.props.siteId}&minFlow=${minFlow}&maxFlow=${maxFlow}`
         )
@@ -86,7 +92,10 @@ class RiverForm extends Component {
     }
 
     getDailyForecast(forecastLength, forecastType = 'holtwinters') {
-        this.setState({ forecastDataLoading: true })
+        this.setState({
+            forecastDataLoading: true,
+            forecastTitle: `Forecacst for the Next ${forecastLength} Days`,
+        })
         fetch(
             `${this.baseApi}forecast/${forecastType}/${this.props.siteId}/?days=${forecastLength}`
         )
@@ -114,13 +123,17 @@ class RiverForm extends Component {
                             xs={12}
                             style={{ textAlign: 'center', align: 'justify' }}
                         >
-                            <SimpleCard style={{ minHeight: 320 }}>
-                                <h4>Historic Average Flow</h4>
+                            <SimpleCard style={{ minHeight: 1000 }}>
                                 {this.state.averageDataLoading ? (
                                     <CircularProgress />
                                 ) : (
                                     <RechartComposedChart
                                         data={this.state.dailyAverages}
+                                        title={
+                                            this.props.siteDescription
+                                                ? `Historic Average Flow for: ${this.props.siteDescription}`
+                                                : 'Historic Average Flow'
+                                        }
                                         xAxis={LineXAxis}
                                         yAxis={LineYAxis}
                                     />
@@ -152,7 +165,6 @@ class RiverForm extends Component {
                             style={{ textAlign: 'center', align: 'justify' }}
                         >
                             <SimpleCard style={{ minHeight: 320 }}>
-                                <h4>Chance Flow is in the Given Range</h4>
                                 {this.state.chanceDataLoading ? (
                                     <CircularProgress />
                                 ) : (
@@ -163,6 +175,7 @@ class RiverForm extends Component {
                                         dataKey="percent"
                                         xAxis={LineXAxis}
                                         yAxis={LineYAxis}
+                                        title={this.state.chanceTitle}
                                         tooltip={
                                             <Tooltip
                                                 label=""
@@ -204,7 +217,6 @@ class RiverForm extends Component {
                             }}
                         >
                             <SimpleCard>
-                                <h4>Forecast for the next 100 days</h4>
                                 {this.state.forecastDataLoading ? (
                                     <CircularProgress />
                                 ) : (
@@ -213,6 +225,7 @@ class RiverForm extends Component {
                                         dataKey="forecast"
                                         xAxis={LineXAxis}
                                         yAxis={LineYAxis}
+                                        title={this.state.forecastTitle}
                                         tooltip={
                                             <Tooltip
                                                 label=""
