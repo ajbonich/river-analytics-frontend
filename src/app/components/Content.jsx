@@ -2,7 +2,7 @@ import React from 'react'
 import Scrollbar from 'react-perfect-scrollbar'
 
 import USGSGaugeMap from 'app/components/USGSGaugeMap'
-import RiverForm from 'app/views/forms/RiverForm'
+import RiverForm from 'app/forms/RiverForm'
 import Footer from './Footer'
 
 export default class Content extends React.Component {

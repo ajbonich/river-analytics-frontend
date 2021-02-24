@@ -14,7 +14,7 @@ import Content from 'app/components/Content'
 const styles = (theme) => {
     return {
         layout: {
-            backgroundColor: theme.palette.background.default,
+            backgroundColor: '#e6f0f6',
         },
     }
 }

@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import CircularProgress from '@material-ui/core/CircularProgress'
-import SimpleRiverForm from './SimpleRiverForm'
+import DesiredFlowCard from './DesiredFlowCard'
+import ForecastDaysCard from './ForecastDaysCard'
 import { SimpleCard } from 'matx'
 import { Grid } from '@material-ui/core'
 import RechartLineChart from 'app/components/Charts/RechartLineChart'
@@ -28,14 +29,17 @@ class RiverForm extends Component {
         super(props)
         this.state = {
             averageDataLoading: false,
-            chanceDataLoading: false,
             dailyAverages: null,
+            chanceDataLoading: false,
             dailyRunnablePercentages: null,
+            forecastDataLoading: false,
+            forecastData: null,
         }
         this.baseApi = this.setBaseAPI()
         this.getDailyRunnablePercentage = this.getDailyRunnablePercentage.bind(
             this
         )
+        this.getDailyForecast = this.getDailyForecast.bind(this)
     }
 
     setBaseAPI() {
@@ -81,6 +85,20 @@ class RiverForm extends Component {
             })
     }
 
+    getDailyForecast(forecastLength, forecastType = 'holtwinters') {
+        this.setState({ forecastDataLoading: true })
+        fetch(
+            `${this.baseApi}forecast/${forecastType}/${this.props.siteId}/?=${forecastLength}`
+        )
+            .then((response) => response.json())
+            .then((data) => {
+                this.setState({
+                    forecastLoading: false,
+                    forecastData: data,
+                })
+            })
+    }
+
     render() {
         return (
             <div className="m-sm-30">
@@ -91,18 +109,9 @@ class RiverForm extends Component {
                     spacing={1}
                 >
                     <Grid container spacing={3}>
-                        <Grid item xs={2}>
-                            <SimpleCard title="Desired Flow">
-                                <SimpleRiverForm
-                                    handleFormSubmit={
-                                        this.getDailyRunnablePercentage
-                                    }
-                                />
-                            </SimpleCard>
-                        </Grid>
                         <Grid
                             item
-                            xs={10}
+                            xs={12}
                             style={{ textAlign: 'center', align: 'justify' }}
                         >
                             <SimpleCard>
@@ -116,6 +125,30 @@ class RiverForm extends Component {
                                         yAxis={LineYAxis}
                                     />
                                 )}
+                            </SimpleCard>
+                        </Grid>
+                        <Grid
+                            item
+                            xs={2}
+                            style={{
+                                textAlign: 'center',
+                            }}
+                        >
+                            <SimpleCard title="Desired Flow">
+                                <DesiredFlowCard
+                                    buttonTitle={'Get Percentages'}
+                                    handleFormSubmit={
+                                        this.getDailyRunnablePercentage
+                                    }
+                                />
+                            </SimpleCard>
+                        </Grid>
+                        <Grid
+                            item
+                            xs={10}
+                            style={{ textAlign: 'center', align: 'justify' }}
+                        >
+                            <SimpleCard>
                                 <h4>Chance Flow is in the Given Range</h4>
                                 {this.state.chanceDataLoading ? (
                                     <CircularProgress />
@@ -131,6 +164,52 @@ class RiverForm extends Component {
                                                 label=""
                                                 formatter={(value) => {
                                                     return [`${value} %`, '']
+                                                }}
+                                                separator=""
+                                            />
+                                        }
+                                    />
+                                )}
+                            </SimpleCard>
+                        </Grid>
+                        <Grid
+                            item
+                            xs={2}
+                            style={{
+                                textAlign: 'center',
+                            }}
+                        >
+                            <SimpleCard title="Forecast Length">
+                                <ForecastDaysCard
+                                    buttonTitle={'Get Forecast'}
+                                    handleFormSubmit={this.getDailyForecast}
+                                />
+                            </SimpleCard>
+                        </Grid>
+                        <Grid
+                            item
+                            xs={10}
+                            style={{
+                                textAlign: 'center',
+                                align: 'justify',
+                            }}
+                        >
+                            <SimpleCard>
+                                <h4>Forecast for the next 100 days</h4>
+                                {this.state.chanceDataLoading ? (
+                                    <CircularProgress />
+                                ) : (
+                                    <RechartLineChart
+                                        data={
+                                            this.state.dailyRunnablePercentages
+                                        }
+                                        xAxis={LineXAxis}
+                                        yAxis={LineYAxis}
+                                        tooltip={
+                                            <Tooltip
+                                                label=""
+                                                formatter={(value) => {
+                                                    return [`${value} cfs`, '']
                                                 }}
                                                 separator=""
                                             />

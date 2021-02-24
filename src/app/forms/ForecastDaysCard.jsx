@@ -7,34 +7,30 @@ class SimpleRiverForm extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
-            minFlow: 300,
-            maxFlow: 1000,
+            days: 30,
         }
     }
-    
+
     handleInputChange = (event) => {
         event.persist()
         this.setState({ [event.target.name]: event.target.value })
     }
 
     render() {
-        const { minFlow, maxFlow } = this.state
+        const { days } = this.state
         return (
             <div>
                 <ValidatorForm
                     debounceTime={2000}
                     onError={(errors) => console.log(errors)}
                     onSubmit={() =>
-                        this.props.handleFormSubmit(
-                            this.state.minFlow,
-                            this.state.maxFlow
-                        )
+                        this.props.handleFormSubmit(this.state.days)
                     }
                     ref="form"
                 >
                     <Grid
                         container
-                        direction="row"
+                        direction="column"
                         justify="flex-start"
                         alignItems="flex-start"
                         spacing={3}
@@ -42,34 +38,16 @@ class SimpleRiverForm extends React.Component {
                         <Grid item xs>
                             <TextValidator
                                 className="mb-4 w-full"
-                                label="Minimum cfs"
+                                label="Days"
                                 onChange={this.handleInputChange}
                                 type="text"
-                                name="minFlow"
-                                value={minFlow}
+                                name="days"
+                                value={days}
                                 validators={[
                                     'required',
                                     'isNumber: true',
-                                    'minNumber: 0',
-                                    'maxNumber: 100000',
-                                    'isPositive: true,',
-                                ]}
-                                errorMessages={['this field is required']}
-                            />
-                        </Grid>
-                        <Grid item xs>
-                            <TextValidator
-                                className="mb-4 w-full"
-                                label="Maximum cfs"
-                                onChange={this.handleInputChange}
-                                type="text"
-                                name="maxFlow"
-                                value={maxFlow}
-                                validators={[
-                                    'required',
-                                    'isNumber: true',
-                                    'minNumber: 0',
-                                    'maxNumber: 100000',
+                                    'minNumber: 1',
+                                    'maxNumber: 100',
                                     'isPositive: true,',
                                 ]}
                                 errorMessages={['this field is required']}
@@ -78,7 +56,9 @@ class SimpleRiverForm extends React.Component {
                     </Grid>
                     <div className="py-3" />
                     <Button color="primary" variant="contained" type="submit">
-                        <span className="pl-2 capitalize">Submit</span>
+                        <span className="pl-2 capitalize">
+                            {this.props.buttonTitle}
+                        </span>
                     </Button>
                 </ValidatorForm>
             </div>
