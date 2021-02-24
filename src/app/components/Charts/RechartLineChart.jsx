@@ -15,7 +15,7 @@ export default class RechartLineChart extends React.Component {
                         type="monotone"
                         dataKey="percent"
                         dot={false}
-                        stroke="#8884d8"
+                        stroke="#000000"
                     />
                 </LineChart>
             </ResponsiveContainer>
