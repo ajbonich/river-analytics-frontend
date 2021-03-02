@@ -34,15 +34,14 @@ class SimpleRiverForm extends React.Component {
                 >
                     <Grid
                         container
-                        direction="column"
-                        justify="flex-start"
-                        alignItems="flex-start"
-                        spacing={3}
+                        alignItems="flex-end"
+                        justify="center"
+                        spacing={2}
                     >
-                        <Grid item xs>
+                        <Grid item xs={3}>
                             <TextValidator
                                 className="mb-4 w-full"
-                                label="Minimum cfs"
+                                label="Minimum CFS"
                                 onChange={this.handleInputChange}
                                 type="text"
                                 name="minFlow"
@@ -54,13 +53,19 @@ class SimpleRiverForm extends React.Component {
                                     'maxNumber: 100000',
                                     'isPositive: true,',
                                 ]}
-                                errorMessages={['this field is required']}
+                                errorMessages={[
+                                    'This field is required',
+                                    'Entry must be a whole number',
+                                    'Number must be between 0 and 100000',
+                                    'Number must be between 0 and 100000',
+                                    'Number must be between 0 and 100000',
+                                ]}
                             />
                         </Grid>
-                        <Grid item xs>
+                        <Grid item xs={3}>
                             <TextValidator
                                 className="mb-4 w-full"
-                                label="Maximum cfs"
+                                label="Maximum CFS"
                                 onChange={this.handleInputChange}
                                 type="text"
                                 name="maxFlow"
@@ -72,16 +77,27 @@ class SimpleRiverForm extends React.Component {
                                     'maxNumber: 100000',
                                     'isPositive: true,',
                                 ]}
-                                errorMessages={['this field is required']}
+                                errorMessages={[
+                                    'This field is required',
+                                    'Entry must be a whole number',
+                                    'Number must be between 0 and 100000',
+                                    'Number must be between 0 and 100000',
+                                    'Number must be between 0 and 100000',
+                                ]}
                             />
                         </Grid>
+                        <Grid item xs={4} style={{ 'padding-bottom': 30 }}>
+                            <Button
+                                color="primary"
+                                variant="contained"
+                                type="submit"
+                            >
+                                <span className="pl-2 capitalize">
+                                    {this.props.buttonTitle}
+                                </span>
+                            </Button>
+                        </Grid>
                     </Grid>
-                    <div className="py-3" />
-                    <Button color="primary" variant="contained" type="submit">
-                        <span className="pl-2 capitalize">
-                            {this.props.buttonTitle}
-                        </span>
-                    </Button>
                 </ValidatorForm>
             </div>
         )

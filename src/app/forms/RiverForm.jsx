@@ -100,143 +100,130 @@ class RiverForm extends Component {
     render() {
         return (
             <div className="m-sm-30">
-                <Grid
-                    container
-                    justify="flex-start"
-                    alignItems="flex-start"
-                    spacing={1}
-                >
-                    <Grid container spacing={3}>
-                        <Grid
-                            item
-                            xs={12}
-                            style={{ textAlign: 'center', align: 'justify' }}
+                <Grid container spacing={2}>
+                    <Grid
+                        item
+                        xs={6}
+                        style={{
+                            textAlign: 'center',
+                        }}
+                    >
+                        <SimpleCard
+                            title="Desired Flow"
+                            style={{ minHeight: 320 }}
                         >
-                            <SimpleCard style={{ minHeight: 1000 }}>
-                                {this.state.averageDataLoading ? (
-                                    <CircularProgress />
-                                ) : (
-                                    <RechartComposedChart
-                                        data={this.state.dailyAverages}
-                                        title={
-                                            this.props.siteDescription
-                                                ? `Historic Average Flow for: ${this.props.siteDescription}`
-                                                : 'Historic Average Flow'
-                                        }
-                                        xAxis={LineXAxis}
-                                        yAxisLabelValue={
-                                            'Cubic Feet Per Second (CFS)'
-                                        }
-                                    />
-                                )}
-                            </SimpleCard>
-                        </Grid>
-                        <Grid
-                            item
-                            xs={2}
-                            style={{
-                                textAlign: 'center',
-                            }}
-                        >
-                            <SimpleCard
-                                title="Desired Flow"
-                                style={{ minHeight: 320 }}
-                            >
-                                <DesiredFlowCard
-                                    buttonTitle={'Get Percentages'}
-                                    handleFormSubmit={
-                                        this.getDailyRunnablePercentage
+                            <DesiredFlowCard
+                                buttonTitle={'Get Percentages'}
+                                handleFormSubmit={
+                                    this.getDailyRunnablePercentage
+                                }
+                            />
+                        </SimpleCard>
+                    </Grid>
+                    <Grid
+                        item
+                        xs={6}
+                        style={{
+                            textAlign: 'center',
+                        }}
+                    >
+                        <SimpleCard title="Forecast Length">
+                            <ForecastDaysCard
+                                buttonTitle={'Get Forecast'}
+                                handleFormSubmit={this.getDailyForecast}
+                            />
+                        </SimpleCard>
+                    </Grid>
+                    <Grid
+                        item
+                        xs={12}
+                        style={{ textAlign: 'center', align: 'justify' }}
+                    >
+                        <SimpleCard style={{ minHeight: 1000 }}>
+                            {this.state.averageDataLoading ? (
+                                <CircularProgress />
+                            ) : (
+                                <RechartComposedChart
+                                    data={this.state.dailyAverages}
+                                    title={
+                                        this.props.siteDescription
+                                            ? `Historic Average Flow for: ${this.props.siteDescription}`
+                                            : 'Historic Average Flow'
+                                    }
+                                    xAxis={LineXAxis}
+                                    yAxisLabelValue={
+                                        'Cubic Feet Per Second (CFS)'
                                     }
                                 />
-                            </SimpleCard>
-                        </Grid>
-                        <Grid
-                            item
-                            xs={10}
-                            style={{ textAlign: 'center', align: 'justify' }}
-                        >
-                            <SimpleCard style={{ minHeight: 320 }}>
-                                {this.state.chanceDataLoading ? (
-                                    <CircularProgress />
-                                ) : (
-                                    <RechartLineChart
-                                        data={
-                                            this.state.dailyRunnablePercentages
-                                        }
-                                        dataKey="percent"
-                                        xAxis={LineXAxis}
-                                        yAxisLabelValue={'Percent Chance'}
-                                        title={this.state.chanceTitle}
-                                        tooltip={
-                                            <Tooltip
-                                                label=""
-                                                formatter={(value) => {
-                                                    return [
-                                                        `${Math.round(
-                                                            value
-                                                        )} %`,
-                                                        '',
-                                                    ]
-                                                }}
-                                                separator=""
-                                            />
-                                        }
-                                    />
-                                )}
-                            </SimpleCard>
-                        </Grid>
-                        <Grid
-                            item
-                            xs={2}
-                            style={{
-                                textAlign: 'center',
-                            }}
-                        >
-                            <SimpleCard title="Forecast Length">
-                                <ForecastDaysCard
-                                    buttonTitle={'Get Forecast'}
-                                    handleFormSubmit={this.getDailyForecast}
+                            )}
+                        </SimpleCard>
+                    </Grid>
+                    <Grid
+                        item
+                        xs={12}
+                        style={{ textAlign: 'center', align: 'justify' }}
+                    >
+                        <SimpleCard style={{ minHeight: 320 }}>
+                            {this.state.chanceDataLoading ? (
+                                <CircularProgress />
+                            ) : (
+                                <RechartLineChart
+                                    data={this.state.dailyRunnablePercentages}
+                                    dataKey="percent"
+                                    xAxis={LineXAxis}
+                                    yAxisLabelValue={'Percent Chance'}
+                                    title={this.state.chanceTitle}
+                                    tooltip={
+                                        <Tooltip
+                                            label=""
+                                            formatter={(value) => {
+                                                return [
+                                                    `${Math.round(value)} %`,
+                                                    '',
+                                                ]
+                                            }}
+                                            separator=""
+                                        />
+                                    }
                                 />
-                            </SimpleCard>
-                        </Grid>
-                        <Grid
-                            item
-                            xs={10}
-                            style={{
-                                textAlign: 'center',
-                                align: 'justify',
-                            }}
-                        >
-                            <SimpleCard>
-                                {this.state.forecastDataLoading ? (
-                                    <CircularProgress />
-                                ) : (
-                                    <RechartLineChart
-                                        data={this.state.forecastData}
-                                        dataKey="forecast"
-                                        xAxis={LineXAxis}
-                                        yAxisLabelValue={
-                                            'Cubic Feet Per Second (CFS)'
-                                        }
-                                        title={this.state.forecastTitle}
-                                        tooltip={
-                                            <Tooltip
-                                                label=""
-                                                formatter={(value) => {
-                                                    return [
-                                                        `${Math.round(
-                                                            value
-                                                        )} cfs`,
-                                                        '',
-                                                    ]
-                                                }}
-                                                separator=""
-                                            />
-                                        }
-                                    />
-                                )}
-                            </SimpleCard>
-                        </Grid>
+                            )}
+                        </SimpleCard>
+                    </Grid>
+                    <Grid
+                        item
+                        xs={12}
+                        style={{
+                            textAlign: 'center',
+                            align: 'justify',
+                        }}
+                    >
+                        <SimpleCard>
+                            {this.state.forecastDataLoading ? (
+                                <CircularProgress />
+                            ) : (
+                                <RechartLineChart
+                                    data={this.state.forecastData}
+                                    dataKey="forecast"
+                                    xAxis={LineXAxis}
+                                    yAxisLabelValue={
+                                        'Cubic Feet Per Second (CFS)'
+                                    }
+                                    title={this.state.forecastTitle}
+                                    tooltip={
+                                        <Tooltip
+                                            label=""
+                                            formatter={(value) => {
+                                                return [
+                                                    `${Math.round(value)} cfs`,
+                                                    '',
+                                                ]
+                                            }}
+                                            separator=""
+                                        />
+                                    }
+                                />
+                            )}
+                        </SimpleCard>
                     </Grid>
                 </Grid>
             </div>
