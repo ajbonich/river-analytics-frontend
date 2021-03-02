@@ -58,7 +58,7 @@ class SimpleRiverForm extends React.Component {
                                 ]}
                             />
                         </Grid>
-                        <Grid item xs={4} style={{ 'padding-bottom': 30 }}>
+                        <Grid item xs={4} style={{ paddingBottom: 30 }}>
                             <Button
                                 color="primary"
                                 variant="contained"

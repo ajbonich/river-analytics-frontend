@@ -9,8 +9,8 @@ export default class Content extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
-            siteId: '',
-            siteDescription: '',
+            siteId: '06719505',
+            siteDescription: 'CLEAR CREEK AT GOLDEN, CO',
         }
         this._scrollRef = 0
     }

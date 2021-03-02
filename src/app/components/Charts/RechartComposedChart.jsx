@@ -67,8 +67,6 @@ export default class RechartComposedChart extends React.Component {
 }
 
 RechartComposedChart.propTypes = {
-    data: PropTypes.any.isRequired,
     title: PropTypes.any.isRequired,
     xAxis: PropTypes.element.isRequired,
-    yAxis: PropTypes.element.isRequired,
 }

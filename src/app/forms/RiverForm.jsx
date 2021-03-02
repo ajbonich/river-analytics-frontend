@@ -17,7 +17,7 @@ class RiverForm extends Component {
     constructor(props) {
         super(props)
         this.state = {
-            averageDataLoading: false,
+            averageDataLoading: true,
             dailyAverages: null,
             dailyAverageTitle: 'Historic Average Flow',
             chanceDataLoading: false,
@@ -32,6 +32,7 @@ class RiverForm extends Component {
             this
         )
         this.getDailyForecast = this.getDailyForecast.bind(this)
+        this.getDailyData()
     }
 
     setBaseAPI() {
