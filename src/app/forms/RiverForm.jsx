@@ -6,22 +6,11 @@ import { SimpleCard } from 'matx'
 import { Grid } from '@material-ui/core'
 import RechartLineChart from 'app/components/Charts/RechartLineChart'
 import RechartComposedChart from 'app/components/Charts/RechartComposedChart'
-import { XAxis, YAxis, Label, Tooltip } from 'recharts'
+import { XAxis, Label, Tooltip } from 'recharts'
 const LineXAxis = (
     <XAxis dataKey="index" height={40}>
         <Label value="Day of the Year" position="insideBottom" offset={3} />
     </XAxis>
-)
-
-const LineYAxis = (
-    <YAxis>
-        <Label
-            value="Cubic Feet Per Second (CFS)"
-            angle={-90}
-            position="insideBottomLeft"
-            offset={10}
-        />
-    </YAxis>
 )
 
 class RiverForm extends Component {
@@ -94,7 +83,7 @@ class RiverForm extends Component {
     getDailyForecast(forecastLength, forecastType = 'holtwinters') {
         this.setState({
             forecastDataLoading: true,
-            forecastTitle: `Forecacst for the Next ${forecastLength} Days`,
+            forecastTitle: `Forecast for the Next ${forecastLength} Days`,
         })
         fetch(
             `${this.baseApi}forecast/${forecastType}/${this.props.siteId}/?days=${forecastLength}`
@@ -135,7 +124,9 @@ class RiverForm extends Component {
                                                 : 'Historic Average Flow'
                                         }
                                         xAxis={LineXAxis}
-                                        yAxis={LineYAxis}
+                                        yAxisLabelValue={
+                                            'Cubic Feet Per Second (CFS)'
+                                        }
                                     />
                                 )}
                             </SimpleCard>
@@ -174,7 +165,7 @@ class RiverForm extends Component {
                                         }
                                         dataKey="percent"
                                         xAxis={LineXAxis}
-                                        yAxis={LineYAxis}
+                                        yAxisLabelValue={'Percent Chance'}
                                         title={this.state.chanceTitle}
                                         tooltip={
                                             <Tooltip
@@ -224,7 +215,9 @@ class RiverForm extends Component {
                                         data={this.state.forecastData}
                                         dataKey="forecast"
                                         xAxis={LineXAxis}
-                                        yAxis={LineYAxis}
+                                        yAxisLabelValue={
+                                            'Cubic Feet Per Second (CFS)'
+                                        }
                                         title={this.state.forecastTitle}
                                         tooltip={
                                             <Tooltip

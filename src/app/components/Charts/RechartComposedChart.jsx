@@ -1,12 +1,14 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import {
-    ComposedChart,
     Area,
     CartesianGrid,
+    ComposedChart,
+    Label,
     Line,
     ResponsiveContainer,
     Tooltip,
+    YAxis,
 } from 'recharts'
 
 export default class RechartComposedChart extends React.Component {
@@ -18,7 +20,14 @@ export default class RechartComposedChart extends React.Component {
                     <ComposedChart data={this.props.data} syncId={'dailyData'}>
                         <CartesianGrid strokeDasharray="3 3" />
                         {this.props.xAxis}
-                        {this.props.yAxis}
+                        <YAxis>
+                            <Label
+                                value={this.props.yAxisLabelValue}
+                                angle={-90}
+                                position="insideBottomLeft"
+                                offset={10}
+                            />
+                        </YAxis>
                         <Area
                             type="monotone"
                             dataKey="middleFifty"

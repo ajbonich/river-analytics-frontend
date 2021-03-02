@@ -1,6 +1,13 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { LineChart, Line, CartesianGrid, ResponsiveContainer } from 'recharts'
+import {
+    CartesianGrid,
+    Label,
+    Line,
+    LineChart,
+    ResponsiveContainer,
+    YAxis,
+} from 'recharts'
 
 export default class RechartLineChart extends React.Component {
     render() {
@@ -11,7 +18,14 @@ export default class RechartLineChart extends React.Component {
                     <LineChart data={this.props.data} syncId={'dailyData'}>
                         <CartesianGrid stroke="#ccc" strokeDasharray="5 5" />
                         {this.props.xAxis}
-                        {this.props.yAxis}
+                        <YAxis>
+                            <Label
+                                value={this.props.yAxisLabelValue}
+                                angle={-90}
+                                position="insideBottomLeft"
+                                offset={10}
+                            />
+                        </YAxis>
                         {this.props.tooltip}
                         <Line
                             type="monotone"

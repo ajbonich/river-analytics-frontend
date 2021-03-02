@@ -47,7 +47,7 @@ class SimpleRiverForm extends React.Component {
                                     'required',
                                     'isNumber: true',
                                     'minNumber: 1',
-                                    'maxNumber: 100',
+                                    'maxNumber: 400',
                                     'isPositive: true,',
                                 ]}
                                 errorMessages={['this field is required']}
