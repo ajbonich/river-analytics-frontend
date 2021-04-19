@@ -21,6 +21,10 @@ class SimpleRiverForm extends React.Component {
         const { minFlow, maxFlow } = this.state
         return (
             <div>
+                <h6>
+                    Compute Chance Flow is in The Given Range (Based off of
+                    historic flows)
+                </h6>
                 <ValidatorForm
                     debounceTime={2000}
                     onError={(errors) => console.log(errors)}

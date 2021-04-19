@@ -11,11 +11,10 @@ import {
     YAxis,
 } from 'recharts'
 
-export default class RechartComposedChart extends React.Component {
+export default class HistoricAverageChart extends React.Component {
     render() {
         return (
             <div>
-                <h4>{this.props.title}</h4>
                 <ResponsiveContainer height={260}>
                     <ComposedChart data={this.props.data} syncId={'dailyData'}>
                         <CartesianGrid strokeDasharray="3 3" />
@@ -66,7 +65,6 @@ export default class RechartComposedChart extends React.Component {
     }
 }
 
-RechartComposedChart.propTypes = {
-    title: PropTypes.any.isRequired,
+HistoricAverageChart.propTypes = {
     xAxis: PropTypes.element.isRequired,
 }

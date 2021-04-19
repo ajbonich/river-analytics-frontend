@@ -1,12 +1,12 @@
 import React, { Component } from 'react'
 import CircularProgress from '@material-ui/core/CircularProgress'
 import DesiredFlowCard from './DesiredFlowCard'
-import ForecastDaysCard from './ForecastDaysCard'
 import { SimpleCard } from 'matx'
 import { Grid } from '@material-ui/core'
-import RechartLineChart from 'app/components/Charts/RechartLineChart'
-import RechartComposedChart from 'app/components/Charts/RechartComposedChart'
-import { XAxis, Label, Tooltip } from 'recharts'
+import ForecastChart from 'app/components/Charts/ForecastChart'
+import HistoricAverageChart from 'app/components/Charts/HistoricAverageChart'
+import PercentChanceChart from 'app/components/Charts/PercentChanceChart'
+import { XAxis, Label } from 'recharts'
 const LineXAxis = (
     <XAxis dataKey="index" height={40}>
         <Label value="Day of the Year" position="insideBottom" offset={3} />
@@ -20,12 +20,11 @@ class RiverForm extends Component {
             averageDataLoading: true,
             dailyAverages: null,
             dailyAverageTitle: 'Historic Average Flow',
-            chanceDataLoading: false,
+            chanceDataLoading: true,
             dailyRunnablePercentages: null,
             chanceTitle: 'Flow Chance',
-            forecastDataLoading: false,
+            forecastDataLoading: true,
             forecastData: null,
-            forecastTitle: 'Forecast',
         }
         this.baseApi = this.setBaseAPI()
         this.getDailyRunnablePercentage = this.getDailyRunnablePercentage.bind(
@@ -33,6 +32,8 @@ class RiverForm extends Component {
         )
         this.getDailyForecast = this.getDailyForecast.bind(this)
         this.getDailyData()
+        this.getDailyRunnablePercentage(300, 1000)
+        this.getDailyForecast()
     }
 
     setBaseAPI() {
@@ -44,8 +45,12 @@ class RiverForm extends Component {
 
     componentDidUpdate(prevProps) {
         if (prevProps.siteId !== this.props.siteId) {
-            this.setState({ averageDataLoading: true })
+            this.setState({
+                averageDataLoading: true,
+                forecastDataLoading: true,
+            })
             this.getDailyData()
+            this.getDailyForecast()
         }
     }
 
@@ -81,14 +86,11 @@ class RiverForm extends Component {
             })
     }
 
-    getDailyForecast(forecastLength, forecastType = 'holtwinters') {
+    getDailyForecast() {
         this.setState({
             forecastDataLoading: true,
-            forecastTitle: `Forecast for the Next ${forecastLength} Days`,
         })
-        fetch(
-            `${this.baseApi}forecast/${forecastType}/${this.props.siteId}/?days=${forecastLength}`
-        )
+        fetch(`${this.baseApi}prophet_forecast?site_id=${this.props.siteId}`)
             .then((response) => response.json())
             .then((data) => {
                 this.setState({
@@ -104,87 +106,22 @@ class RiverForm extends Component {
                 <Grid container spacing={2}>
                     <Grid
                         item
-                        xs={6}
-                        style={{
-                            textAlign: 'center',
-                        }}
-                    >
-                        <SimpleCard
-                            title="Desired Flow"
-                            style={{ minHeight: 320 }}
-                        >
-                            <DesiredFlowCard
-                                buttonTitle={'Get Percentages'}
-                                handleFormSubmit={
-                                    this.getDailyRunnablePercentage
-                                }
-                            />
-                        </SimpleCard>
-                    </Grid>
-                    <Grid
-                        item
-                        xs={6}
-                        style={{
-                            textAlign: 'center',
-                        }}
-                    >
-                        <SimpleCard title="Forecast Length">
-                            <ForecastDaysCard
-                                buttonTitle={'Get Forecast'}
-                                handleFormSubmit={this.getDailyForecast}
-                            />
-                        </SimpleCard>
-                    </Grid>
-                    <Grid
-                        item
                         xs={12}
                         style={{ textAlign: 'center', align: 'justify' }}
                     >
                         <SimpleCard style={{ minHeight: 1000 }}>
+                            <h4>
+                                Historic Average Flow for:{' '}
+                                {this.props.siteDescription}
+                            </h4>
                             {this.state.averageDataLoading ? (
                                 <CircularProgress />
                             ) : (
-                                <RechartComposedChart
+                                <HistoricAverageChart
                                     data={this.state.dailyAverages}
-                                    title={
-                                        this.props.siteDescription
-                                            ? `Historic Average Flow for: ${this.props.siteDescription}`
-                                            : 'Historic Average Flow'
-                                    }
                                     xAxis={LineXAxis}
                                     yAxisLabelValue={
                                         'Cubic Feet Per Second (CFS)'
-                                    }
-                                />
-                            )}
-                        </SimpleCard>
-                    </Grid>
-                    <Grid
-                        item
-                        xs={12}
-                        style={{ textAlign: 'center', align: 'justify' }}
-                    >
-                        <SimpleCard style={{ minHeight: 320 }}>
-                            {this.state.chanceDataLoading ? (
-                                <CircularProgress />
-                            ) : (
-                                <RechartLineChart
-                                    data={this.state.dailyRunnablePercentages}
-                                    dataKey="percent"
-                                    xAxis={LineXAxis}
-                                    yAxisLabelValue={'Percent Chance'}
-                                    title={this.state.chanceTitle}
-                                    tooltip={
-                                        <Tooltip
-                                            label=""
-                                            formatter={(value) => {
-                                                return [
-                                                    `${Math.round(value)} %`,
-                                                    '',
-                                                ]
-                                            }}
-                                            separator=""
-                                        />
                                     }
                                 />
                             )}
@@ -198,34 +135,50 @@ class RiverForm extends Component {
                             align: 'justify',
                         }}
                     >
-                        <SimpleCard>
+                        <SimpleCard style={{ minHeight: 320 }}>
+                            <h4>Forecast for: {this.props.siteDescription}</h4>
                             {this.state.forecastDataLoading ? (
                                 <CircularProgress />
                             ) : (
-                                <RechartLineChart
+                                <ForecastChart
                                     data={this.state.forecastData}
-                                    dataKey="forecast"
                                     xAxis={LineXAxis}
                                     yAxisLabelValue={
                                         'Cubic Feet Per Second (CFS)'
-                                    }
-                                    title={this.state.forecastTitle}
-                                    tooltip={
-                                        <Tooltip
-                                            label=""
-                                            formatter={(value) => {
-                                                return [
-                                                    `${Math.round(value)} cfs`,
-                                                    '',
-                                                ]
-                                            }}
-                                            separator=""
-                                        />
                                     }
                                 />
                             )}
                         </SimpleCard>
                     </Grid>
+                    {/* <Grid
+                        item
+                        xs={12}
+                        style={{ textAlign: 'center', align: 'justify' }}
+                    >
+                        <SimpleCard style={{ minHeight: 320 }}>
+                            {this.state.chanceDataLoading ? (
+                                <CircularProgress />
+                            ) : (
+                                <div>
+                                    <PercentChanceChart
+                                        data={
+                                            this.state.dailyRunnablePercentages
+                                        }
+                                        dataKey="percent"
+                                        xAxis={LineXAxis}
+                                        yAxisLabelValue={'Percent Chance'}
+                                        title={this.state.chanceTitle}
+                                    />
+                                    <DesiredFlowCard
+                                        buttonTitle={'Get Percentages'}
+                                        handleFormSubmit={
+                                            this.getDailyRunnablePercentage
+                                        }
+                                    />
+                                </div>
+                            )}
+                        </SimpleCard>
+                    </Grid> */}
                 </Grid>
             </div>
         )

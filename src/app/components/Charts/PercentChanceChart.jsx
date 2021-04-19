@@ -5,11 +5,12 @@ import {
     Label,
     Line,
     LineChart,
+    Tooltip,
     ResponsiveContainer,
     YAxis,
 } from 'recharts'
 
-export default class RechartLineChart extends React.Component {
+export default class PercentChanceChart extends React.Component {
     render() {
         return (
             <div>
@@ -26,12 +27,18 @@ export default class RechartLineChart extends React.Component {
                                 offset={10}
                             />
                         </YAxis>
-                        {this.props.tooltip}
                         <Line
                             type="monotone"
                             dataKey={this.props.dataKey}
                             dot={false}
                             stroke="#000000"
+                        />
+                        <Tooltip
+                            label=""
+                            formatter={(value) => {
+                                return [`${Math.round(value)} %`, '']
+                            }}
+                            separator=""
                         />
                     </LineChart>
                 </ResponsiveContainer>
@@ -40,8 +47,7 @@ export default class RechartLineChart extends React.Component {
     }
 }
 
-RechartLineChart.propTypes = {
+PercentChanceChart.propTypes = {
     dataKey: PropTypes.any.isRequired,
     xAxis: PropTypes.any.isRequired,
-    tooltip: PropTypes.any.isRequired,
 }
