@@ -2,13 +2,16 @@
 <html lang="en">
   <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HY8LDLLBCN"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=" + process.env.GOOGLE_ANALYTICS_MEASUREMENT_ID></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
 
-      gtag('config', process.env.GOOGLE_ANALYTICS_MEASUREMENT_ID);
+      gtag('config', process.env.REACT_APP_GOOGLE_ANALYTICS_MEASUREMENT_ID);
+    </script>
+    <script>
+      console.log(process.log.REACT_APP_GOOGLE_ANALYTICS_MEASUREMENT_ID)
     </script>
     <meta charset="utf-8" />
     <link rel="shortcut icon" href="%PUBLIC_URL%/river.png" />
@@ -48,7 +51,7 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>River Flow Analytics</title>
+    <title>River Flow Analytics%REACT_APP_GOOGLE_ANALYTICS_MEASUREMENT_ID%</title>
 
     <!-- style -->
     <style>
