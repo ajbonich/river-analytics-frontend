@@ -38,16 +38,9 @@ class SimpleRiverForm extends React.Component {
                 >
                     <Grid
                         container
-<<<<<<< HEAD:src/app/views/forms/SimpleRiverForm.jsx
-                        direction="row"
-                        justify="flex-start"
-                        alignItems="flex-start"
-                        spacing={3}
-=======
                         alignItems="flex-end"
                         justify="center"
                         spacing={2}
->>>>>>> development:src/app/forms/DesiredFlowCard.jsx
                     >
                         <Grid item xs={3}>
                             <TextValidator
