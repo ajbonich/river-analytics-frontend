@@ -13,7 +13,7 @@ const SimpleCard = ({ children, title, subtitle, icon }) => {
             >
                 {title}
             </div>
-            {subtitle && <div className="card-subtitle mb-4">{subtitle}</div>}
+            {/* {subtitle && <div className="card-subtitle mb-4">{subtitle}</div>} */}
             {children}
         </Card>
     )

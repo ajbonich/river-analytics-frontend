@@ -43,7 +43,4 @@ Footer.propTypes = {
     settings: PropTypes.object.isRequired,
 }
 
-export default withStyles(
-    {},
-    { withTheme: true }
-)(Footer)
+export default withStyles({}, { withTheme: true })(Footer)

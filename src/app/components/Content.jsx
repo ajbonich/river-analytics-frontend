@@ -2,20 +2,21 @@ import React from 'react'
 import Scrollbar from 'react-perfect-scrollbar'
 
 import USGSGaugeMap from 'app/components/USGSGaugeMap'
-import RiverForm from 'app/views/forms/RiverForm'
+import RiverForm from 'app/forms/RiverForm'
 import Footer from './Footer'
 
 export default class Content extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
-            siteId: '',
+            siteId: '06719505',
+            siteDescription: 'CLEAR CREEK AT GOLDEN, CO',
         }
         this._scrollRef = 0
     }
 
-    handleGauge = (gauge) => {
-        this.setState({ siteId: gauge })
+    handleGauge = (gauge, description) => {
+        this.setState({ siteId: gauge, siteDescription: description })
         this._scrollRef.scrollTop = 10000
     }
 
@@ -29,12 +30,11 @@ export default class Content extends React.Component {
             >
                 <div className="content">
                     <USGSGaugeMap onSelectGauge={this.handleGauge} />
-                    <Scrollbar className="scrollable-lower">
-                        <RiverForm
-                            className="content"
-                            siteId={this.state.siteId}
-                        />
-                    </Scrollbar>
+                    <RiverForm
+                        className="content"
+                        siteId={this.state.siteId}
+                        siteDescription={this.state.siteDescription}
+                    />
                 </div>
                 <div className="my-auto" />
                 {this.props.settings && (

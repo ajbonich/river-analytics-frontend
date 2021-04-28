@@ -1,0 +1,2930 @@
+[
+	{
+		"index": "1/1",
+		"average": 45.6,
+		"quantile": [
+			34.0,
+			20.5
+		]
+	},
+	{
+		"index": "1/2",
+		"average": 45.4,
+		"quantile": [
+			36.0,
+			19.0
+		]
+	},
+	{
+		"index": "1/3",
+		"average": 46.0,
+		"quantile": [
+			35.0,
+			20.0
+		]
+	},
+	{
+		"index": "1/4",
+		"average": 46.5,
+		"quantile": [
+			37.0,
+			18.0
+		]
+	},
+	{
+		"index": "1/5",
+		"average": 45.1,
+		"quantile": [
+			36.0,
+			19.0
+		]
+	},
+	{
+		"index": "1/6",
+		"average": 45.6,
+		"quantile": [
+			36.8,
+			19.4
+		]
+	},
+	{
+		"index": "1/7",
+		"average": 46.5,
+		"quantile": [
+			36.0,
+			20.6
+		]
+	},
+	{
+		"index": "1/8",
+		"average": 47.2,
+		"quantile": [
+			36.0,
+			23.7
+		]
+	},
+	{
+		"index": "1/9",
+		"average": 46.8,
+		"quantile": [
+			36.0,
+			19.9
+		]
+	},
+	{
+		"index": "1/10",
+		"average": 45.5,
+		"quantile": [
+			36.0,
+			19.0
+		]
+	},
+	{
+		"index": "1/11",
+		"average": 44.8,
+		"quantile": [
+			36.0,
+			18.0
+		]
+	},
+	{
+		"index": "1/12",
+		"average": 44.1,
+		"quantile": [
+			31.1,
+			23.9
+		]
+	},
+	{
+		"index": "1/13",
+		"average": 43.9,
+		"quantile": [
+			32.0,
+			22.0
+		]
+	},
+	{
+		"index": "1/14",
+		"average": 43.9,
+		"quantile": [
+			32.0,
+			22.0
+		]
+	},
+	{
+		"index": "1/15",
+		"average": 44.4,
+		"quantile": [
+			33.9,
+			20.1
+		]
+	},
+	{
+		"index": "1/16",
+		"average": 43.7,
+		"quantile": [
+			34.0,
+			20.0
+		]
+	},
+	{
+		"index": "1/17",
+		"average": 43.4,
+		"quantile": [
+			34.0,
+			18.6
+		]
+	},
+	{
+		"index": "1/18",
+		"average": 44.1,
+		"quantile": [
+			34.2,
+			19.8
+		]
+	},
+	{
+		"index": "1/19",
+		"average": 44.8,
+		"quantile": [
+			35.0,
+			19.6
+		]
+	},
+	{
+		"index": "1/20",
+		"average": 44.3,
+		"quantile": [
+			36.0,
+			16.6
+		]
+	},
+	{
+		"index": "1/21",
+		"average": 44.0,
+		"quantile": [
+			36.0,
+			16.3
+		]
+	},
+	{
+		"index": "1/22",
+		"average": 43.5,
+		"quantile": [
+			35.0,
+			17.2
+		]
+	},
+	{
+		"index": "1/23",
+		"average": 43.5,
+		"quantile": [
+			33.7,
+			18.3
+		]
+	},
+	{
+		"index": "1/24",
+		"average": 44.1,
+		"quantile": [
+			34.0,
+			20.0
+		]
+	},
+	{
+		"index": "1/25",
+		"average": 43.8,
+		"quantile": [
+			34.0,
+			19.0
+		]
+	},
+	{
+		"index": "1/26",
+		"average": 42.8,
+		"quantile": [
+			34.0,
+			16.1
+		]
+	},
+	{
+		"index": "1/27",
+		"average": 41.5,
+		"quantile": [
+			32.0,
+			17.0
+		]
+	},
+	{
+		"index": "1/28",
+		"average": 42.2,
+		"quantile": [
+			34.0,
+			16.0
+		]
+	},
+	{
+		"index": "1/29",
+		"average": 43.3,
+		"quantile": [
+			34.0,
+			19.1
+		]
+	},
+	{
+		"index": "1/30",
+		"average": 43.3,
+		"quantile": [
+			34.0,
+			19.0
+		]
+	},
+	{
+		"index": "1/31",
+		"average": 42.7,
+		"quantile": [
+			36.0,
+			16.2
+		]
+	},
+	{
+		"index": "2/1",
+		"average": 42.6,
+		"quantile": [
+			34.8,
+			15.2
+		]
+	},
+	{
+		"index": "2/2",
+		"average": 42.9,
+		"quantile": [
+			34.0,
+			16.0
+		]
+	},
+	{
+		"index": "2/3",
+		"average": 42.8,
+		"quantile": [
+			34.0,
+			14.7
+		]
+	},
+	{
+		"index": "2/4",
+		"average": 43.3,
+		"quantile": [
+			34.0,
+			17.1
+		]
+	},
+	{
+		"index": "2/5",
+		"average": 43.7,
+		"quantile": [
+			34.0,
+			18.0
+		]
+	},
+	{
+		"index": "2/6",
+		"average": 43.7,
+		"quantile": [
+			33.9,
+			18.9
+		]
+	},
+	{
+		"index": "2/7",
+		"average": 43.4,
+		"quantile": [
+			33.0,
+			18.8
+		]
+	},
+	{
+		"index": "2/8",
+		"average": 43.3,
+		"quantile": [
+			33.0,
+			18.8
+		]
+	},
+	{
+		"index": "2/9",
+		"average": 44.0,
+		"quantile": [
+			32.5,
+			20.7
+		]
+	},
+	{
+		"index": "2/10",
+		"average": 44.2,
+		"quantile": [
+			33.0,
+			19.0
+		]
+	},
+	{
+		"index": "2/11",
+		"average": 44.0,
+		"quantile": [
+			33.0,
+			17.0
+		]
+	},
+	{
+		"index": "2/12",
+		"average": 43.4,
+		"quantile": [
+			32.6,
+			17.4
+		]
+	},
+	{
+		"index": "2/13",
+		"average": 45.1,
+		"quantile": [
+			33.0,
+			20.5
+		]
+	},
+	{
+		"index": "2/14",
+		"average": 44.4,
+		"quantile": [
+			33.0,
+			20.5
+		]
+	},
+	{
+		"index": "2/15",
+		"average": 42.8,
+		"quantile": [
+			33.0,
+			17.0
+		]
+	},
+	{
+		"index": "2/16",
+		"average": 42.3,
+		"quantile": [
+			33.4,
+			14.6
+		]
+	},
+	{
+		"index": "2/17",
+		"average": 41.7,
+		"quantile": [
+			32.0,
+			16.0
+		]
+	},
+	{
+		"index": "2/18",
+		"average": 41.2,
+		"quantile": [
+			32.0,
+			15.9
+		]
+	},
+	{
+		"index": "2/19",
+		"average": 41.2,
+		"quantile": [
+			31.0,
+			16.2
+		]
+	},
+	{
+		"index": "2/20",
+		"average": 41.3,
+		"quantile": [
+			31.7,
+			15.3
+		]
+	},
+	{
+		"index": "2/21",
+		"average": 41.2,
+		"quantile": [
+			32.0,
+			15.3
+		]
+	},
+	{
+		"index": "2/22",
+		"average": 41.7,
+		"quantile": [
+			32.0,
+			15.0
+		]
+	},
+	{
+		"index": "2/23",
+		"average": 41.7,
+		"quantile": [
+			33.0,
+			14.0
+		]
+	},
+	{
+		"index": "2/24",
+		"average": 42.0,
+		"quantile": [
+			35.0,
+			12.0
+		]
+	},
+	{
+		"index": "2/25",
+		"average": 41.1,
+		"quantile": [
+			33.0,
+			13.4
+		]
+	},
+	{
+		"index": "2/26",
+		"average": 41.6,
+		"quantile": [
+			32.0,
+			16.0
+		]
+	},
+	{
+		"index": "2/27",
+		"average": 42.1,
+		"quantile": [
+			33.0,
+			15.1
+		]
+	},
+	{
+		"index": "2/28",
+		"average": 43.1,
+		"quantile": [
+			33.5,
+			15.0
+		]
+	},
+	{
+		"index": "2/29",
+		"average": 45.6,
+		"quantile": [
+			38.1,
+			14.1
+		]
+	},
+	{
+		"index": "3/1",
+		"average": 42.4,
+		"quantile": [
+			33.3,
+			16.7
+		]
+	},
+	{
+		"index": "3/2",
+		"average": 42.7,
+		"quantile": [
+			32.0,
+			19.8
+		]
+	},
+	{
+		"index": "3/3",
+		"average": 42.0,
+		"quantile": [
+			33.0,
+			16.0
+		]
+	},
+	{
+		"index": "3/4",
+		"average": 41.8,
+		"quantile": [
+			34.0,
+			15.0
+		]
+	},
+	{
+		"index": "3/5",
+		"average": 42.0,
+		"quantile": [
+			32.0,
+			17.0
+		]
+	},
+	{
+		"index": "3/6",
+		"average": 43.4,
+		"quantile": [
+			35.0,
+			14.0
+		]
+	},
+	{
+		"index": "3/7",
+		"average": 43.2,
+		"quantile": [
+			35.4,
+			15.6
+		]
+	},
+	{
+		"index": "3/8",
+		"average": 44.1,
+		"quantile": [
+			37.0,
+			15.0
+		]
+	},
+	{
+		"index": "3/9",
+		"average": 43.4,
+		"quantile": [
+			36.0,
+			14.0
+		]
+	},
+	{
+		"index": "3/10",
+		"average": 42.7,
+		"quantile": [
+			34.9,
+			14.1
+		]
+	},
+	{
+		"index": "3/11",
+		"average": 43.2,
+		"quantile": [
+			35.0,
+			15.6
+		]
+	},
+	{
+		"index": "3/12",
+		"average": 44.2,
+		"quantile": [
+			35.7,
+			16.3
+		]
+	},
+	{
+		"index": "3/13",
+		"average": 44.7,
+		"quantile": [
+			34.0,
+			18.2
+		]
+	},
+	{
+		"index": "3/14",
+		"average": 44.9,
+		"quantile": [
+			35.9,
+			16.4
+		]
+	},
+	{
+		"index": "3/15",
+		"average": 45.1,
+		"quantile": [
+			35.0,
+			18.0
+		]
+	},
+	{
+		"index": "3/16",
+		"average": 44.8,
+		"quantile": [
+			37.0,
+			14.0
+		]
+	},
+	{
+		"index": "3/17",
+		"average": 46.0,
+		"quantile": [
+			36.7,
+			15.3
+		]
+	},
+	{
+		"index": "3/18",
+		"average": 46.6,
+		"quantile": [
+			38.0,
+			16.5
+		]
+	},
+	{
+		"index": "3/19",
+		"average": 46.8,
+		"quantile": [
+			37.0,
+			16.0
+		]
+	},
+	{
+		"index": "3/20",
+		"average": 46.8,
+		"quantile": [
+			38.5,
+			17.1
+		]
+	},
+	{
+		"index": "3/21",
+		"average": 47.0,
+		"quantile": [
+			37.0,
+			18.0
+		]
+	},
+	{
+		"index": "3/22",
+		"average": 48.6,
+		"quantile": [
+			38.0,
+			21.0
+		]
+	},
+	{
+		"index": "3/23",
+		"average": 49.3,
+		"quantile": [
+			37.0,
+			24.0
+		]
+	},
+	{
+		"index": "3/24",
+		"average": 50.2,
+		"quantile": [
+			37.0,
+			24.0
+		]
+	},
+	{
+		"index": "3/25",
+		"average": 50.2,
+		"quantile": [
+			39.8,
+			21.2
+		]
+	},
+	{
+		"index": "3/26",
+		"average": 51.3,
+		"quantile": [
+			40.0,
+			24.0
+		]
+	},
+	{
+		"index": "3/27",
+		"average": 51.2,
+		"quantile": [
+			39.0,
+			25.0
+		]
+	},
+	{
+		"index": "3/28",
+		"average": 51.3,
+		"quantile": [
+			38.0,
+			22.0
+		]
+	},
+	{
+		"index": "3/29",
+		"average": 52.0,
+		"quantile": [
+			40.0,
+			22.0
+		]
+	},
+	{
+		"index": "3/30",
+		"average": 51.5,
+		"quantile": [
+			40.0,
+			23.0
+		]
+	},
+	{
+		"index": "3/31",
+		"average": 52.9,
+		"quantile": [
+			39.0,
+			25.7
+		]
+	},
+	{
+		"index": "4/1",
+		"average": 53.1,
+		"quantile": [
+			40.7,
+			26.3
+		]
+	},
+	{
+		"index": "4/2",
+		"average": 55.3,
+		"quantile": [
+			42.0,
+			26.8
+		]
+	},
+	{
+		"index": "4/3",
+		"average": 56.0,
+		"quantile": [
+			41.1,
+			28.6
+		]
+	},
+	{
+		"index": "4/4",
+		"average": 56.9,
+		"quantile": [
+			42.3,
+			34.3
+		]
+	},
+	{
+		"index": "4/5",
+		"average": 58.3,
+		"quantile": [
+			43.0,
+			35.0
+		]
+	},
+	{
+		"index": "4/6",
+		"average": 59.0,
+		"quantile": [
+			45.0,
+			29.0
+		]
+	},
+	{
+		"index": "4/7",
+		"average": 59.9,
+		"quantile": [
+			47.0,
+			26.5
+		]
+	},
+	{
+		"index": "4/8",
+		"average": 60.3,
+		"quantile": [
+			47.0,
+			23.9
+		]
+	},
+	{
+		"index": "4/9",
+		"average": 62.9,
+		"quantile": [
+			49.0,
+			30.0
+		]
+	},
+	{
+		"index": "4/10",
+		"average": 65.1,
+		"quantile": [
+			50.0,
+			33.0
+		]
+	},
+	{
+		"index": "4/11",
+		"average": 67.7,
+		"quantile": [
+			49.5,
+			35.5
+		]
+	},
+	{
+		"index": "4/12",
+		"average": 67.6,
+		"quantile": [
+			44.0,
+			47.6
+		]
+	},
+	{
+		"index": "4/13",
+		"average": 69.4,
+		"quantile": [
+			47.0,
+			42.0
+		]
+	},
+	{
+		"index": "4/14",
+		"average": 69.9,
+		"quantile": [
+			50.0,
+			43.2
+		]
+	},
+	{
+		"index": "4/15",
+		"average": 73.5,
+		"quantile": [
+			53.0,
+			41.7
+		]
+	},
+	{
+		"index": "4/16",
+		"average": 74.8,
+		"quantile": [
+			55.0,
+			40.8
+		]
+	},
+	{
+		"index": "4/17",
+		"average": 77.9,
+		"quantile": [
+			57.0,
+			41.0
+		]
+	},
+	{
+		"index": "4/18",
+		"average": 80.9,
+		"quantile": [
+			58.4,
+			45.6
+		]
+	},
+	{
+		"index": "4/19",
+		"average": 84.2,
+		"quantile": [
+			62.2,
+			38.8
+		]
+	},
+	{
+		"index": "4/20",
+		"average": 86.2,
+		"quantile": [
+			64.0,
+			32.1
+		]
+	},
+	{
+		"index": "4/21",
+		"average": 87.4,
+		"quantile": [
+			64.0,
+			52.0
+		]
+	},
+	{
+		"index": "4/22",
+		"average": 93.8,
+		"quantile": [
+			62.0,
+			70.0
+		]
+	},
+	{
+		"index": "4/23",
+		"average": 99.7,
+		"quantile": [
+			58.0,
+			84.0
+		]
+	},
+	{
+		"index": "4/24",
+		"average": 107.5,
+		"quantile": [
+			60.0,
+			95.0
+		]
+	},
+	{
+		"index": "4/25",
+		"average": 110.7,
+		"quantile": [
+			64.9,
+			90.1
+		]
+	},
+	{
+		"index": "4/26",
+		"average": 113.2,
+		"quantile": [
+			66.0,
+			95.0
+		]
+	},
+	{
+		"index": "4/27",
+		"average": 115.7,
+		"quantile": [
+			67.0,
+			98.0
+		]
+	},
+	{
+		"index": "4/28",
+		"average": 119.0,
+		"quantile": [
+			65.0,
+			92.0
+		]
+	},
+	{
+		"index": "4/29",
+		"average": 126.3,
+		"quantile": [
+			74.0,
+			111.0
+		]
+	},
+	{
+		"index": "4/30",
+		"average": 137.3,
+		"quantile": [
+			76.1,
+			124.9
+		]
+	},
+	{
+		"index": "5/1",
+		"average": 146.2,
+		"quantile": [
+			81.0,
+			111.0
+		]
+	},
+	{
+		"index": "5/2",
+		"average": 148.0,
+		"quantile": [
+			87.0,
+			112.0
+		]
+	},
+	{
+		"index": "5/3",
+		"average": 151.4,
+		"quantile": [
+			84.3,
+			111.7
+		]
+	},
+	{
+		"index": "5/4",
+		"average": 157.6,
+		"quantile": [
+			81.0,
+			124.0
+		]
+	},
+	{
+		"index": "5/5",
+		"average": 170.5,
+		"quantile": [
+			85.0,
+			133.0
+		]
+	},
+	{
+		"index": "5/6",
+		"average": 177.8,
+		"quantile": [
+			95.5,
+			134.5
+		]
+	},
+	{
+		"index": "5/7",
+		"average": 187.4,
+		"quantile": [
+			99.0,
+			136.0
+		]
+	},
+	{
+		"index": "5/8",
+		"average": 197.9,
+		"quantile": [
+			104.0,
+			165.0
+		]
+	},
+	{
+		"index": "5/9",
+		"average": 209.8,
+		"quantile": [
+			101.0,
+			186.0
+		]
+	},
+	{
+		"index": "5/10",
+		"average": 217.7,
+		"quantile": [
+			103.0,
+			197.0
+		]
+	},
+	{
+		"index": "5/11",
+		"average": 225.3,
+		"quantile": [
+			103.0,
+			207.0
+		]
+	},
+	{
+		"index": "5/12",
+		"average": 231.4,
+		"quantile": [
+			115.0,
+			189.0
+		]
+	},
+	{
+		"index": "5/13",
+		"average": 242.5,
+		"quantile": [
+			120.0,
+			233.0
+		]
+	},
+	{
+		"index": "5/14",
+		"average": 258.8,
+		"quantile": [
+			144.0,
+			224.0
+		]
+	},
+	{
+		"index": "5/15",
+		"average": 274.2,
+		"quantile": [
+			173.0,
+			228.0
+		]
+	},
+	{
+		"index": "5/16",
+		"average": 294.9,
+		"quantile": [
+			179.0,
+			242.0
+		]
+	},
+	{
+		"index": "5/17",
+		"average": 319.2,
+		"quantile": [
+			193.0,
+			260.0
+		]
+	},
+	{
+		"index": "5/18",
+		"average": 334.7,
+		"quantile": [
+			197.0,
+			276.0
+		]
+	},
+	{
+		"index": "5/19",
+		"average": 356.3,
+		"quantile": [
+			224.0,
+			255.0
+		]
+	},
+	{
+		"index": "5/20",
+		"average": 375.1,
+		"quantile": [
+			224.0,
+			284.0
+		]
+	},
+	{
+		"index": "5/21",
+		"average": 398.6,
+		"quantile": [
+			249.0,
+			293.0
+		]
+	},
+	{
+		"index": "5/22",
+		"average": 426.1,
+		"quantile": [
+			254.0,
+			363.0
+		]
+	},
+	{
+		"index": "5/23",
+		"average": 445.2,
+		"quantile": [
+			259.0,
+			396.0
+		]
+	},
+	{
+		"index": "5/24",
+		"average": 473.3,
+		"quantile": [
+			275.0,
+			396.0
+		]
+	},
+	{
+		"index": "5/25",
+		"average": 496.0,
+		"quantile": [
+			264.0,
+			422.0
+		]
+	},
+	{
+		"index": "5/26",
+		"average": 498.2,
+		"quantile": [
+			270.0,
+			390.0
+		]
+	},
+	{
+		"index": "5/27",
+		"average": 503.9,
+		"quantile": [
+			285.0,
+			368.0
+		]
+	},
+	{
+		"index": "5/28",
+		"average": 528.3,
+		"quantile": [
+			321.0,
+			354.0
+		]
+	},
+	{
+		"index": "5/29",
+		"average": 561.1,
+		"quantile": [
+			334.0,
+			408.0
+		]
+	},
+	{
+		"index": "5/30",
+		"average": 575.8,
+		"quantile": [
+			346.0,
+			443.0
+		]
+	},
+	{
+		"index": "5/31",
+		"average": 588.8,
+		"quantile": [
+			371.0,
+			367.0
+		]
+	},
+	{
+		"index": "6/1",
+		"average": 616.6,
+		"quantile": [
+			368.0,
+			437.0
+		]
+	},
+	{
+		"index": "6/2",
+		"average": 632.4,
+		"quantile": [
+			367.0,
+			467.0
+		]
+	},
+	{
+		"index": "6/3",
+		"average": 653.5,
+		"quantile": [
+			400.0,
+			423.0
+		]
+	},
+	{
+		"index": "6/4",
+		"average": 680.7,
+		"quantile": [
+			432.0,
+			416.0
+		]
+	},
+	{
+		"index": "6/5",
+		"average": 720.8,
+		"quantile": [
+			477.0,
+			419.0
+		]
+	},
+	{
+		"index": "6/6",
+		"average": 757.2,
+		"quantile": [
+			540.0,
+			394.0
+		]
+	},
+	{
+		"index": "6/7",
+		"average": 791.8,
+		"quantile": [
+			582.0,
+			398.0
+		]
+	},
+	{
+		"index": "6/8",
+		"average": 807.8,
+		"quantile": [
+			581.0,
+			439.0
+		]
+	},
+	{
+		"index": "6/9",
+		"average": 820.5,
+		"quantile": [
+			539.0,
+			571.0
+		]
+	},
+	{
+		"index": "6/10",
+		"average": 824.4,
+		"quantile": [
+			551.0,
+			549.0
+		]
+	},
+	{
+		"index": "6/11",
+		"average": 827.1,
+		"quantile": [
+			548.0,
+			502.0
+		]
+	},
+	{
+		"index": "6/12",
+		"average": 837.8,
+		"quantile": [
+			545.0,
+			555.0
+		]
+	},
+	{
+		"index": "6/13",
+		"average": 831.4,
+		"quantile": [
+			532.0,
+			538.0
+		]
+	},
+	{
+		"index": "6/14",
+		"average": 831.0,
+		"quantile": [
+			531.0,
+			499.0
+		]
+	},
+	{
+		"index": "6/15",
+		"average": 831.9,
+		"quantile": [
+			522.0,
+			518.0
+		]
+	},
+	{
+		"index": "6/16",
+		"average": 836.0,
+		"quantile": [
+			508.0,
+			592.0
+		]
+	},
+	{
+		"index": "6/17",
+		"average": 834.2,
+		"quantile": [
+			495.0,
+			605.0
+		]
+	},
+	{
+		"index": "6/18",
+		"average": 834.8,
+		"quantile": [
+			476.0,
+			624.0
+		]
+	},
+	{
+		"index": "6/19",
+		"average": 839.4,
+		"quantile": [
+			473.0,
+			627.0
+		]
+	},
+	{
+		"index": "6/20",
+		"average": 841.1,
+		"quantile": [
+			499.0,
+			591.0
+		]
+	},
+	{
+		"index": "6/21",
+		"average": 838.2,
+		"quantile": [
+			481.0,
+			629.0
+		]
+	},
+	{
+		"index": "6/22",
+		"average": 829.7,
+		"quantile": [
+			491.0,
+			639.0
+		]
+	},
+	{
+		"index": "6/23",
+		"average": 814.2,
+		"quantile": [
+			485.0,
+			575.0
+		]
+	},
+	{
+		"index": "6/24",
+		"average": 791.0,
+		"quantile": [
+			476.0,
+			614.0
+		]
+	},
+	{
+		"index": "6/25",
+		"average": 781.7,
+		"quantile": [
+			453.0,
+			617.0
+		]
+	},
+	{
+		"index": "6/26",
+		"average": 769.2,
+		"quantile": [
+			442.0,
+			568.0
+		]
+	},
+	{
+		"index": "6/27",
+		"average": 749.3,
+		"quantile": [
+			425.0,
+			567.0
+		]
+	},
+	{
+		"index": "6/28",
+		"average": 731.2,
+		"quantile": [
+			425.0,
+			547.0
+		]
+	},
+	{
+		"index": "6/29",
+		"average": 711.8,
+		"quantile": [
+			403.0,
+			568.0
+		]
+	},
+	{
+		"index": "6/30",
+		"average": 692.5,
+		"quantile": [
+			389.0,
+			579.0
+		]
+	},
+	{
+		"index": "7/1",
+		"average": 680.5,
+		"quantile": [
+			380.0,
+			579.0
+		]
+	},
+	{
+		"index": "7/2",
+		"average": 660.5,
+		"quantile": [
+			372.0,
+			548.0
+		]
+	},
+	{
+		"index": "7/3",
+		"average": 639.4,
+		"quantile": [
+			364.0,
+			504.0
+		]
+	},
+	{
+		"index": "7/4",
+		"average": 613.3,
+		"quantile": [
+			341.0,
+			552.0
+		]
+	},
+	{
+		"index": "7/5",
+		"average": 582.4,
+		"quantile": [
+			335.0,
+			515.0
+		]
+	},
+	{
+		"index": "7/6",
+		"average": 558.8,
+		"quantile": [
+			323.0,
+			475.0
+		]
+	},
+	{
+		"index": "7/7",
+		"average": 545.3,
+		"quantile": [
+			312.0,
+			435.0
+		]
+	},
+	{
+		"index": "7/8",
+		"average": 539.2,
+		"quantile": [
+			297.0,
+			436.0
+		]
+	},
+	{
+		"index": "7/9",
+		"average": 535.9,
+		"quantile": [
+			292.0,
+			385.0
+		]
+	},
+	{
+		"index": "7/10",
+		"average": 525.0,
+		"quantile": [
+			297.0,
+			332.0
+		]
+	},
+	{
+		"index": "7/11",
+		"average": 504.9,
+		"quantile": [
+			272.0,
+			348.0
+		]
+	},
+	{
+		"index": "7/12",
+		"average": 488.6,
+		"quantile": [
+			276.0,
+			381.0
+		]
+	},
+	{
+		"index": "7/13",
+		"average": 470.9,
+		"quantile": [
+			274.0,
+			344.0
+		]
+	},
+	{
+		"index": "7/14",
+		"average": 456.1,
+		"quantile": [
+			252.0,
+			318.0
+		]
+	},
+	{
+		"index": "7/15",
+		"average": 434.3,
+		"quantile": [
+			248.0,
+			292.0
+		]
+	},
+	{
+		"index": "7/16",
+		"average": 411.1,
+		"quantile": [
+			262.0,
+			258.0
+		]
+	},
+	{
+		"index": "7/17",
+		"average": 401.8,
+		"quantile": [
+			240.0,
+			296.0
+		]
+	},
+	{
+		"index": "7/18",
+		"average": 385.2,
+		"quantile": [
+			239.0,
+			236.0
+		]
+	},
+	{
+		"index": "7/19",
+		"average": 373.2,
+		"quantile": [
+			228.0,
+			222.0
+		]
+	},
+	{
+		"index": "7/20",
+		"average": 366.9,
+		"quantile": [
+			224.0,
+			218.0
+		]
+	},
+	{
+		"index": "7/21",
+		"average": 355.6,
+		"quantile": [
+			218.0,
+			204.0
+		]
+	},
+	{
+		"index": "7/22",
+		"average": 336.7,
+		"quantile": [
+			197.0,
+			221.0
+		]
+	},
+	{
+		"index": "7/23",
+		"average": 328.9,
+		"quantile": [
+			194.0,
+			191.0
+		]
+	},
+	{
+		"index": "7/24",
+		"average": 317.1,
+		"quantile": [
+			196.0,
+			191.0
+		]
+	},
+	{
+		"index": "7/25",
+		"average": 307.8,
+		"quantile": [
+			201.0,
+			169.0
+		]
+	},
+	{
+		"index": "7/26",
+		"average": 305.1,
+		"quantile": [
+			204.0,
+			159.0
+		]
+	},
+	{
+		"index": "7/27",
+		"average": 286.2,
+		"quantile": [
+			178.0,
+			180.0
+		]
+	},
+	{
+		"index": "7/28",
+		"average": 280.5,
+		"quantile": [
+			177.0,
+			183.0
+		]
+	},
+	{
+		"index": "7/29",
+		"average": 286.3,
+		"quantile": [
+			166.0,
+			188.0
+		]
+	},
+	{
+		"index": "7/30",
+		"average": 276.7,
+		"quantile": [
+			161.0,
+			203.0
+		]
+	},
+	{
+		"index": "7/31",
+		"average": 270.1,
+		"quantile": [
+			158.0,
+			200.0
+		]
+	},
+	{
+		"index": "8/1",
+		"average": 266.0,
+		"quantile": [
+			161.0,
+			178.0
+		]
+	},
+	{
+		"index": "8/2",
+		"average": 257.3,
+		"quantile": [
+			158.0,
+			172.0
+		]
+	},
+	{
+		"index": "8/3",
+		"average": 253.8,
+		"quantile": [
+			142.0,
+			162.0
+		]
+	},
+	{
+		"index": "8/4",
+		"average": 245.7,
+		"quantile": [
+			148.0,
+			152.0
+		]
+	},
+	{
+		"index": "8/5",
+		"average": 244.1,
+		"quantile": [
+			146.0,
+			161.0
+		]
+	},
+	{
+		"index": "8/6",
+		"average": 238.8,
+		"quantile": [
+			140.0,
+			139.0
+		]
+	},
+	{
+		"index": "8/7",
+		"average": 229.8,
+		"quantile": [
+			143.0,
+			120.0
+		]
+	},
+	{
+		"index": "8/8",
+		"average": 218.2,
+		"quantile": [
+			141.0,
+			111.0
+		]
+	},
+	{
+		"index": "8/9",
+		"average": 211.1,
+		"quantile": [
+			131.0,
+			130.0
+		]
+	},
+	{
+		"index": "8/10",
+		"average": 208.0,
+		"quantile": [
+			135.0,
+			96.0
+		]
+	},
+	{
+		"index": "8/11",
+		"average": 203.2,
+		"quantile": [
+			137.0,
+			108.0
+		]
+	},
+	{
+		"index": "8/12",
+		"average": 199.0,
+		"quantile": [
+			134.0,
+			105.0
+		]
+	},
+	{
+		"index": "8/13",
+		"average": 199.2,
+		"quantile": [
+			139.0,
+			115.0
+		]
+	},
+	{
+		"index": "8/14",
+		"average": 195.6,
+		"quantile": [
+			141.0,
+			99.0
+		]
+	},
+	{
+		"index": "8/15",
+		"average": 190.9,
+		"quantile": [
+			129.0,
+			109.0
+		]
+	},
+	{
+		"index": "8/16",
+		"average": 182.2,
+		"quantile": [
+			127.0,
+			94.0
+		]
+	},
+	{
+		"index": "8/17",
+		"average": 183.6,
+		"quantile": [
+			128.0,
+			97.0
+		]
+	},
+	{
+		"index": "8/18",
+		"average": 182.6,
+		"quantile": [
+			129.0,
+			98.0
+		]
+	},
+	{
+		"index": "8/19",
+		"average": 180.2,
+		"quantile": [
+			129.0,
+			106.0
+		]
+	},
+	{
+		"index": "8/20",
+		"average": 176.4,
+		"quantile": [
+			128.0,
+			89.0
+		]
+	},
+	{
+		"index": "8/21",
+		"average": 171.4,
+		"quantile": [
+			122.0,
+			74.0
+		]
+	},
+	{
+		"index": "8/22",
+		"average": 171.0,
+		"quantile": [
+			119.0,
+			71.0
+		]
+	},
+	{
+		"index": "8/23",
+		"average": 165.7,
+		"quantile": [
+			121.0,
+			58.0
+		]
+	},
+	{
+		"index": "8/24",
+		"average": 167.2,
+		"quantile": [
+			120.0,
+			60.0
+		]
+	},
+	{
+		"index": "8/25",
+		"average": 163.0,
+		"quantile": [
+			116.0,
+			65.0
+		]
+	},
+	{
+		"index": "8/26",
+		"average": 161.3,
+		"quantile": [
+			119.0,
+			61.0
+		]
+	},
+	{
+		"index": "8/27",
+		"average": 158.7,
+		"quantile": [
+			120.0,
+			50.0
+		]
+	},
+	{
+		"index": "8/28",
+		"average": 155.0,
+		"quantile": [
+			117.0,
+			47.0
+		]
+	},
+	{
+		"index": "8/29",
+		"average": 152.2,
+		"quantile": [
+			113.0,
+			52.0
+		]
+	},
+	{
+		"index": "8/30",
+		"average": 149.7,
+		"quantile": [
+			107.0,
+			51.0
+		]
+	},
+	{
+		"index": "8/31",
+		"average": 147.1,
+		"quantile": [
+			106.0,
+			48.0
+		]
+	},
+	{
+		"index": "9/1",
+		"average": 147.9,
+		"quantile": [
+			107.0,
+			56.0
+		]
+	},
+	{
+		"index": "9/2",
+		"average": 143.2,
+		"quantile": [
+			105.0,
+			58.0
+		]
+	},
+	{
+		"index": "9/3",
+		"average": 141.4,
+		"quantile": [
+			106.0,
+			47.0
+		]
+	},
+	{
+		"index": "9/4",
+		"average": 136.8,
+		"quantile": [
+			100.0,
+			50.0
+		]
+	},
+	{
+		"index": "9/5",
+		"average": 133.1,
+		"quantile": [
+			99.3,
+			46.7
+		]
+	},
+	{
+		"index": "9/6",
+		"average": 129.8,
+		"quantile": [
+			94.4,
+			53.6
+		]
+	},
+	{
+		"index": "9/7",
+		"average": 130.3,
+		"quantile": [
+			96.5,
+			50.5
+		]
+	},
+	{
+		"index": "9/8",
+		"average": 129.4,
+		"quantile": [
+			96.7,
+			53.3
+		]
+	},
+	{
+		"index": "9/9",
+		"average": 128.4,
+		"quantile": [
+			93.5,
+			55.5
+		]
+	},
+	{
+		"index": "9/10",
+		"average": 130.9,
+		"quantile": [
+			91.1,
+			66.9
+		]
+	},
+	{
+		"index": "9/11",
+		"average": 128.0,
+		"quantile": [
+			93.7,
+			58.3
+		]
+	},
+	{
+		"index": "9/12",
+		"average": 133.7,
+		"quantile": [
+			92.0,
+			67.0
+		]
+	},
+	{
+		"index": "9/13",
+		"average": 146.9,
+		"quantile": [
+			94.0,
+			53.0
+		]
+	},
+	{
+		"index": "9/14",
+		"average": 136.3,
+		"quantile": [
+			92.2,
+			63.8
+		]
+	},
+	{
+		"index": "9/15",
+		"average": 134.1,
+		"quantile": [
+			91.8,
+			58.2
+		]
+	},
+	{
+		"index": "9/16",
+		"average": 130.3,
+		"quantile": [
+			87.0,
+			46.0
+		]
+	},
+	{
+		"index": "9/17",
+		"average": 124.7,
+		"quantile": [
+			84.0,
+			46.0
+		]
+	},
+	{
+		"index": "9/18",
+		"average": 120.8,
+		"quantile": [
+			82.6,
+			56.4
+		]
+	},
+	{
+		"index": "9/19",
+		"average": 116.4,
+		"quantile": [
+			79.0,
+			51.0
+		]
+	},
+	{
+		"index": "9/20",
+		"average": 115.4,
+		"quantile": [
+			79.0,
+			50.0
+		]
+	},
+	{
+		"index": "9/21",
+		"average": 115.1,
+		"quantile": [
+			84.2,
+			44.8
+		]
+	},
+	{
+		"index": "9/22",
+		"average": 114.5,
+		"quantile": [
+			83.0,
+			44.0
+		]
+	},
+	{
+		"index": "9/23",
+		"average": 112.1,
+		"quantile": [
+			83.0,
+			43.0
+		]
+	},
+	{
+		"index": "9/24",
+		"average": 110.2,
+		"quantile": [
+			84.0,
+			38.0
+		]
+	},
+	{
+		"index": "9/25",
+		"average": 107.3,
+		"quantile": [
+			79.0,
+			43.0
+		]
+	},
+	{
+		"index": "9/26",
+		"average": 107.1,
+		"quantile": [
+			81.0,
+			44.0
+		]
+	},
+	{
+		"index": "9/27",
+		"average": 104.7,
+		"quantile": [
+			76.6,
+			46.4
+		]
+	},
+	{
+		"index": "9/28",
+		"average": 103.4,
+		"quantile": [
+			80.9,
+			41.1
+		]
+	},
+	{
+		"index": "9/29",
+		"average": 103.2,
+		"quantile": [
+			78.0,
+			42.0
+		]
+	},
+	{
+		"index": "9/30",
+		"average": 101.9,
+		"quantile": [
+			74.2,
+			51.8
+		]
+	},
+	{
+		"index": "10/1",
+		"average": 97.9,
+		"quantile": [
+			74.8,
+			39.2
+		]
+	},
+	{
+		"index": "10/2",
+		"average": 97.6,
+		"quantile": [
+			73.9,
+			38.9
+		]
+	},
+	{
+		"index": "10/3",
+		"average": 96.0,
+		"quantile": [
+			72.3,
+			41.1
+		]
+	},
+	{
+		"index": "10/4",
+		"average": 98.3,
+		"quantile": [
+			72.2,
+			40.0
+		]
+	},
+	{
+		"index": "10/5",
+		"average": 95.7,
+		"quantile": [
+			72.0,
+			34.8
+		]
+	},
+	{
+		"index": "10/6",
+		"average": 95.1,
+		"quantile": [
+			74.0,
+			38.8
+		]
+	},
+	{
+		"index": "10/7",
+		"average": 94.9,
+		"quantile": [
+			73.7,
+			38.3
+		]
+	},
+	{
+		"index": "10/8",
+		"average": 93.9,
+		"quantile": [
+			72.0,
+			38.2
+		]
+	},
+	{
+		"index": "10/9",
+		"average": 92.0,
+		"quantile": [
+			71.8,
+			33.0
+		]
+	},
+	{
+		"index": "10/10",
+		"average": 92.3,
+		"quantile": [
+			70.5,
+			42.1
+		]
+	},
+	{
+		"index": "10/11",
+		"average": 90.8,
+		"quantile": [
+			66.5,
+			45.1
+		]
+	},
+	{
+		"index": "10/12",
+		"average": 89.4,
+		"quantile": [
+			69.6,
+			38.0
+		]
+	},
+	{
+		"index": "10/13",
+		"average": 89.5,
+		"quantile": [
+			68.3,
+			35.7
+		]
+	},
+	{
+		"index": "10/14",
+		"average": 87.8,
+		"quantile": [
+			68.1,
+			29.9
+		]
+	},
+	{
+		"index": "10/15",
+		"average": 85.9,
+		"quantile": [
+			64.4,
+			35.2
+		]
+	},
+	{
+		"index": "10/16",
+		"average": 85.8,
+		"quantile": [
+			62.2,
+			33.7
+		]
+	},
+	{
+		"index": "10/17",
+		"average": 83.9,
+		"quantile": [
+			63.2,
+			30.7
+		]
+	},
+	{
+		"index": "10/18",
+		"average": 84.0,
+		"quantile": [
+			61.8,
+			31.7
+		]
+	},
+	{
+		"index": "10/19",
+		"average": 83.2,
+		"quantile": [
+			60.4,
+			34.2
+		]
+	},
+	{
+		"index": "10/20",
+		"average": 83.2,
+		"quantile": [
+			63.1,
+			30.1
+		]
+	},
+	{
+		"index": "10/21",
+		"average": 82.3,
+		"quantile": [
+			61.8,
+			32.0
+		]
+	},
+	{
+		"index": "10/22",
+		"average": 80.9,
+		"quantile": [
+			61.6,
+			29.2
+		]
+	},
+	{
+		"index": "10/23",
+		"average": 79.8,
+		"quantile": [
+			59.2,
+			34.2
+		]
+	},
+	{
+		"index": "10/24",
+		"average": 79.0,
+		"quantile": [
+			60.2,
+			30.8
+		]
+	},
+	{
+		"index": "10/25",
+		"average": 77.2,
+		"quantile": [
+			61.0,
+			24.0
+		]
+	},
+	{
+		"index": "10/26",
+		"average": 76.6,
+		"quantile": [
+			60.0,
+			26.8
+		]
+	},
+	{
+		"index": "10/27",
+		"average": 75.6,
+		"quantile": [
+			59.0,
+			25.8
+		]
+	},
+	{
+		"index": "10/28",
+		"average": 76.0,
+		"quantile": [
+			56.4,
+			31.1
+		]
+	},
+	{
+		"index": "10/29",
+		"average": 74.9,
+		"quantile": [
+			56.2,
+			31.6
+		]
+	},
+	{
+		"index": "10/30",
+		"average": 74.7,
+		"quantile": [
+			55.0,
+			33.2
+		]
+	},
+	{
+		"index": "10/31",
+		"average": 73.9,
+		"quantile": [
+			53.0,
+			33.4
+		]
+	},
+	{
+		"index": "11/1",
+		"average": 74.1,
+		"quantile": [
+			53.6,
+			34.9
+		]
+	},
+	{
+		"index": "11/2",
+		"average": 70.5,
+		"quantile": [
+			50.8,
+			31.7
+		]
+	},
+	{
+		"index": "11/3",
+		"average": 70.9,
+		"quantile": [
+			51.0,
+			30.0
+		]
+	},
+	{
+		"index": "11/4",
+		"average": 68.5,
+		"quantile": [
+			48.7,
+			30.2
+		]
+	},
+	{
+		"index": "11/5",
+		"average": 67.5,
+		"quantile": [
+			49.4,
+			27.8
+		]
+	},
+	{
+		"index": "11/6",
+		"average": 66.7,
+		"quantile": [
+			48.2,
+			28.9
+		]
+	},
+	{
+		"index": "11/7",
+		"average": 65.4,
+		"quantile": [
+			47.1,
+			29.3
+		]
+	},
+	{
+		"index": "11/8",
+		"average": 66.0,
+		"quantile": [
+			49.1,
+			26.2
+		]
+	},
+	{
+		"index": "11/9",
+		"average": 65.0,
+		"quantile": [
+			48.6,
+			28.3
+		]
+	},
+	{
+		"index": "11/10",
+		"average": 62.7,
+		"quantile": [
+			48.5,
+			25.1
+		]
+	},
+	{
+		"index": "11/11",
+		"average": 63.8,
+		"quantile": [
+			50.0,
+			22.3
+		]
+	},
+	{
+		"index": "11/12",
+		"average": 62.6,
+		"quantile": [
+			45.6,
+			30.3
+		]
+	},
+	{
+		"index": "11/13",
+		"average": 63.1,
+		"quantile": [
+			50.3,
+			21.5
+		]
+	},
+	{
+		"index": "11/14",
+		"average": 63.4,
+		"quantile": [
+			47.1,
+			26.6
+		]
+	},
+	{
+		"index": "11/15",
+		"average": 60.3,
+		"quantile": [
+			44.2,
+			26.6
+		]
+	},
+	{
+		"index": "11/16",
+		"average": 59.5,
+		"quantile": [
+			46.0,
+			20.9
+		]
+	},
+	{
+		"index": "11/17",
+		"average": 61.0,
+		"quantile": [
+			49.1,
+			17.9
+		]
+	},
+	{
+		"index": "11/18",
+		"average": 61.0,
+		"quantile": [
+			45.3,
+			24.5
+		]
+	},
+	{
+		"index": "11/19",
+		"average": 60.4,
+		"quantile": [
+			45.1,
+			25.4
+		]
+	},
+	{
+		"index": "11/20",
+		"average": 59.8,
+		"quantile": [
+			43.4,
+			25.3
+		]
+	},
+	{
+		"index": "11/21",
+		"average": 58.5,
+		"quantile": [
+			43.4,
+			27.1
+		]
+	},
+	{
+		"index": "11/22",
+		"average": 59.2,
+		"quantile": [
+			46.0,
+			22.5
+		]
+	},
+	{
+		"index": "11/23",
+		"average": 57.7,
+		"quantile": [
+			47.0,
+			21.2
+		]
+	},
+	{
+		"index": "11/24",
+		"average": 56.0,
+		"quantile": [
+			44.5,
+			22.3
+		]
+	},
+	{
+		"index": "11/25",
+		"average": 56.4,
+		"quantile": [
+			45.0,
+			24.5
+		]
+	},
+	{
+		"index": "11/26",
+		"average": 57.1,
+		"quantile": [
+			44.3,
+			23.7
+		]
+	},
+	{
+		"index": "11/27",
+		"average": 55.2,
+		"quantile": [
+			43.3,
+			24.7
+		]
+	},
+	{
+		"index": "11/28",
+		"average": 55.4,
+		"quantile": [
+			44.0,
+			26.0
+		]
+	},
+	{
+		"index": "11/29",
+		"average": 57.3,
+		"quantile": [
+			45.0,
+			25.6
+		]
+	},
+	{
+		"index": "11/30",
+		"average": 55.7,
+		"quantile": [
+			43.0,
+			27.1
+		]
+	},
+	{
+		"index": "12/1",
+		"average": 54.7,
+		"quantile": [
+			44.0,
+			23.4
+		]
+	},
+	{
+		"index": "12/2",
+		"average": 54.6,
+		"quantile": [
+			43.6,
+			23.3
+		]
+	},
+	{
+		"index": "12/3",
+		"average": 56.7,
+		"quantile": [
+			47.0,
+			20.0
+		]
+	},
+	{
+		"index": "12/4",
+		"average": 55.7,
+		"quantile": [
+			42.0,
+			25.0
+		]
+	},
+	{
+		"index": "12/5",
+		"average": 53.0,
+		"quantile": [
+			40.6,
+			19.5
+		]
+	},
+	{
+		"index": "12/6",
+		"average": 52.5,
+		"quantile": [
+			45.0,
+			14.0
+		]
+	},
+	{
+		"index": "12/7",
+		"average": 52.0,
+		"quantile": [
+			45.0,
+			13.0
+		]
+	},
+	{
+		"index": "12/8",
+		"average": 51.2,
+		"quantile": [
+			40.0,
+			19.0
+		]
+	},
+	{
+		"index": "12/9",
+		"average": 50.4,
+		"quantile": [
+			40.0,
+			19.9
+		]
+	},
+	{
+		"index": "12/10",
+		"average": 50.5,
+		"quantile": [
+			39.8,
+			20.2
+		]
+	},
+	{
+		"index": "12/11",
+		"average": 51.7,
+		"quantile": [
+			42.0,
+			18.0
+		]
+	},
+	{
+		"index": "12/12",
+		"average": 51.7,
+		"quantile": [
+			42.1,
+			17.6
+		]
+	},
+	{
+		"index": "12/13",
+		"average": 51.5,
+		"quantile": [
+			41.0,
+			17.0
+		]
+	},
+	{
+		"index": "12/14",
+		"average": 50.7,
+		"quantile": [
+			41.0,
+			17.2
+		]
+	},
+	{
+		"index": "12/15",
+		"average": 50.4,
+		"quantile": [
+			41.0,
+			17.0
+		]
+	},
+	{
+		"index": "12/16",
+		"average": 49.1,
+		"quantile": [
+			39.3,
+			18.7
+		]
+	},
+	{
+		"index": "12/17",
+		"average": 48.0,
+		"quantile": [
+			38.0,
+			19.0
+		]
+	},
+	{
+		"index": "12/18",
+		"average": 47.5,
+		"quantile": [
+			37.0,
+			19.0
+		]
+	},
+	{
+		"index": "12/19",
+		"average": 47.3,
+		"quantile": [
+			36.0,
+			20.0
+		]
+	},
+	{
+		"index": "12/20",
+		"average": 47.0,
+		"quantile": [
+			37.0,
+			19.8
+		]
+	},
+	{
+		"index": "12/21",
+		"average": 47.5,
+		"quantile": [
+			38.0,
+			20.0
+		]
+	},
+	{
+		"index": "12/22",
+		"average": 47.7,
+		"quantile": [
+			36.9,
+			19.1
+		]
+	},
+	{
+		"index": "12/23",
+		"average": 48.2,
+		"quantile": [
+			38.0,
+			18.0
+		]
+	},
+	{
+		"index": "12/24",
+		"average": 46.6,
+		"quantile": [
+			38.0,
+			17.0
+		]
+	},
+	{
+		"index": "12/25",
+		"average": 47.6,
+		"quantile": [
+			38.0,
+			18.0
+		]
+	},
+	{
+		"index": "12/26",
+		"average": 46.8,
+		"quantile": [
+			37.0,
+			19.0
+		]
+	},
+	{
+		"index": "12/27",
+		"average": 45.9,
+		"quantile": [
+			37.0,
+			15.3
+		]
+	},
+	{
+		"index": "12/28",
+		"average": 45.8,
+		"quantile": [
+			36.0,
+			20.0
+		]
+	},
+	{
+		"index": "12/29",
+		"average": 45.5,
+		"quantile": [
+			33.5,
+			22.5
+		]
+	},
+	{
+		"index": "12/30",
+		"average": 47.2,
+		"quantile": [
+			35.0,
+			22.2
+		]
+	},
+	{
+		"index": "12/31",
+		"average": 46.0,
+		"quantile": [
+			34.2,
+			22.3
+		]
+	}
+]
