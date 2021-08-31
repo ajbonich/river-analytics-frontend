@@ -62,7 +62,7 @@ class RiverForm extends Component {
             chanceTitle: `Chance Flow is between ${minFlow} and ${maxFlow} cfs`,
         })
         fetch(
-            `${this.baseApi}getRunnablePercentage?siteId=${this.props.siteId}&minFlow=${minFlow}&maxFlow=${maxFlow}`
+            `${this.baseApi}/runnable-percentage?siteId=${this.props.siteId}&minFlow=${minFlow}&maxFlow=${maxFlow}`
         )
             .then((response) => response.json())
             .then((data) => {
@@ -74,7 +74,7 @@ class RiverForm extends Component {
     }
 
     getDailyData() {
-        fetch(`${this.baseApi}getDailyAverageData?siteId=${this.props.siteId}`)
+        fetch(`${this.baseApi}/daily-average-data?siteId=${this.props.siteId}`)
             .then((response) => response.json())
             .then((data) => {
                 this.setState({
