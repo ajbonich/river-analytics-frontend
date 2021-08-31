@@ -4,6 +4,7 @@ import PropTypes from 'prop-types'
 import { withStyles, ThemeProvider } from '@material-ui/core/styles'
 import { classList } from 'utils'
 import Layout1Topbar from './Layout1Topbar'
+import feedbackButtonCss from 'styles/feedbackButton.css'
 
 import { themeColors } from './MatxTheme/themeColors'
 import { createMuiTheme } from '@material-ui/core/styles'
@@ -87,6 +88,7 @@ const Layout1 = (props) => {
                     hoverBorderColor="#349ecf"
                     primaryColor="#276b91"
                     projectName="TheRiverFlowcast. Please add your email if you would like a response! :)"
+                    classname={feedbackButtonCss}
                 />
             </div>
         </div>

@@ -1,11 +1,9 @@
 import React, { Component } from 'react'
 import CircularProgress from '@material-ui/core/CircularProgress'
-import DesiredFlowCard from './DesiredFlowCard'
 import { SimpleCard } from 'matx'
 import { Grid } from '@material-ui/core'
 import ForecastChart from 'app/components/Charts/ForecastChart'
 import HistoricAverageChart from 'app/components/Charts/HistoricAverageChart'
-import PercentChanceChart from 'app/components/Charts/PercentChanceChart'
 import { XAxis, Label } from 'recharts'
 const LineXAxis = (
     <XAxis dataKey="index" height={40}>
