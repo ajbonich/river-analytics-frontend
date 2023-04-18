@@ -86,7 +86,7 @@ const Layout1 = (props) => {
                 <Feedback
                     projectId="603e7dc265d39b0004cbe71f"
                     hoverBorderColor="#349ecf"
-                    primaryColor="#276b91"
+                    primaryColor="#348fc2"
                     projectName="TheRiverFlowcast. Please add your email if you would like a response! :)"
                     classname={feedbackButtonCss}
                 />

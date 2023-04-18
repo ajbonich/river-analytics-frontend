@@ -1,3 +1,7 @@
 .frf-trigger-button {
-    bottom: 100px;
+    bottom: 4px !important;
+    right: -18px !important;
+}
+.frf-water {
+    display: none;
 }

@@ -27,7 +27,6 @@ const Footer = ({ theme, settings }) => {
                                 Find river sections at American Whitewater
                             </Button>
                         </a>
-                        <span className="m-auto"></span>
                         {/* <Button variant="contained" color="secondary">
                             Submit Feedback
                         </Button> */}
