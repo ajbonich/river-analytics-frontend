@@ -88,7 +88,9 @@ class RiverForm extends Component {
         this.setState({
             forecastDataLoading: true,
         })
-        fetch(`${this.baseApi}/prophet_forecast?site_id=${this.props.siteId}`)
+        fetch(
+            `${this.baseApi}/prophet_base_forecast?site_id=${this.props.siteId}`
+        )
             .then((response) => response.json())
             .then((data) => {
                 this.setState({
