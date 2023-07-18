@@ -42,7 +42,7 @@ export default class ForecastChart extends React.Component {
                         />
                         <Tooltip
                             label=""
-                            formatter={(value, name, props) => {
+                            formatter={(value, name) => {
                                 if (name === 'past_value') {
                                     return [
                                         `Flow: ${Math.round(value)} cfs`,

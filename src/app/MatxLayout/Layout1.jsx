@@ -15,7 +15,7 @@ import Content from 'app/components/Content'
 import Feedback from 'feeder-react-feedback' // import Feedback component
 import 'feeder-react-feedback/dist/feeder-react-feedback.css' // import stylesheet
 
-const styles = (theme) => {
+const styles = () => {
     return {
         layout: {
             backgroundColor: '#e6f0f6',

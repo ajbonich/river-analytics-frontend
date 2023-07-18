@@ -5,9 +5,9 @@ body {
         'Helvetica Neue', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    font-size: 16px;
-    overflow: hidden;
-    position: relative;
+    font-size: 16px; //maybe not needed
+    overflow: hidden;//maybe not needed
+    position: relative; //maybe not needed
 }
 
 .leaflet-container {
@@ -22,7 +22,7 @@ body {
 code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
         monospace;
-    color: rgba(255, 0, 221, 0.863);
-    font-size: 16px;
-    // color: rgba(255, 162, 0, 0.842);
+    color: rgba(255, 0, 221, 0.863);//maybe not needed
+    font-size: 16px; //maybe not needed
+    /* color: rgba(255, 162, 0, 0.842);*/
 }

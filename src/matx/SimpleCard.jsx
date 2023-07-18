@@ -2,7 +2,7 @@ import React from 'react'
 import { Card } from '@material-ui/core'
 import { classList } from 'utils'
 
-const SimpleCard = ({ children, title, subtitle, icon }) => {
+const SimpleCard = ({ children, title, subtitle }) => {
     return (
         <Card elevation={6} className="px-6 py-2 h-full">
             <div
