@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { withStyles } from '@material-ui/core/styles'
-import { classList } from 'utils'
+import { classList } from '../../../src/utils'
 
 const styles = (theme) => ({
     topbar: {
@@ -59,9 +59,4 @@ class Layout1Topbar extends Component {
     }
 }
 
-export default withStyles(styles, { withTheme: true })(
-(
-            Layout1Topbar
-        )
-    
-)
+export default withStyles(styles, { withTheme: true })(Layout1Topbar)

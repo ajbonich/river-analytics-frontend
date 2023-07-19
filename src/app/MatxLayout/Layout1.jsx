@@ -7,10 +7,10 @@ import Layout1Topbar from './Layout1Topbar'
 import feedbackButtonCss from 'styles/feedbackButton.css'
 
 import { themeColors } from './MatxTheme/themeColors'
-import { createMuiTheme } from '@material-ui/core/styles'
+import { createTheme } from '@material-ui/core/styles'
 import { forEach, merge } from 'lodash'
 import themeOptions from './MatxTheme/themeOptions'
-import Content from 'app/components/Content'
+import Content from '../../app/components/Content'
 
 import Feedback from 'feeder-react-feedback' // import Feedback component
 import 'feeder-react-feedback/dist/feeder-react-feedback.css' // import stylesheet
@@ -27,7 +27,7 @@ function createMatxThemes() {
     const themes = {}
 
     forEach(themeColors, (value, key) => {
-        themes[key] = createMuiTheme(merge({}, themeOptions, value))
+        themes[key] = createTheme(merge({}, themeOptions, value))
     })
     return themes
 }

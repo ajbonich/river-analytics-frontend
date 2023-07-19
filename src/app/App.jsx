@@ -1,4 +1,4 @@
-import '../styles/_app.css'
+import '../styles/_app.scss'
 import React from 'react'
 import Layout1 from './MatxLayout/Layout1'
 
