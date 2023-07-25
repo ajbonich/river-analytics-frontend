@@ -1,11 +1,9 @@
 import React, { Component } from 'react'
 import CircularProgress from '@material-ui/core/CircularProgress'
-import DesiredFlowCard from './DesiredFlowCard'
 import { SimpleCard } from 'matx'
 import { Grid } from '@material-ui/core'
 import ForecastChart from 'app/components/Charts/ForecastChart'
 import HistoricAverageChart from 'app/components/Charts/HistoricAverageChart'
-import PercentChanceChart from 'app/components/Charts/PercentChanceChart'
 import { XAxis, Label } from 'recharts'
 const LineXAxis = (
     <XAxis dataKey="index" height={40}>
@@ -27,9 +25,8 @@ class RiverForm extends Component {
             forecastData: null,
         }
         this.baseApi = this.setBaseAPI()
-        this.getDailyRunnablePercentage = this.getDailyRunnablePercentage.bind(
-            this
-        )
+        this.getDailyRunnablePercentage =
+            this.getDailyRunnablePercentage.bind(this)
         this.getDailyForecast = this.getDailyForecast.bind(this)
         this.getDailyData()
         this.getDailyRunnablePercentage(300, 1000)
@@ -64,7 +61,7 @@ class RiverForm extends Component {
             chanceTitle: `Chance Flow is between ${minFlow} and ${maxFlow} cfs`,
         })
         fetch(
-            `${this.baseApi}getRunnablePercentage?siteId=${this.props.siteId}&minFlow=${minFlow}&maxFlow=${maxFlow}`
+            `${this.baseApi}/runnable-percentage?siteId=${this.props.siteId}&minFlow=${minFlow}&maxFlow=${maxFlow}`
         )
             .then((response) => response.json())
             .then((data) => {
@@ -76,7 +73,7 @@ class RiverForm extends Component {
     }
 
     getDailyData() {
-        fetch(`${this.baseApi}getDailyAverageData?siteId=${this.props.siteId}`)
+        fetch(`${this.baseApi}/daily-average-data?siteId=${this.props.siteId}`)
             .then((response) => response.json())
             .then((data) => {
                 this.setState({
@@ -90,7 +87,9 @@ class RiverForm extends Component {
         this.setState({
             forecastDataLoading: true,
         })
-        fetch(`${this.baseApi}prophet_forecast?site_id=${this.props.siteId}`)
+        fetch(
+            `${this.baseApi}/prophet-base-forecast?siteId=${this.props.siteId}`
+        )
             .then((response) => response.json())
             .then((data) => {
                 this.setState({

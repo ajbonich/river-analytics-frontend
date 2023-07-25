@@ -4,17 +4,18 @@ import PropTypes from 'prop-types'
 import { withStyles, ThemeProvider } from '@material-ui/core/styles'
 import { classList } from 'utils'
 import Layout1Topbar from './Layout1Topbar'
+import feedbackButtonCss from 'styles/feedbackButton.css'
 
 import { themeColors } from './MatxTheme/themeColors'
-import { createMuiTheme } from '@material-ui/core/styles'
+import { createTheme } from '@material-ui/core/styles'
 import { forEach, merge } from 'lodash'
 import themeOptions from './MatxTheme/themeOptions'
-import Content from 'app/components/Content'
+import Content from '../../app/components/Content'
 
 import Feedback from 'feeder-react-feedback' // import Feedback component
 import 'feeder-react-feedback/dist/feeder-react-feedback.css' // import stylesheet
 
-const styles = (theme) => {
+const styles = () => {
     return {
         layout: {
             backgroundColor: '#e6f0f6',
@@ -26,7 +27,7 @@ function createMatxThemes() {
     const themes = {}
 
     forEach(themeColors, (value, key) => {
-        themes[key] = createMuiTheme(merge({}, themeOptions, value))
+        themes[key] = createTheme(merge({}, themeOptions, value))
     })
     return themes
 }
@@ -85,8 +86,9 @@ const Layout1 = (props) => {
                 <Feedback
                     projectId="603e7dc265d39b0004cbe71f"
                     hoverBorderColor="#349ecf"
-                    primaryColor="#276b91"
+                    primaryColor="#348fc2"
                     projectName="TheRiverFlowcast. Please add your email if you would like a response! :)"
+                    classname={feedbackButtonCss}
                 />
             </div>
         </div>

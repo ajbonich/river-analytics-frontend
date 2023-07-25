@@ -1,6 +1,6 @@
 import React from 'react'
 import { MapContainer, TileLayer, Tooltip, Marker, Popup } from 'react-leaflet'
-import MarkerClusterGroup from 'react-leaflet-markercluster'
+import MarkerClusterGroup from '@changey/react-leaflet-markercluster'
 import gaugeData from './all_sites_filtered_on_mean.json'
 
 export default class USGSGaugeMap extends React.Component {
