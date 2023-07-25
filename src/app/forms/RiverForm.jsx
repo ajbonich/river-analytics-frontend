@@ -25,9 +25,8 @@ class RiverForm extends Component {
             forecastData: null,
         }
         this.baseApi = this.setBaseAPI()
-        this.getDailyRunnablePercentage = this.getDailyRunnablePercentage.bind(
-            this
-        )
+        this.getDailyRunnablePercentage =
+            this.getDailyRunnablePercentage.bind(this)
         this.getDailyForecast = this.getDailyForecast.bind(this)
         this.getDailyData()
         this.getDailyRunnablePercentage(300, 1000)
@@ -89,7 +88,7 @@ class RiverForm extends Component {
             forecastDataLoading: true,
         })
         fetch(
-            `${this.baseApi}/prophet_base_forecast?site_id=${this.props.siteId}`
+            `${this.baseApi}/prophet-base-forecast?siteId=${this.props.siteId}`
         )
             .then((response) => response.json())
             .then((data) => {
